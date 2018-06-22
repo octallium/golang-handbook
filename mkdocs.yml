@@ -64,3 +64,6 @@ pages:
     - 'Why Go': 'getting-started/why-go.md'
     - 'Installation': 'getting-started/installation.md'
     - 'Editors and IDE': 'getting-started/editor_ide.md'
+  - Basic:
+    - 'Basic Introduction': 'basic/basic.md'
+    - '01 Hello World': 'basic/hello-world.md'
