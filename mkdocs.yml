@@ -15,6 +15,7 @@ copyright: 'Copyright &copy; 2017 - 2018 Anil Kulkarni'
 theme:
   name: 'material'
   favicon: 'images/gopher-front.png'
+  logo: 'images/golang-logo.svg'
   palette:
     primary: 'indigo'
     accent: 'indigo'
