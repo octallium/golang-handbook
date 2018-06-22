@@ -5,7 +5,7 @@ site_author: 'Anil Kulkarni'
 site_url: 'https://octallium.github.io/golang-handbook/'
 
 # Repository
-repo_name: 'octallium/go-handbook'
+repo_name: 'octallium/golang-handbook'
 repo_url: 'https://github.com/octallium/golang-handbook'
 
 # Copyright
