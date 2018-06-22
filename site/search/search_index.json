@@ -1,0 +1,119 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "The 'Go' Programming Handbook\n\n\nA Guide To Understanding The \n Go\n Programming Language.\n\n\n\n\nIntroduction\n\n\nThe 'Go' handbook is an introductory book and is intended for beginners, the book doesn't make any assumption about your prior programming knowledge and tries to teach everything from scratch.\n\n\nAudience\n\n\nThis handbook is intended for beginners and new programmers, it can also be used as a reference by more experienced developers.\n\n\nMotivation\n\n\nAs a beginner I really struggled to find the right sources for learning 'Go' and many of the resources very not suited for new beginner or for a student who is entirely new to programming, so I decided to write a simple to understand 'beginners' book for learning 'Go'\n\n\nAbout Me\n\n\nHi, my name is Anil Kulkarni and I am passionate about coding \n. I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies \n\n\nCode Sample\n\n\nAll code samples will the in the form of following block:\n    \nfunc\n \nmain\n()\n \n{\n\n    \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n}\n\n\n\n\nGet In Touch\n\n\nTo know more about me please visit \nwww.octallium.com\n.\n\n\n- Anil Kulkarni", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#the-go-programming-handbook", 
+            "text": "A Guide To Understanding The   Go  Programming Language.", 
+            "title": "The 'Go' Programming Handbook"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "The 'Go' handbook is an introductory book and is intended for beginners, the book doesn't make any assumption about your prior programming knowledge and tries to teach everything from scratch.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#audience", 
+            "text": "This handbook is intended for beginners and new programmers, it can also be used as a reference by more experienced developers.", 
+            "title": "Audience"
+        }, 
+        {
+            "location": "/#motivation", 
+            "text": "As a beginner I really struggled to find the right sources for learning 'Go' and many of the resources very not suited for new beginner or for a student who is entirely new to programming, so I decided to write a simple to understand 'beginners' book for learning 'Go'", 
+            "title": "Motivation"
+        }, 
+        {
+            "location": "/#about-me", 
+            "text": "Hi, my name is Anil Kulkarni and I am passionate about coding  . I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies", 
+            "title": "About Me"
+        }, 
+        {
+            "location": "/#code-sample", 
+            "text": "All code samples will the in the form of following block:\n     func   main ()   { \n     fmt . Println ( Hello, World! )  }", 
+            "title": "Code Sample"
+        }, 
+        {
+            "location": "/#get-in-touch", 
+            "text": "To know more about me please visit  www.octallium.com .  - Anil Kulkarni", 
+            "title": "Get In Touch"
+        }, 
+        {
+            "location": "/getting-started/why-go/", 
+            "text": "Why Go ?\n\n\n\n\n\nIts really an interesting question, why should you learn and use Go ? \n\n\nThis question becomes even more important, specially because of so many existing powerful languages such as C/C++, Python, Java, Javascript, etc.\n\n\nGo delivers some really exciting \n features\n such as:\n\n\n\n\n\n\nEasy and clear syntax.\n\n\n\n\n\n\nSmall language with big standard library.\n\n\n\n\n\n\nCompiled language and fast compilation.\n\n\n\n\n\n\nCan be easily used cross platform.\n\n\n\n\n\n\nIts incredibly fast.\n\n\n\n\n\n\nExcellent concurrency.\n\n\n\n\n\n\nGood community support.\n\n\n\n\n\n\nWhile other languages also provide some of the above mentioned benefits, but Go really excels at them all together.\n\n\nYou also need to remmember that Go is not the silver-bullet for all your applications, you need to consider all the project requirements before deciding on a language, if Go meets all your project requirements, then it can really deliver.\n\n\nI will not be detailing, why Go was created, creators, its history, etc, all of it is easily available online, what I am really interested is diving into the actual code.", 
+            "title": "Why Go"
+        }, 
+        {
+            "location": "/getting-started/why-go/#why-go", 
+            "text": "Its really an interesting question, why should you learn and use Go ?   This question becomes even more important, specially because of so many existing powerful languages such as C/C++, Python, Java, Javascript, etc.  Go delivers some really exciting   features  such as:    Easy and clear syntax.    Small language with big standard library.    Compiled language and fast compilation.    Can be easily used cross platform.    Its incredibly fast.    Excellent concurrency.    Good community support.    While other languages also provide some of the above mentioned benefits, but Go really excels at them all together.  You also need to remmember that Go is not the silver-bullet for all your applications, you need to consider all the project requirements before deciding on a language, if Go meets all your project requirements, then it can really deliver.  I will not be detailing, why Go was created, creators, its history, etc, all of it is easily available online, what I am really interested is diving into the actual code.", 
+            "title": "Why Go ?"
+        }, 
+        {
+            "location": "/getting-started/installation/", 
+            "text": "Installing Go\n\n\n\n\n\n How-To\n Install Go on your local machine\n\n\nInstalling on Mac OSx:\n\n\nInstalling on Mac OSx\nInstalling Go on your mac is pretty straight forward, choose any one method: -\nA) Installing using package installer directly from \ngolang.org\nOR\nB) Using Homebrew\nA) Installing using the package installer\nPackage installer method is the simplest way to get you started, just download the .pkg file by clicking on \nthis link\n and install it just as you would install any other program on your mac.\nThe installer will automatically create everything for you including setting up your environment variables.\nInstaller will automatically install it to\nusr/local/go directory\n\n\n\n\nAfter installing read \"Checking the installation\" section below to make sure everything works.\nB) Using Homebrew\nBefore using this method, make sure you have homebrew installed, if it is not installed checkout this \nlink\n and install it.\nOpen your terminal and type the following:\nbrew install go\n\n\n\n\nbrew will automatically fetch the latest binaries and install it for you, make sure they are installed to\nusr/local/go directory\n\n\n\n\nIts now time to setup your environment variables, check the \"Setting up environment variables\" to complete the installation and start using Go.\nInstalling on FreeBSD \n Linux:\n\n\nInstalling on FreeBSD \n Linux\nDownload the archive from \ngolang.org\n and extract it to usr/local, for extracting open the terminal in the downloaded directory and type the following:\nIf you have downloaded Go v 1.10.3 type the following command, if you have downloaded some other version, change the version in the following command.\nOpen terminal in downloaded directory and type:\ntar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz\n\n\n\n\nAfter extracting set up GOPATH, refer the \"Setting up environment variables\" section.\nInstalling on Windows:\n\n\nInstalling on Windows\nDownload the msi installer from \ngolang.org\n and follow the prompts to intsall it.\nBy default it is installed in\nc:\\Go\n\n\n\n\nall the environmental variables are set automatically by the installer.\nIf you are using windows, I would highly recommend to install Git \n Git Bash.\nSetting up environment variables:\n\n\nSetting up environment variables\nIf you have installed Go using brew on OSx or on linux you need to set up GOPATH.\nA) If you are using bash, open and edit:\n~/.bash_profile\n\n\n\n\nB) If you are using zsh, open and edit:\n~/.zshrc\n\n\n\n\nand add the following:\nexport PATH=$PATH:/usr/local/go/bin\nexport GOROOT=/usr/local/go\nexport GOPATH=$HOME/go\nexport GOBIN=$HOME/go/bin\n\n\n\n\nsave the file and restart the terminal or type\nA) For bash:\nsource ~/.bash_profile\n\n\n\n\nB) For zsh:\nsource ~/.zshrc\n\n\n\n\nEditing .bash_profile or .zshrc\nFollow the instructions to edit .bash_profile or .zshrc, open the terminal and type\ncd\n\n\n\n\nIf you are using atom type\natom .bash_profile\n\n\n\n\nor\natom .zshrc\n\n\n\n\nChecking the installation:\n\n\nChecking the installation\nOpen the terminal and type:\necho $GOROOT\n\n\n\n\nit should give the output:\nusr/local/go\n\n\n\n\nFor windows it should give output:\nc:\\Go\n\n\n\n\nYou can also test using the following commands:\ngo env\ngo version", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/getting-started/installation/#installing-go", 
+            "text": "", 
+            "title": "Installing Go"
+        }, 
+        {
+            "location": "/getting-started/installation/#czjqqkd0-how-toczjqqkd1-install-go-on-your-local-machine", 
+            "text": "", 
+            "title": " How-To Install Go on your local machine"
+        }, 
+        {
+            "location": "/getting-started/installation/#installing-on-mac-osx", 
+            "text": "Installing on Mac OSx Installing Go on your mac is pretty straight forward, choose any one method: - A) Installing using package installer directly from  golang.org OR B) Using Homebrew A) Installing using the package installer Package installer method is the simplest way to get you started, just download the .pkg file by clicking on  this link  and install it just as you would install any other program on your mac. The installer will automatically create everything for you including setting up your environment variables. Installer will automatically install it to usr/local/go directory  After installing read \"Checking the installation\" section below to make sure everything works. B) Using Homebrew Before using this method, make sure you have homebrew installed, if it is not installed checkout this  link  and install it. Open your terminal and type the following: brew install go  brew will automatically fetch the latest binaries and install it for you, make sure they are installed to usr/local/go directory  Its now time to setup your environment variables, check the \"Setting up environment variables\" to complete the installation and start using Go.", 
+            "title": "Installing on Mac OSx:"
+        }, 
+        {
+            "location": "/getting-started/installation/#installing-on-freebsd-linux", 
+            "text": "Installing on FreeBSD   Linux Download the archive from  golang.org  and extract it to usr/local, for extracting open the terminal in the downloaded directory and type the following: If you have downloaded Go v 1.10.3 type the following command, if you have downloaded some other version, change the version in the following command. Open terminal in downloaded directory and type: tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz  After extracting set up GOPATH, refer the \"Setting up environment variables\" section.", 
+            "title": "Installing on FreeBSD &amp; Linux:"
+        }, 
+        {
+            "location": "/getting-started/installation/#installing-on-windows", 
+            "text": "Installing on Windows Download the msi installer from  golang.org  and follow the prompts to intsall it. By default it is installed in c:\\Go  all the environmental variables are set automatically by the installer. If you are using windows, I would highly recommend to install Git   Git Bash.", 
+            "title": "Installing on Windows:"
+        }, 
+        {
+            "location": "/getting-started/installation/#setting-up-environment-variables", 
+            "text": "Setting up environment variables If you have installed Go using brew on OSx or on linux you need to set up GOPATH. A) If you are using bash, open and edit: ~/.bash_profile  B) If you are using zsh, open and edit: ~/.zshrc  and add the following: export PATH=$PATH:/usr/local/go/bin\nexport GOROOT=/usr/local/go\nexport GOPATH=$HOME/go\nexport GOBIN=$HOME/go/bin  save the file and restart the terminal or type A) For bash: source ~/.bash_profile  B) For zsh: source ~/.zshrc  Editing .bash_profile or .zshrc Follow the instructions to edit .bash_profile or .zshrc, open the terminal and type cd  If you are using atom type atom .bash_profile  or atom .zshrc", 
+            "title": "Setting up environment variables:"
+        }, 
+        {
+            "location": "/getting-started/installation/#checking-the-installation", 
+            "text": "Checking the installation Open the terminal and type: echo $GOROOT  it should give the output: usr/local/go  For windows it should give output: c:\\Go  You can also test using the following commands: go env\ngo version", 
+            "title": "Checking the installation:"
+        }, 
+        {
+            "location": "/getting-started/editor_ide/", 
+            "text": "Setting Up Your Development Environment Using Text Editor's And IDE.\n\n\n\n\n\nThere are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.\n\n\nEditor's\n\n\n\n\nSublime Text\n\n\nAtom\n\n\nVisual Studio Code\n\n\nVim\n\n\n\n\nIDE\n\n\n\n\nGoland By Jetbrains (Paid)\n\n\nEclipse\n\n\n\n\nThis list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list \nhere\n\n\nI personally use Visual Studio Code, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.\n\n\nInstalling 'Go' Plugins\n\n\nJust downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.\n\n\nPlugins\n\n\n\n\nVS Code - \nGo - By Microsoft\n\n\nAtom - \nGo Plus", 
+            "title": "Editors and IDE"
+        }, 
+        {
+            "location": "/getting-started/editor_ide/#setting-up-your-development-environment-using-text-editors-and-ide", 
+            "text": "There are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.", 
+            "title": "Setting Up Your Development Environment Using Text Editor's And IDE."
+        }, 
+        {
+            "location": "/getting-started/editor_ide/#editors", 
+            "text": "Sublime Text  Atom  Visual Studio Code  Vim", 
+            "title": "Editor's"
+        }, 
+        {
+            "location": "/getting-started/editor_ide/#ide", 
+            "text": "Goland By Jetbrains (Paid)  Eclipse   This list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list  here  I personally use Visual Studio Code, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.", 
+            "title": "IDE"
+        }, 
+        {
+            "location": "/getting-started/editor_ide/#installing-go-plugins", 
+            "text": "Just downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.  Plugins   VS Code -  Go - By Microsoft  Atom -  Go Plus", 
+            "title": "Installing 'Go' Plugins"
+        }
+    ]
+}
