@@ -18,4 +18,4 @@ As a beginner I really struggled to find the right sources for learning 'Go' and
 ### Website
 
 Check out the website for 'Go' Handbook documentation.
-[Click Here](https://octallium.github.io/go-handbook/).
+[Click Here](https://octallium.github.io/golang-handbook/).
