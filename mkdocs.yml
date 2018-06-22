@@ -1,0 +1,65 @@
+# Project information
+site_name: The 'Go' Programming Handbook
+site_description: 'A guide to understanding the "Go" programming language.'
+site_author: 'Anil Kulkarni'
+site_url: 'https://octallium.github.io/go-handbook/'
+
+# Repository
+repo_name: 'octallium/go-handbook'
+repo_url: 'https://github.com/octallium/go-handbook'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2018 Anil Kulkarni'
+
+# Configuration
+theme:
+  name: 'material'
+  favicon: 'images/gopher-front.png'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  feature:
+    tabs: true
+
+# Customization
+extra:
+  social:
+    - type: 'globe'
+      link: 'https://www.octallium.com'
+    - type: 'github'
+      link: 'https://github.com/octallium'
+    - type: 'twitter'
+      link: 'https://twitter.com/octallium'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/octallium'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      # guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Pages
+pages:
+  - Introduction: index.md
+  - Getting Started:
+    - 'Why Go': 'getting-started/why-go.md'
+    - 'Installation': 'getting-started/installation.md'
+    - 'Editors and IDE': 'getting-started/editor_ide.md'
