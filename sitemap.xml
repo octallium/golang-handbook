@@ -20,4 +20,14 @@
      <lastmod>2018-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    <url>
+     <loc>https://octallium.github.io/golang-handbook/basic/basic/</loc>
+     <lastmod>2018-06-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://octallium.github.io/golang-handbook/basic/hello-world/</loc>
+     <lastmod>2018-06-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>

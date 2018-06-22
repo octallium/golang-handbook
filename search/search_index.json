@@ -114,6 +114,51 @@
             "location": "/getting-started/editor_ide/#installing-go-plugins", 
             "text": "Just downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.  Plugins   VS Code -  Go - By Microsoft  Atom -  Go Plus", 
             "title": "Installing 'Go' Plugins"
+        }, 
+        {
+            "location": "/basic/basic/", 
+            "text": "Basic\n\n\n\n\n\nIn this section we will understand language syntax, instead of just reading theory, lets dive into code and I will explain everything as we start writing our programs.\n\n\nStart with the next section to write a \n \"Hello, World!\"\n program in Go.", 
+            "title": "Basic Introduction"
+        }, 
+        {
+            "location": "/basic/basic/#basic", 
+            "text": "In this section we will understand language syntax, instead of just reading theory, lets dive into code and I will explain everything as we start writing our programs.  Start with the next section to write a   \"Hello, World!\"  program in Go.", 
+            "title": "Basic"
+        }, 
+        {
+            "location": "/basic/hello-world/", 
+            "text": "Writing a \n \"Hello, World!\"\n program.\n\n\n\n\n\nObjective\n\n\nWrite a program which prints \"Hello, World!\" on the screen.\n\n\nStructure\n\n\nLet's create a folder called 'code' anywhere on your machine and we will put all our Go code in it.\n\n\ncode/\n\n\n\n\n\nFor our first program create a new folder '01_hello_world'\n\n\ncode/01_hello_world\n\n\n\n\n\nAnd lets create a file 'hello_world.go' in it, finally the structure would look like this:\n\n\ncode/01_hello_world/hello_world.go\n\n\n\n\n\nCode\n\n\nWrite the code as shown below, while you can simply copy and paste, its better if you write everything on your own. \n\n\nDon't worry if you code won't work, only then copy and paste the code \n\n\nHello World\n1\n \npackage\n \nmain\n\n\n2\n\n\n3\n \nimport\n \nfmt\n\n\n4\n\n\n5\n \nfunc\n \nmain\n()\n \n{\n\n\n6\n   \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n7\n \n}\n\n\n\n\nRunning your code\n\n\nOpen your terminal and navigate to our folder\n\n\ncode/01_hello_world/hello_world.go\n\n\n\n\n\nOnce in the folder type the following command\n\n\ngo run hello_world.go\n\n\n\n\n\nIf there are no errors, you should get the output as:\n\n\nOutput\nHello, World!\n\n\n\n\nThat's it, \n Congratulations\n ! You just wrote your first Go program.\n\n\nNext\n\n\nIf you haven't understood anything what you wrote, no worries, you aren't expected to understand it just yet !\n\n\nIn the next section we will understand everything line-by-line.", 
+            "title": "01 Hello World"
+        }, 
+        {
+            "location": "/basic/hello-world/#writing-a-czjqqkd0-hello-worldczjqqkd1-program", 
+            "text": "", 
+            "title": "Writing a  \"Hello, World!\" program."
+        }, 
+        {
+            "location": "/basic/hello-world/#objective", 
+            "text": "Write a program which prints \"Hello, World!\" on the screen.", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/hello-world/#structure", 
+            "text": "Let's create a folder called 'code' anywhere on your machine and we will put all our Go code in it.  code/  For our first program create a new folder '01_hello_world'  code/01_hello_world  And lets create a file 'hello_world.go' in it, finally the structure would look like this:  code/01_hello_world/hello_world.go", 
+            "title": "Structure"
+        }, 
+        {
+            "location": "/basic/hello-world/#code", 
+            "text": "Write the code as shown below, while you can simply copy and paste, its better if you write everything on your own.   Don't worry if you code won't work, only then copy and paste the code   Hello World 1   package   main  2  3   import   fmt  4  5   func   main ()   {  6     fmt . Println ( Hello, World! )  7   }", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/basic/hello-world/#running-your-code", 
+            "text": "Open your terminal and navigate to our folder  code/01_hello_world/hello_world.go  Once in the folder type the following command  go run hello_world.go  If there are no errors, you should get the output as:  Output Hello, World!  That's it,   Congratulations  ! You just wrote your first Go program.", 
+            "title": "Running your code"
+        }, 
+        {
+            "location": "/basic/hello-world/#next", 
+            "text": "If you haven't understood anything what you wrote, no worries, you aren't expected to understand it just yet !  In the next section we will understand everything line-by-line.", 
+            "title": "Next"
         }
     ]
 }
