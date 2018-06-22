@@ -2,11 +2,11 @@
 site_name: The 'Go' Programming Handbook
 site_description: 'A guide to understanding the "Go" programming language.'
 site_author: 'Anil Kulkarni'
-site_url: 'https://octallium.github.io/go-handbook/'
+site_url: 'https://octallium.github.io/golang-handbook/'
 
 # Repository
 repo_name: 'octallium/go-handbook'
-repo_url: 'https://github.com/octallium/go-handbook'
+repo_url: 'https://github.com/octallium/golang-handbook'
 
 # Copyright
 copyright: 'Copyright &copy; 2017 - 2018 Anil Kulkarni'
