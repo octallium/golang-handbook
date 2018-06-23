@@ -3,6 +3,8 @@
 _A Guide To Understanding The 'Go' Programming Language._
 <hr>
 
+![Go Handbook](https://3.bp.blogspot.com/-i-OOWA4rZdY/Wfi1Qp3OzKI/AAAAAAAA_CM/55hxG13GmYwJcWKNDMm6JLPpMwsYbHBvwCLcBGAs/s1600/golang-logo.png)
+
 ### Introduction
 
 The 'Go' handbook is an introductory book and is intended for beginners, the book doesn't make any assumption about your prior programming knowledge and tries to teach everything from scratch.
