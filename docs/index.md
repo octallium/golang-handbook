@@ -19,7 +19,7 @@ As a beginner I really struggled to find the right sources for learning 'Go' and
 
 ## About Me
 
-Hi, my name is Anil Kulkarni and I am passionate about coding <c_>. I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies :clapper:
+Hi, my name is {++ Anil Kulkarni++} and I am passionate about coding. I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies :clapper:
 
 ## Code Sample
 
