@@ -28,13 +28,13 @@ Line 1 -
 
     package main
 
-Declares that this file belongs to the main package, in golang all the files are arranged in packages, we have a entire chapter dedicated to Packages in future, for now remmember all files at your project directory level belong's to package main.
+Declares that this file belongs to the main package, in golang all the files are arranged in packages, we have a entire chapter dedicated to Packages in future, for now remmember all files at your project directory level belong to package main.
 
 Line 3 -
 
     import "fmt"
 
-Here we say, they golang I wan't to import a package called as "fmt", "fmt" stands for "format".
+Here we say, they golang I want to import a package called as "fmt", "fmt" stands for "format".
 
 "fmt" belongs to the golang standard library, means that the Go authors have already written it for you. You can simply import then and use all the code written by experts.
 
