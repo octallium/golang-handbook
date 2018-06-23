@@ -21,3 +21,11 @@ As a beginner I really struggled to find the right sources for learning 'Go' and
 
 Check out the website for 'Go' Handbook documentation.
 [Click Here](https://octallium.github.io/golang-handbook/).
+
+## Patreon
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:
+
+[![Patreon](images/patreon.png)](https://www.patreon.com/octallium)

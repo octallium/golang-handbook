@@ -3,7 +3,7 @@
 _A Guide To Understanding The {++ Go++} Programming Language._
 <hr>
 
-![Golang](images/gopher-front.png)
+![Golang](images/gophercon_1.png)
 
 ## Introduction
 
@@ -29,6 +29,14 @@ All code samples will the in the form of following block:
         fmt.Println("Hello, World!")
     }
     ```
+
+## Patreon
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:
+
+[![Patreon](images/patreon.png)](https://www.patreon.com/octallium)
 
 ## Get In Touch
 
