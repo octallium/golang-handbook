@@ -57,6 +57,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Google Analytics
+google_analytics:
+  - 'UA-121309781-1'
+  - 'auto'
+
 # Pages
 pages:
   - Introduction: index.md

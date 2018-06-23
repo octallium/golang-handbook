@@ -57,4 +57,14 @@ To know more about me please visit [www.octallium.com](https://www.octallium.com
 
 The website is currently {== offline==} and under development, will update on this page when it is launched.
 
-    - Anil Kulkarni
+I am reachable at 
+
+???+ note "Twitter Handle"
+
+    [@octallium](https://twitter.com/octallium)
+
+
+
+Thanks,
+
+Anil Kulkarni
