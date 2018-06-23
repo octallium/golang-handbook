@@ -29,3 +29,4 @@ All the work is provided free of cost and completely open source, but it needs y
 Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:
 
 [![Patreon](https://octallium.github.io/golang-handbook/images/patreon.png)](https://www.patreon.com/octallium)
+

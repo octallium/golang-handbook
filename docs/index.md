@@ -38,8 +38,23 @@ Any support is genuinely appreciated, you can help the activity by becoming a pa
 
 [![Patreon](images/patreon.png)](https://www.patreon.com/octallium)
 
+## Work In Progress
+
+As you can see, this is a work in progress, I intend to complete the basic & partial intermediate write-up by end of Oct, 18.
+
+## To Do
+
+A lots have to be done yet, here is a small lists to things to do in near future
+
+* [ ] Complete basic tutorial consisting of language syntax by end of Oct, 18.
+* [ ] Add partial intermediate material by end of Oct, 18.
+* [ ] Add at least basic tutorial videos by end of Oct, 2018.
+* [ ] Create pdf downloadable version.
+
 ## Get In Touch
 
 To know more about me please visit [www.octallium.com](https://www.octallium.com).
+
+The website is currently {== offline==} and under development, will update on this page when it is launched.
 
     - Anil Kulkarni
