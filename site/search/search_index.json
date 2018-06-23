@@ -92,7 +92,7 @@
         }, 
         {
             "location": "/getting-started/editor_ide/", 
-            "text": "Setting Up Your Development Environment Using Text Editor's And IDE.\n\n\n\n\n\nThere are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.\n\n\nEditor's\n\n\n\n\nSublime Text\n\n\nAtom\n\n\nVisual Studio Code\n\n\nVim\n\n\n\n\nIDE\n\n\n\n\nGoland By Jetbrains (Paid)\n\n\nEclipse\n\n\n\n\nThis list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list \nhere\n\n\nI personally use Visual Studio Code, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.\n\n\nInstalling 'Go' Plugins\n\n\nJust downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.\n\n\nPlugins\n\n\n\n\nVS Code - \nGo - By Microsoft\n\n\nAtom - \nGo Plus", 
+            "text": "Setting Up Your Development Environment Using Text Editor's And IDE.\n\n\n\n\n\nThere are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.\n\n\nEditor's\n\n\n\n\nSublime Text\n\n\nAtom\n\n\nVisual Studio Code (Not to be confused with Visual Studio IDE)\n\n\nVim\n\n\n\n\nIDE\n\n\n\n\nGoland By Jetbrains (Paid)\n\n\nEclipse\n\n\n\n\nThis list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list \nhere\n\n\nI personally use \n Visual Studio Code\n, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.\n\n\nInstalling 'Go' Plugins\n\n\nJust downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.\n\n\nPlugins\n\n\n\n\nVS Code - \nGo - By Microsoft\n\n\nAtom - \nGo Plus", 
             "title": "Editors and IDE"
         }, 
         {
@@ -102,12 +102,12 @@
         }, 
         {
             "location": "/getting-started/editor_ide/#editors", 
-            "text": "Sublime Text  Atom  Visual Studio Code  Vim", 
+            "text": "Sublime Text  Atom  Visual Studio Code (Not to be confused with Visual Studio IDE)  Vim", 
             "title": "Editor's"
         }, 
         {
             "location": "/getting-started/editor_ide/#ide", 
-            "text": "Goland By Jetbrains (Paid)  Eclipse   This list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list  here  I personally use Visual Studio Code, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.", 
+            "text": "Goland By Jetbrains (Paid)  Eclipse   This list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list  here  I personally use   Visual Studio Code , there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.", 
             "title": "IDE"
         }, 
         {
@@ -127,7 +127,7 @@
         }, 
         {
             "location": "/basic/hello-world/", 
-            "text": "Writing a \n \"Hello, World!\"\n program.\n\n\n\n\n\nObjective\n\n\nWrite a program which prints \"Hello, World!\" on the screen.\n\n\nStructure\n\n\nLet's create a folder called 'code' anywhere on your machine and we will put all our Go code in it.\n\n\ncode/\n\n\n\n\n\nFor our first program create a new folder '01_hello_world'\n\n\ncode/01_hello_world\n\n\n\n\n\nAnd lets create a file 'hello_world.go' in it, finally the structure would look like this:\n\n\ncode/01_hello_world/hello_world.go\n\n\n\n\n\nCode\n\n\nWrite the code as shown below, while you can simply copy and paste, its better if you write everything on your own. \n\n\nDon't worry if you code won't work, only then copy and paste the code \n\n\nHello World\n1\n \npackage\n \nmain\n\n\n2\n\n\n3\n \nimport\n \nfmt\n\n\n4\n\n\n5\n \nfunc\n \nmain\n()\n \n{\n\n\n6\n   \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n7\n \n}\n\n\n\n\nRunning your code\n\n\nOpen your terminal and navigate to our folder\n\n\ncode/01_hello_world/hello_world.go\n\n\n\n\n\nOnce in the folder type the following command\n\n\ngo run hello_world.go\n\n\n\n\n\nIf there are no errors, you should get the output as:\n\n\nOutput\nHello, World!\n\n\n\n\nThat's it, \n Congratulations\n ! You just wrote your first Go program.\n\n\nNext\n\n\nIf you haven't understood anything what you wrote, no worries, you aren't expected to understand it just yet !\n\n\nIn the next section we will understand everything line-by-line.", 
+            "text": "Writing a \n \"Hello, World!\"\n program.\n\n\n\n\n\nObjective\n\n\nWrite a program which prints \"Hello, World!\" on the screen.\n\n\nStructure\n\n\nLet's create a folder called 'code' anywhere on your machine and we will put all our Go code in it.\n\n\ncode/\n\n\n\n\n\nFor our first program create a new folder '01_hello_world'\n\n\ncode/01_hello_world\n\n\n\n\n\nAnd lets create a file 'hello_world.go' in it, finally the structure would look like this:\n\n\ncode/01_hello_world/hello_world.go\n\n\n\n\n\nCode\n\n\nWrite the code as shown below, while you can simply copy and paste, its better if you write everything on your own. \n\n\nDon't worry if you code won't work, only then copy and paste the code \n\n\nHello World\n1\n \npackage\n \nmain\n\n\n2\n\n\n3\n \nimport\n \nfmt\n\n\n4\n\n\n5\n \nfunc\n \nmain\n()\n \n{\n\n\n6\n   \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n7\n \n}\n\n\n\n\nRunning your code\n\n\nOpen your terminal and navigate to our folder\n\n\ncode/01_hello_world/hello_world.go\n\n\n\n\n\nOnce in the folder type the following command\n\n\ngo run hello_world.go\n\n\n\n\n\nIf there are no errors, you should get the output as:\n\n\nOutput\nHello, World!\n\n\n\n\nIf for some reason your code isn't working, checkout the golang playground or github links in the following section.\n\n\nClick on the below link for \nGithub Repo\n\n\nGithub Repo\n\n\nThat's it, \n Congratulations\n ! You just wrote your first Go program.\n\n\nGolang Playground\n\n\nGolang has a online sandbox environment for running your Go programs, which can be accessed on \nGolang Playground\n\n\nI will be posting all the playground links for all the code we write, this way you can run them online and compare with your code.\n\n\nHello World On Playground\nClick on the below link:\nHello World\nNext\n\n\nIf you haven't understood anything what you wrote, no worries, you aren't expected to understand it just yet !\n\n\nIn the next section we will understand everything line-by-line.", 
             "title": "01 Hello World"
         }, 
         {
@@ -152,13 +152,48 @@
         }, 
         {
             "location": "/basic/hello-world/#running-your-code", 
-            "text": "Open your terminal and navigate to our folder  code/01_hello_world/hello_world.go  Once in the folder type the following command  go run hello_world.go  If there are no errors, you should get the output as:  Output Hello, World!  That's it,   Congratulations  ! You just wrote your first Go program.", 
+            "text": "Open your terminal and navigate to our folder  code/01_hello_world/hello_world.go  Once in the folder type the following command  go run hello_world.go  If there are no errors, you should get the output as:  Output Hello, World!  If for some reason your code isn't working, checkout the golang playground or github links in the following section.  Click on the below link for  Github Repo  Github Repo  That's it,   Congratulations  ! You just wrote your first Go program.", 
             "title": "Running your code"
+        }, 
+        {
+            "location": "/basic/hello-world/#golang-playground", 
+            "text": "Golang has a online sandbox environment for running your Go programs, which can be accessed on  Golang Playground  I will be posting all the playground links for all the code we write, this way you can run them online and compare with your code.  Hello World On Playground Click on the below link: Hello World", 
+            "title": "Golang Playground"
         }, 
         {
             "location": "/basic/hello-world/#next", 
             "text": "If you haven't understood anything what you wrote, no worries, you aren't expected to understand it just yet !  In the next section we will understand everything line-by-line.", 
             "title": "Next"
+        }, 
+        {
+            "location": "/basic/hello-world-understand/", 
+            "text": "Understanding \n \"Hello, World!\"\n Program.\n\n\n\n\n\nObjective\n\n\nUnderstanding the Hello World program line-by-line\n\n\nCode\n\n\nHello World\n1\n \npackage\n \nmain\n\n\n2\n\n\n3\n \nimport\n \nfmt\n\n\n4\n\n\n5\n \nfunc\n \nmain\n()\n \n{\n\n\n6\n   \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n7\n \n}\n\n\n\n\nCode Review\n\n\nNow its time to dive in and understand the code\n\n\nLine 1 - \n\n\npackage main\n\n\n\n\n\nDeclares that this file belongs to the main package, in golang all the files are arranged in packages, we have a entire chapter dedicated to Packages in future, for now remmember all files at your project directory level belong's to package main.\n\n\nLine 3 -\n\n\nimport\n \nfmt\n\n\n\n\n\n\nHere we say, they golang I wan't to import a package called as \"fmt\", \"fmt\" stands for \"format\".\n\n\n\"fmt\" belongs to the golang standard library, means that the Go authors have already written it for you. You can simply import then and use all the code written by experts.\n\n\nDocumentation for \"fmt\" can be found \nhere\n\n\n\"fmt\" exposes a lot of functionality to us which we use in the line 6.\n\n\nLine 5 - \n\n\nfunc main () {\n\n\n\n\n\nThis is the start or entry point for your code, the compiler will automatically check if \n func main()\n is present or not and start the program from there, it is generally mentioned as\n\n\nmain.main\n[package].[function]\n\n\n\n\n\nmeans \"main\" function in \"main\" package\n\n\nLine 6 - \n\n\nfmt.Println(\nHello, World!)\n\n\n\n\n\nHere we use Println function defined in the package \"fmt\" for printing out \"Hello, World!\" on the screen.\n\n\nNow, you can see how we can use functionality written in packages and use it for our ease.\n\n\nLine 7 - \n\n\n}\n\n\n\n\n\nCloses the main function, this symbolizes that main function ends here.\n\n\nAside\n\n\nWow.. you have now learned your first Go program, even if all of the above doesn't make sense to you right now, don't worry ! You will soon be comfortable with all of that as we progress and write more code.\n\n\nAs a beginner, you would want to quit when you don't understand anything, my advise, don't quit just move along and later come back to topics which you didn't understand.\n\n\nLearning code takes patience and persistance, fasten your seat belts and keep learning.", 
+            "title": "02 Understanding Hello World"
+        }, 
+        {
+            "location": "/basic/hello-world-understand/#understanding-czjqqkd0-hello-worldczjqqkd1-program", 
+            "text": "", 
+            "title": "Understanding  \"Hello, World!\" Program."
+        }, 
+        {
+            "location": "/basic/hello-world-understand/#objective", 
+            "text": "Understanding the Hello World program line-by-line", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/hello-world-understand/#code", 
+            "text": "Hello World 1   package   main  2  3   import   fmt  4  5   func   main ()   {  6     fmt . Println ( Hello, World! )  7   }", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/basic/hello-world-understand/#code-review", 
+            "text": "Now its time to dive in and understand the code  Line 1 -   package main  Declares that this file belongs to the main package, in golang all the files are arranged in packages, we have a entire chapter dedicated to Packages in future, for now remmember all files at your project directory level belong's to package main.  Line 3 -  import   fmt   Here we say, they golang I wan't to import a package called as \"fmt\", \"fmt\" stands for \"format\".  \"fmt\" belongs to the golang standard library, means that the Go authors have already written it for you. You can simply import then and use all the code written by experts.  Documentation for \"fmt\" can be found  here  \"fmt\" exposes a lot of functionality to us which we use in the line 6.  Line 5 -   func main () {  This is the start or entry point for your code, the compiler will automatically check if   func main()  is present or not and start the program from there, it is generally mentioned as  main.main\n[package].[function]  means \"main\" function in \"main\" package  Line 6 -   fmt.Println( Hello, World!)  Here we use Println function defined in the package \"fmt\" for printing out \"Hello, World!\" on the screen.  Now, you can see how we can use functionality written in packages and use it for our ease.  Line 7 -   }  Closes the main function, this symbolizes that main function ends here.", 
+            "title": "Code Review"
+        }, 
+        {
+            "location": "/basic/hello-world-understand/#aside", 
+            "text": "Wow.. you have now learned your first Go program, even if all of the above doesn't make sense to you right now, don't worry ! You will soon be comfortable with all of that as we progress and write more code.  As a beginner, you would want to quit when you don't understand anything, my advise, don't quit just move along and later come back to topics which you didn't understand.  Learning code takes patience and persistance, fasten your seat belts and keep learning.", 
+            "title": "Aside"
         }
     ]
 }
