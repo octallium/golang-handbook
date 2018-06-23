@@ -67,3 +67,4 @@ pages:
   - Basic:
     - 'Basic Introduction': 'basic/basic.md'
     - '01 Hello World': 'basic/hello-world.md'
+    - '02 Understanding Hello World': 'basic/hello-world-understand.md'

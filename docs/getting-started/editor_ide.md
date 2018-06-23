@@ -8,7 +8,7 @@ There are many choices available, both free and paid, while I haven't tried all 
 
 - Sublime Text
 - Atom
-- Visual Studio Code
+- Visual Studio Code (Not to be confused with Visual Studio IDE)
 - Vim
 
 ## IDE
@@ -18,7 +18,7 @@ There are many choices available, both free and paid, while I haven't tried all 
 
 This list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list [here](https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins)
 
-I personally use Visual Studio Code, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.
+I personally use {++ Visual Studio Code++}, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.
 
 ## Installing 'Go' Plugins
 
