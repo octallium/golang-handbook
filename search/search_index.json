@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "The 'Go' Programming Handbook\n\n\nA Guide To Understanding The \n Go\n Programming Language.\n\n\n\n\n\n\nIntroduction\n\n\nThe 'Go' handbook is an introductory book and is intended for beginners, the book doesn't make any assumption about your prior programming knowledge and tries to teach everything from scratch.\n\n\nAudience\n\n\nThis handbook is intended for beginners and new programmers, it can also be used as a reference by more experienced developers.\n\n\nMotivation\n\n\nAs a beginner I really struggled to find the right sources for learning 'Go' and many of the resources very not suited for new beginner or for a student who is entirely new to programming, so I decided to write a simple to understand 'beginners' book for learning 'Go'\n\n\nAbout Me\n\n\nHi, my name is Anil Kulkarni and I am passionate about coding \n. I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies \n\n\nCode Sample\n\n\nAll code samples will the in the form of following block:\n    \nfunc\n \nmain\n()\n \n{\n\n    \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n}\n\n\n\n\nGet In Touch\n\n\nTo know more about me please visit \nwww.octallium.com\n.\n\n\n- Anil Kulkarni", 
+            "text": "The 'Go' Programming Handbook\n\n\nA Guide To Understanding The \n Go\n Programming Language.\n\n\n\n\n\n\nIntroduction\n\n\nThe 'Go' handbook is an introductory book and is intended for beginners, the book doesn't make any assumption about your prior programming knowledge and tries to teach everything from scratch.\n\n\nAudience\n\n\nThis handbook is intended for beginners and new programmers, it can also be used as a reference by more experienced developers.\n\n\nMotivation\n\n\nAs a beginner I really struggled to find the right sources for learning 'Go' and many of the resources very not suited for new beginner or for a student who is entirely new to programming, so I decided to write a simple to understand 'beginners' book for learning 'Go'\n\n\nAbout Me\n\n\nHi, my name is Anil Kulkarni and I am passionate about coding \n. I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies \n\n\nCode Sample\n\n\nAll code samples will the in the form of following block:\n    \nfunc\n \nmain\n()\n \n{\n\n    \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n}\n\n\n\n\nPatreon\n\n\nAll the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.\n\n\nAny support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:\n\n\n\n\nGet In Touch\n\n\nTo know more about me please visit \nwww.octallium.com\n.\n\n\n- Anil Kulkarni", 
             "title": "Introduction"
         }, 
         {
@@ -34,6 +34,11 @@
             "location": "/#code-sample", 
             "text": "All code samples will the in the form of following block:\n     func   main ()   { \n     fmt . Println ( Hello, World! )  }", 
             "title": "Code Sample"
+        }, 
+        {
+            "location": "/#patreon", 
+            "text": "All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.  Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:", 
+            "title": "Patreon"
         }, 
         {
             "location": "/#get-in-touch", 
