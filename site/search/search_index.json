@@ -107,18 +107,18 @@
         }, 
         {
             "location": "/getting-started/editor_ide/", 
-            "text": "Setting Up Your Development Environment Using Text Editor's And IDE.\n\n\n\n\n\nThere are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.\n\n\nEditor's\n\n\n\n\nSublime Text\n\n\nAtom\n\n\nVisual Studio Code (Not to be confused with Visual Studio IDE)\n\n\nVim\n\n\n\n\nIDE\n\n\n\n\nGoland By Jetbrains (Paid)\n\n\nEclipse\n\n\n\n\nThis list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list \nhere\n\n\nI personally use \n Visual Studio Code\n, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.\n\n\nInstalling 'Go' Plugins\n\n\nJust downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.\n\n\nPlugins\n\n\n\n\nVS Code - \nGo - By Microsoft\n\n\nAtom - \nGo Plus", 
+            "text": "Setting Up Your Development Environment Using Text Editor's And IDE.\n\n\n\n\n\nThere are many choices available, both free and paid, I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.\n\n\nEditors\n\n\n\n\nSublime Text\n\n\nAtom\n\n\nVisual Studio Code (Not to be confused with Visual Studio IDE)\n\n\nVim\n\n\n\n\nIDE\n\n\n\n\nGoland By Jetbrains (Paid)\n\n\nEclipse\n\n\n\n\nThis list is by no means exhaustive, there are much more available, if you want a complete list check out the community maintained list \nhere\n\n\nI personally use \n Visual Studio Code\n, there's nothing wrong with other editors, just that I am used to working with VS Code and pretty comfortable using all the keys.\n\n\nInstalling 'Go' Plugins\n\n\nJust downloading and installing the editor or IDE is not sufficient, make sure you install the respective 'Go' plugins to get started with development.\n\n\nPlugins\n\n\n\n\nVS Code - \nGo - By Microsoft\n\n\nAtom - \nGo Plus", 
             "title": "Editors and IDE"
         }, 
         {
             "location": "/getting-started/editor_ide/#setting-up-your-development-environment-using-text-editors-and-ide", 
-            "text": "There are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.", 
+            "text": "There are many choices available, both free and paid, I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.", 
             "title": "Setting Up Your Development Environment Using Text Editor's And IDE."
         }, 
         {
             "location": "/getting-started/editor_ide/#editors", 
             "text": "Sublime Text  Atom  Visual Studio Code (Not to be confused with Visual Studio IDE)  Vim", 
-            "title": "Editor's"
+            "title": "Editors"
         }, 
         {
             "location": "/getting-started/editor_ide/#ide", 
