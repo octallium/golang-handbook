@@ -2,9 +2,9 @@
 
 <hr>
 
-There are many choices available, both free and paid, while I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.
+There are many choices available, both free and paid, I haven't tried all of them, but I would like to suggest a couple of them that work well for golang development.
 
-## Editor's
+## Editors
 
 - Sublime Text
 - Atom
