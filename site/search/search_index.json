@@ -209,6 +209,66 @@
             "location": "/basic/hello-world-understand/#aside", 
             "text": "Wow.. you have now learned your first Go program, even if all of the above doesn't make sense to you right now, don't worry ! You will soon be comfortable with all of that as we progress and write more code.  As a beginner, you would want to quit when you don't understand anything, my advise, don't quit just move along and later come back to topics which you didn't understand.  Learning code takes patience and persistance, fasten your seat belts and keep learning.", 
             "title": "Aside"
+        }, 
+        {
+            "location": "/basic/add-comment/", 
+            "text": "How To Add A \n Comment\n.\n\n\n\n\n\nObjective\n\n\nLearn how to add a comment in the code. \n\n\nRequirement\n\n\nAdding comments is a very handy way of adding documentation to your code, it serves as a tool to let others know what you have written and makes navigating your code an easy task.\n\n\nGo has a specific format for adding comments and recommends adding comments wherever it makes sense.\n\n\nCode\n\n\nAdding a comment is pretty easy\n\n\n// This is a comment\n\n\n\n\n\nThe compiler ignores the comment and runs your code, however as humans for us to remmember what we have written and for others to understand writing comments would make sense.\n\n\nHello World With Comment\n\n\nHello World\n1\n \n// Declaring that the file belongs to the main package\n\n\n2\n \npackage\n \nmain\n\n\n3\n\n\n4\n \n// Importing the package \nfmt\n\n\n5\n \nimport\n \nfmt\n\n\n6\n\n\n7\n \n// Declaring the main function\n\n\n8\n \nfunc\n \nmain\n()\n \n{\n\n\n9\n   \n\n10\n \n// Printing Hello World to the standard output\n\n\n11\n \nfmt\n.\nPrintln\n(\nHello, World!\n)\n\n\n12\n \n}\n\n\n13\n \n// main function ends\n\n\n\n\nGolang Playground\n\n\nHello World With Comment\nClick on the below link:\nHello World With Comments\nNext\n\n\nNow that you know how to write comments, lets start with writing code with beautiful comments, but before we actually start writing more code there is one small step, we need to understand \n Data Types\n\n\nClick on the next section to understand basic data types in Go.", 
+            "title": "03 Adding a Comment"
+        }, 
+        {
+            "location": "/basic/add-comment/#how-to-add-a-czjqqkd0-commentczjqqkd1", 
+            "text": "", 
+            "title": "How To Add A  Comment."
+        }, 
+        {
+            "location": "/basic/add-comment/#objective", 
+            "text": "Learn how to add a comment in the code.", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/add-comment/#requirement", 
+            "text": "Adding comments is a very handy way of adding documentation to your code, it serves as a tool to let others know what you have written and makes navigating your code an easy task.  Go has a specific format for adding comments and recommends adding comments wherever it makes sense.", 
+            "title": "Requirement"
+        }, 
+        {
+            "location": "/basic/add-comment/#code", 
+            "text": "Adding a comment is pretty easy  // This is a comment  The compiler ignores the comment and runs your code, however as humans for us to remmember what we have written and for others to understand writing comments would make sense.", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/basic/add-comment/#hello-world-with-comment", 
+            "text": "Hello World 1   // Declaring that the file belongs to the main package  2   package   main  3  4   // Importing the package  fmt  5   import   fmt  6  7   // Declaring the main function  8   func   main ()   {  9     10   // Printing Hello World to the standard output  11   fmt . Println ( Hello, World! )  12   }  13   // main function ends", 
+            "title": "Hello World With Comment"
+        }, 
+        {
+            "location": "/basic/add-comment/#golang-playground", 
+            "text": "Hello World With Comment Click on the below link: Hello World With Comments", 
+            "title": "Golang Playground"
+        }, 
+        {
+            "location": "/basic/add-comment/#next", 
+            "text": "Now that you know how to write comments, lets start with writing code with beautiful comments, but before we actually start writing more code there is one small step, we need to understand   Data Types  Click on the next section to understand basic data types in Go.", 
+            "title": "Next"
+        }, 
+        {
+            "location": "/basic/basic-data-types/", 
+            "text": "Understanding The Basic \n Data Types\n In Go\n\n\n\n\n\nObjective\n\n\nLearn the basic data types in Go\n\n\nData Types\n\n\nFor a new programmer, data types sounds geeky enough, but really there isn't much to it, lets see below how it works out.\n\n\nIf I ask you, what's your name ? Yours answer would be something like this:\n\n\nMy name is Bond, James Bond\n\n\n\n\n\nThis is nothing but data type of \n string\n, in plain english string is nothing but a collection of characters.\n\n\nNow, if I ask you, how old are you ? You would say something like:\n\n\n28\n\n\n\n\n\nSince age is a number or a digit, it belongs to the data type of \n int\n , int stands for integer which means whole numbers without decimals.\n\n\nLet's get more curious and ask James Bond, you have a nice watch, how much did it cost ? He would say:\n\n\n$ \n105\n.23\n\n\n\n\n\nNow you see nice it has a decimal value, it is called as a data type of \n float\n, float is just another fancy way of saying, its a digit with decimal values.\n\n\nJames Bond is getting irritated with our question, so lets ask a final question and wrap it up, lets ask, is it true that you are licensed to kill ? He would say\n\n\nTrue\n\n\n\n\n\nTrue is neither a digit or a string, its a condition, so it belongs to the data type of \n boolean\n, boolean values can be only True or False.\n\n\nIn reality the above data types are of very basic types, Go has much more to it, also Go has different varieties of int, float, etc. But for now lets take it easy, we will see different data types as we progress with our code.", 
+            "title": "04 Understanding Data Types"
+        }, 
+        {
+            "location": "/basic/basic-data-types/#understanding-the-basic-czjqqkd0-data-typesczjqqkd1-in-go", 
+            "text": "", 
+            "title": "Understanding The Basic  Data Types In Go"
+        }, 
+        {
+            "location": "/basic/basic-data-types/#objective", 
+            "text": "Learn the basic data types in Go", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/basic-data-types/#data-types", 
+            "text": "For a new programmer, data types sounds geeky enough, but really there isn't much to it, lets see below how it works out.  If I ask you, what's your name ? Yours answer would be something like this:  My name is Bond, James Bond  This is nothing but data type of   string , in plain english string is nothing but a collection of characters.  Now, if I ask you, how old are you ? You would say something like:  28  Since age is a number or a digit, it belongs to the data type of   int  , int stands for integer which means whole numbers without decimals.  Let's get more curious and ask James Bond, you have a nice watch, how much did it cost ? He would say:  $  105 .23  Now you see nice it has a decimal value, it is called as a data type of   float , float is just another fancy way of saying, its a digit with decimal values.  James Bond is getting irritated with our question, so lets ask a final question and wrap it up, lets ask, is it true that you are licensed to kill ? He would say  True  True is neither a digit or a string, its a condition, so it belongs to the data type of   boolean , boolean values can be only True or False.  In reality the above data types are of very basic types, Go has much more to it, also Go has different varieties of int, float, etc. But for now lets take it easy, we will see different data types as we progress with our code.", 
+            "title": "Data Types"
         }
     ]
 }

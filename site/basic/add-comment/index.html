@@ -13,6 +13,8 @@
         <meta name="description" content="A guide to understanding the "Go" programming language.">
       
       
+        <link rel="canonical" href="https://octallium.github.io/golang-handbook/basic/add-comment/">
+      
       
         <meta name="author" content="Anil Kulkarni">
       
@@ -35,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/golang-handbook/images/gopher-front.png">
+      <link rel="shortcut icon" href="../../images/gopher-front.png">
       <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
     
     
       
-        <title>The 'Go' Programming Handbook</title>
+        <title>03 Adding a Comment - The 'Go' Programming Handbook</title>
       
     
     
-      <link rel="stylesheet" href="/golang-handbook/assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
       
-        <link rel="stylesheet" href="/golang-handbook/assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
       
       
         
@@ -55,7 +57,7 @@
       
     
     
-      <script src="/golang-handbook/assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -64,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="/golang-handbook/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
   </head>
@@ -102,6 +104,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#how-to-add-a-czjqqkd0-commentczjqqkd1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -109,7 +115,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-header-nav__button md-logo">
           
-            <img src="/golang-handbook/images/golang-logo.svg" width="24" height="24">
+            <img src="../../images/golang-logo.svg" width="24" height="24">
           
         </a>
       </div>
@@ -124,7 +130,7 @@
                 The 'Go' Programming Handbook
               </span>
               <span class="md-header-nav__topic">
-                
+                03 Adding a Comment
               </span>
             
           
@@ -196,14 +202,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="/golang-handbook/" title="Introduction" class="md-tabs__link md-tabs__link--active">
+      <a href="../.." title="Introduction" class="md-tabs__link">
         Introduction
       </a>
     
@@ -215,7 +223,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="/golang-handbook/getting-started/why-go/" title="Getting Started" class="md-tabs__link">
+        <a href="../../getting-started/why-go/" title="Getting Started" class="md-tabs__link">
           Getting Started
         </a>
       
@@ -228,7 +236,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="/golang-handbook/basic/basic/" title="Basic" class="md-tabs__link">
+        <a href="../basic/" title="Basic" class="md-tabs__link md-tabs__link--active">
           Basic
         </a>
       
@@ -251,7 +259,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <span class="md-nav__button md-logo">
       
-        <img src="/golang-handbook/images/golang-logo.svg" width="48" height="48">
+        <img src="../../images/golang-logo.svg" width="48" height="48">
       
     </span>
     The 'Go' Programming Handbook
@@ -287,7 +295,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/" title="Introduction" class="md-nav__link">
+    <a href="../.." title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -318,7 +326,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/getting-started/why-go/" title="Why Go" class="md-nav__link">
+    <a href="../../getting-started/why-go/" title="Why Go" class="md-nav__link">
       Why Go
     </a>
   </li>
@@ -330,7 +338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/getting-started/installation/" title="Installation" class="md-nav__link">
+    <a href="../../getting-started/installation/" title="Installation" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -342,7 +350,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/getting-started/editor_ide/" title="Editors and IDE" class="md-nav__link">
+    <a href="../../getting-started/editor_ide/" title="Editors and IDE" class="md-nav__link">
       Editors and IDE
     </a>
   </li>
@@ -357,10 +365,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Basic
@@ -378,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/basic/basic/" title="Basic Introduction" class="md-nav__link">
+    <a href="../basic/" title="Basic Introduction" class="md-nav__link">
       Basic Introduction
     </a>
   </li>
@@ -390,7 +400,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/basic/hello-world/" title="01 Hello World" class="md-nav__link">
+    <a href="../hello-world/" title="01 Hello World" class="md-nav__link">
       01 Hello World
     </a>
   </li>
@@ -402,8 +412,105 @@
 
 
   <li class="md-nav__item">
-    <a href="/golang-handbook/basic/hello-world-understand/" title="02 Understanding Hello World" class="md-nav__link">
+    <a href="../hello-world-understand/" title="02 Understanding Hello World" class="md-nav__link">
       02 Understanding Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        03 Adding a Comment
+      </label>
+    
+    <a href="./" title="03 Adding a Comment" class="md-nav__link md-nav__link--active">
+      03 Adding a Comment
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" title="Objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirement" title="Requirement" class="md-nav__link">
+    Requirement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" title="Code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-world-with-comment" title="Hello World With Comment" class="md-nav__link">
+    Hello World With Comment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
+    Golang Playground
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-data-types/" title="04 Understanding Data Types" class="md-nav__link">
+      04 Understanding Data Types
     </a>
   </li>
 
@@ -420,12 +527,118 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" title="Objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirement" title="Requirement" class="md-nav__link">
+    Requirement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" title="Code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-world-with-comment" title="Hello World With Comment" class="md-nav__link">
+    Hello World With Comment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
+    Golang Playground
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/octallium/golang-handbook/edit/master/docs/basic/add-comment.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="how-to-add-a-czjqqkd0-commentczjqqkd1">How To Add A <ins class="critic"> Comment</ins>.<a class="headerlink" href="#how-to-add-a-czjqqkd0-commentczjqqkd1" title="Permanent link">&para;</a></h1>
+<hr>
 
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
+<p>Learn how to add a comment in the code. </p>
+<h2 id="requirement">Requirement<a class="headerlink" href="#requirement" title="Permanent link">&para;</a></h2>
+<p>Adding comments is a very handy way of adding documentation to your code, it serves as a tool to let others know what you have written and makes navigating your code an easy task.</p>
+<p>Go has a specific format for adding comments and recommends adding comments wherever it makes sense.</p>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
+<p>Adding a comment is pretty easy</p>
+<div class="codehilite"><pre><span></span>// This is a comment
+</pre></div>
+
+
+<p>The compiler ignores the comment and runs your code, however as humans for us to remmember what we have written and for others to understand writing comments would make sense.</p>
+<h2 id="hello-world-with-comment">Hello World With Comment<a class="headerlink" href="#hello-world-with-comment" title="Permanent link">&para;</a></h2>
+<details class="example" open="open"><summary>Hello World</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="c1">// Declaring that the file belongs to the main package</span>
+<span class="mi">2</span> <span class="kn">package</span> <span class="nx">main</span>
+<span class="mi">3</span>
+<span class="mi">4</span> <span class="c1">// Importing the package &quot;fmt&quot;</span>
+<span class="mi">5</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+<span class="mi">6</span>
+<span class="mi">7</span> <span class="c1">// Declaring the main function</span>
+<span class="mi">8</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="mi">9</span>   
+<span class="mi">10</span> <span class="c1">// Printing Hello World to the standard output</span>
+<span class="mi">11</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
+<span class="mi">12</span> <span class="p">}</span>
+<span class="mi">13</span> <span class="c1">// main function ends</span>
+</pre></div>
+</details><h2 id="golang-playground">Golang Playground<a class="headerlink" href="#golang-playground" title="Permanent link">&para;</a></h2>
+<details class="info" open="open"><summary>Hello World With Comment</summary><p>Click on the below link:</p><p><a href="https://play.golang.org/p/Gy8TKpeAIO2">Hello World With Comments</a></p></details><h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Now that you know how to write comments, lets start with writing code with beautiful comments, but before we actually start writing more code there is one small step, we need to understand <ins class="critic"> Data Types</ins></p>
+<p>Click on the next section to understand basic data types in Go.</p>
+                
+                  
+                
+              
               
                 
 
@@ -438,6 +651,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../hello-world-understand/" title="02 Understanding Hello World" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                02 Understanding Hello World
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../basic-data-types/" title="04 Understanding Data Types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                04 Understanding Data Types
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -456,7 +704,7 @@
       
         
   <div class="md-footer-social">
-    <link rel="stylesheet" href="/golang-handbook/assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
       <a href="https://www.octallium.com" class="md-footer-social__link fa fa-globe"></a>
     
@@ -475,9 +723,9 @@
       
     </div>
     
-      <script src="/golang-handbook/assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"/golang-handbook"}})</script>
+      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
       
     
     
