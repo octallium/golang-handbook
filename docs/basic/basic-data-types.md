@@ -35,3 +35,7 @@ James Bond is getting irritated with our question, so lets ask a final question 
 True is neither a digit or a string, its a condition, so it belongs to the data type of {++ boolean++}, boolean values can be only True or False.
 
 In reality the above data types are of very basic types, Go has much more to it, also Go has different varieties of int, float, etc. But for now lets take it easy, we will see different data types as we progress with our code.
+
+## Next
+
+So now you know what are the basic data types in Go, in the next section we will start using them by declaring something called as {++ variables++} and {++ constants++}.
