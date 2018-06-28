@@ -75,3 +75,4 @@ pages:
     - '02 Understanding Hello World': 'basic/hello-world-understand.md'
     - '03 Adding a Comment': 'basic/add-comment.md'
     - '04 Understanding Data Types': 'basic/basic-data-types.md'
+    - '05 Variables & Constants': 'basic/variables-constants.md'

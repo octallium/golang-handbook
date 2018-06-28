@@ -274,6 +274,56 @@
             "location": "/basic/basic-data-types/#next", 
             "text": "So now you know what are the basic data types in Go, in the next section we will start using them by declaring something called as   variables  and   constants .", 
             "title": "Next"
+        }, 
+        {
+            "location": "/basic/variables-constants/", 
+            "text": "Declaring \n Variables\n \n \n Constants\n.\n\n\n\n\n\nObjective\n\n\nLearn how to declare variables and constants.\n\n\nVariables\n\n\nImagine you own a bookstore and you have to manage many books, you remove one book and store another book, now imagine bookstore to be variable, variable can store different values.\n\n\nVariables can be declared using the keyword \n var\n, besides using the keyword you also need to tell Go which data-type it belongs to. Since Go is a strictly typed language you need to declare the data-type.\n\n\nThe syntax for declaring variable is:\n\n\nvar variableName type\n\n\n\n\n\nConstant\n\n\nConstants are like locker, once you put a value in it, it cannot be changed, and as usual you need to declare the data type as well.\n\n\nconst constName type = value\n\n\n\n\n\nCode\n\n\nVariables \n Constants\n1\n \npackage\n \nmain\n\n\n2\n\n\n3\n \nimport\n \nfmt\n\n\n4\n\n\n5\n \nfunc\n \nmain\n()\n \n{\n\n\n6\n   \n// Declaring variable \nname\n of type string\n\n\n7\n   \nvar\n \nname\n \nstring\n\n\n8\n   \nname\n \n=\n \nOctallium\n\n\n9\n   \n// Printing out the value of \nname\n\n\n10\n   \nfmt\n.\nPrintln\n(\nThe value of \nname\n variable is:\n,\n \nname\n)\n\n\n11\n\n\n12\n  \n// Declaring variable \nage\n of type int\n\n\n13\n  \nvar\n \nage\n \nint\n\n\n14\n  \nage\n \n=\n \n9\n\n\n15\n  \n// Printing out the value of \nage\n\n\n16\n  \nfmt\n.\nPrintln\n(\nThe value of \nage\n variable is:\n,\n \nage\n)\n\n\n17\n  \n\n18\n  \n// Declaring constant \nSECRET_KEY\n of type string\n\n\n19\n  \nconst\n \nSECRET_KEY\n \nstring\n \n=\n \nabc-123-xyz-098\n\n\n20\n  \n// Printing out the value of \nSECRET_KEY\n\n\n21\n  \nfmt\n.\nPrintln\n(\nThe value of \nSECRET_KEY\n constant is:\n,\n \nSECRET_KEY\n)\n\n\n22\n\n\n23\n  \n// Values of variables can be changed\n\n\n24\n  \nname\n \n=\n \nGolang Handbook\n\n\n25\n  \nfmt\n.\nPrintln\n(\nNow the value of \nname\n variable is:\n,\n \nname\n)\n\n\n26\n\n\n27\n  \nage\n \n=\n \n13\n\n\n28\n  \nfmt\n.\nPrintln\n(\nNow the value of \nage\n variable is:\n,\n \nage\n)\n\n\n29\n\n\n30\n  \n// SECRET_KEY = \nque-472-ert-383\n will throw an error as it is a constant\n\n\n31\n \n}\n\n\n\n\nGithub\n\n\nJust in case you have some errors with your code, you can check out the code at github repo\n\n\nGithub Repo\n\n\nGolang Playground\n\n\nYou can also run the code at playground\n\n\nGolang Playground\n\n\nCode Review\n\n\nLines 7 declares a new variable \"name\" of type \"string\" and on line 8 we give it the value of \"octallium\"\n\n\nSimilarly on line 13 we declare a variable \"age\" of type int and on line 14 we give it the value of 9, note that there are no double quotes around 9 as it is of type int, strings have to be enclosed within double quotes.\n\n\nOn line 19 we declare a constant of type string and give it a value, on line 30 if we try to change the value, the compiler will throw and error, try uncommenting the line and running the code.\n\n\nOn line 24 \n 27 we assign new values to variables and print them out.\n\n\nNext\n\n\nIn the next section we will see the short hand method for declaring variables.", 
+            "title": "05 Variables & Constants"
+        }, 
+        {
+            "location": "/basic/variables-constants/#declaring-czjqqkd0-variablesczjqqkd1-czjqqkd2-constantsczjqqkd3", 
+            "text": "", 
+            "title": "Declaring  Variables &amp;  Constants."
+        }, 
+        {
+            "location": "/basic/variables-constants/#objective", 
+            "text": "Learn how to declare variables and constants.", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/variables-constants/#variables", 
+            "text": "Imagine you own a bookstore and you have to manage many books, you remove one book and store another book, now imagine bookstore to be variable, variable can store different values.  Variables can be declared using the keyword   var , besides using the keyword you also need to tell Go which data-type it belongs to. Since Go is a strictly typed language you need to declare the data-type.  The syntax for declaring variable is:  var variableName type", 
+            "title": "Variables"
+        }, 
+        {
+            "location": "/basic/variables-constants/#constant", 
+            "text": "Constants are like locker, once you put a value in it, it cannot be changed, and as usual you need to declare the data type as well.  const constName type = value", 
+            "title": "Constant"
+        }, 
+        {
+            "location": "/basic/variables-constants/#code", 
+            "text": "Variables   Constants 1   package   main  2  3   import   fmt  4  5   func   main ()   {  6     // Declaring variable  name  of type string  7     var   name   string  8     name   =   Octallium  9     // Printing out the value of  name  10     fmt . Println ( The value of  name  variable is: ,   name )  11  12    // Declaring variable  age  of type int  13    var   age   int  14    age   =   9  15    // Printing out the value of  age  16    fmt . Println ( The value of  age  variable is: ,   age )  17    18    // Declaring constant  SECRET_KEY  of type string  19    const   SECRET_KEY   string   =   abc-123-xyz-098  20    // Printing out the value of  SECRET_KEY  21    fmt . Println ( The value of  SECRET_KEY  constant is: ,   SECRET_KEY )  22  23    // Values of variables can be changed  24    name   =   Golang Handbook  25    fmt . Println ( Now the value of  name  variable is: ,   name )  26  27    age   =   13  28    fmt . Println ( Now the value of  age  variable is: ,   age )  29  30    // SECRET_KEY =  que-472-ert-383  will throw an error as it is a constant  31   }", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/basic/variables-constants/#github", 
+            "text": "Just in case you have some errors with your code, you can check out the code at github repo  Github Repo", 
+            "title": "Github"
+        }, 
+        {
+            "location": "/basic/variables-constants/#golang-playground", 
+            "text": "You can also run the code at playground  Golang Playground", 
+            "title": "Golang Playground"
+        }, 
+        {
+            "location": "/basic/variables-constants/#code-review", 
+            "text": "Lines 7 declares a new variable \"name\" of type \"string\" and on line 8 we give it the value of \"octallium\"  Similarly on line 13 we declare a variable \"age\" of type int and on line 14 we give it the value of 9, note that there are no double quotes around 9 as it is of type int, strings have to be enclosed within double quotes.  On line 19 we declare a constant of type string and give it a value, on line 30 if we try to change the value, the compiler will throw and error, try uncommenting the line and running the code.  On line 24   27 we assign new values to variables and print them out.", 
+            "title": "Code Review"
+        }, 
+        {
+            "location": "/basic/variables-constants/#next", 
+            "text": "In the next section we will see the short hand method for declaring variables.", 
+            "title": "Next"
         }
     ]
 }
