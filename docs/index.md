@@ -50,6 +50,7 @@ A lots have to be done yet, here is a small lists to things to do in near future
 * [ ] Add partial intermediate material by end of Oct, 18.
 * [ ] Add at least basic tutorial videos by end of Oct, 2018.
 * [ ] Create pdf downloadable version.
+* [ ] Create artwork for chapters.
 
 ## Get In Touch
 
