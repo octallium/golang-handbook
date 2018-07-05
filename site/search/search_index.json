@@ -324,6 +324,56 @@
             "location": "/basic/variables-constants/#next", 
             "text": "In the next section we will see the short hand method for declaring variables.", 
             "title": "Next"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/", 
+            "text": "Shorthand\n Declaration Of Variables.\n\n\n\n\n\nObjective\n\n\nLearn how to declare variables using the shorthand method.\n\n\nDeclaration\n\n\nGo ships with a smart compiler, it can detect the data type and automatically assign it to variables, using short declaration is very widely used in Go, with this method you can create variables on the fly, no need for prior declaration.\n\n\nGeneral syntax\n\n\nvariableName := value\n\n\n\n\n\nIt is also called as inference type declaration, meaning that the variable type is \"inferred\" from the value. This method offers various benefits such as compiler can choose the right data type and much more which we will explore as we write more code.\n\n\nCode\n\n\nShorthand Declaration\n1\n \npackage\n \nmain\n\n\n2\n\n\n3\n \nimport\n \nfmt\n\n\n\n4\n \nfunc\n \nmain\n()\n \n{\n\n\n5\n   \n// declaring integer\n\n\n6\n   \nnum\n \n:=\n \n12\n\n\n7\n   \nfmt\n.\nPrintf\n(\nThe type of variable \nnum\n is: %T.\\n\n,\n \nnum\n)\n\n\n8\n\n\n9\n   \n// declaring float\n\n\n10\n  \ndecimal\n \n:=\n \n15.45\n\n\n11\n  \nfmt\n.\nPrintf\n(\nThe type of variable \ndecimal\n is: %T.\\n\n,\n \ndecimal\n)\n\n\n12\n\n\n13\n  \n// declaring string\n\n\n14\n  \nname\n \n:=\n \nOctallium\n\n\n15\n  \nfmt\n.\nPrintf\n(\nThe type of variable \nname\n is : %T.\\n\n,\n \nname\n)\n\n\n16\n \n}\n\n\n\n\nOutput\n\n\nThe type of variable \nnum\n is: int.\nThe type of variable \ndecimal\n is: float64.\nThe type of variable \nname\n is : string.\n\n\n\n\n\nCode Review\n\n\nOn line 6, 10 \n 14 we declare a new variable\n\n\nnum := 12\ndecimal := 15.45\nname := \nOctallium\n\n\n\n\n\n\nTo check the data type we use a special format output function\n\n\nfmt.Printf()\n\n\n\n\n\nNote, in the earlier examples we had used\n\n\nfmt.Println()\n\n\n\n\n\nOn line 7, 11 \n 15, we print out the data type, to check the data type we use a special character \"%T\", which acts as a placeholder and represent the data \"Type\", it is followed by the variable name.\n\n\nfmt.Printf(\nThe type of variable \nnum\n is: %T.\\n\n, num)\nfmt.Printf(\nThe type of variable \ndecimal\n is: %T.\\n\n, decimal)\nfmt.Printf(\nThe type of variable \nname\n is : %T.\\n\n, name)\n\n\n\n\n\nIf you don't understand the print statements, no worries, we will be having a dedicated section on formatting output, for now type everything as in the code above and make sure it runs.\n\n\nGithub\n\n\nJust in case you have some errors with your code, you can check out the code at github repo\n\n\nGithub Repo\n\n\nGolang Playground\n\n\nYou can also run the code at playground\n\n\nGolang Playground\n\n\nNext\n\n\nIn the next chapter we will see about \n if/else\n condition, don't worry if its becoming too geeky, keep up with the code and in no time you will get the hang of it.", 
+            "title": "06 Shorthand Declaration"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#czjqqkd0-shorthandczjqqkd1-declaration-of-variables", 
+            "text": "", 
+            "title": " Shorthand Declaration Of Variables."
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#objective", 
+            "text": "Learn how to declare variables using the shorthand method.", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#declaration", 
+            "text": "Go ships with a smart compiler, it can detect the data type and automatically assign it to variables, using short declaration is very widely used in Go, with this method you can create variables on the fly, no need for prior declaration.  General syntax  variableName := value  It is also called as inference type declaration, meaning that the variable type is \"inferred\" from the value. This method offers various benefits such as compiler can choose the right data type and much more which we will explore as we write more code.", 
+            "title": "Declaration"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#code", 
+            "text": "Shorthand Declaration 1   package   main  2  3   import   fmt  4   func   main ()   {  5     // declaring integer  6     num   :=   12  7     fmt . Printf ( The type of variable  num  is: %T.\\n ,   num )  8  9     // declaring float  10    decimal   :=   15.45  11    fmt . Printf ( The type of variable  decimal  is: %T.\\n ,   decimal )  12  13    // declaring string  14    name   :=   Octallium  15    fmt . Printf ( The type of variable  name  is : %T.\\n ,   name )  16   }", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#output", 
+            "text": "The type of variable  num  is: int.\nThe type of variable  decimal  is: float64.\nThe type of variable  name  is : string.", 
+            "title": "Output"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#code-review", 
+            "text": "On line 6, 10   14 we declare a new variable  num := 12\ndecimal := 15.45\nname :=  Octallium   To check the data type we use a special format output function  fmt.Printf()  Note, in the earlier examples we had used  fmt.Println()  On line 7, 11   15, we print out the data type, to check the data type we use a special character \"%T\", which acts as a placeholder and represent the data \"Type\", it is followed by the variable name.  fmt.Printf( The type of variable  num  is: %T.\\n , num)\nfmt.Printf( The type of variable  decimal  is: %T.\\n , decimal)\nfmt.Printf( The type of variable  name  is : %T.\\n , name)  If you don't understand the print statements, no worries, we will be having a dedicated section on formatting output, for now type everything as in the code above and make sure it runs.", 
+            "title": "Code Review"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#github", 
+            "text": "Just in case you have some errors with your code, you can check out the code at github repo  Github Repo", 
+            "title": "Github"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#golang-playground", 
+            "text": "You can also run the code at playground  Golang Playground", 
+            "title": "Golang Playground"
+        }, 
+        {
+            "location": "/basic/shorthand-declaration/#next", 
+            "text": "In the next chapter we will see about   if/else  condition, don't worry if its becoming too geeky, keep up with the code and in no time you will get the hang of it.", 
+            "title": "Next"
         }
     ]
 }

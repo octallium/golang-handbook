@@ -76,3 +76,4 @@ pages:
     - '03 Adding a Comment': 'basic/add-comment.md'
     - '04 Understanding Data Types': 'basic/basic-data-types.md'
     - '05 Variables & Constants': 'basic/variables-constants.md'
+    - '06 Shorthand Declaration': 'basic/shorthand-declaration.md'

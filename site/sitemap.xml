@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://octallium.github.io/golang-handbook/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/getting-started/why-go/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/getting-started/installation/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/getting-started/editor_ide/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/basic/basic/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/basic/hello-world/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/basic/hello-world-understand/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/basic/add-comment/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/basic/basic-data-types/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://octallium.github.io/golang-handbook/basic/variables-constants/</loc>
-     <lastmod>2018-06-28</lastmod>
+     <lastmod>2018-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://octallium.github.io/golang-handbook/basic/shorthand-declaration/</loc>
+     <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
