@@ -77,3 +77,4 @@ pages:
     - '04 Understanding Data Types': 'basic/basic-data-types.md'
     - '05 Variables & Constants': 'basic/variables-constants.md'
     - '06 Shorthand Declaration': 'basic/shorthand-declaration.md'
+    - '07 Condition - if/else': 'basic/if-else.md'

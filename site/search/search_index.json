@@ -374,6 +374,51 @@
             "location": "/basic/shorthand-declaration/#next", 
             "text": "In the next chapter we will see about   if/else  condition, don't worry if its becoming too geeky, keep up with the code and in no time you will get the hang of it.", 
             "title": "Next"
+        }, 
+        {
+            "location": "/basic/if-else/", 
+            "text": "Conditions \n if/else\n.\n\n\n\n\n\nObjective\n\n\nTo understand if/else conditions. \n\n\nIf/else conditions are of very fundamental importance to programming and are present in all the programming languages.\n\n\nThe intent of condition is very simple\n\n\nif condition {\n    do something\n} else {\n    do another thing\n}\n\n\n\n\n\nCode\n\n\nThe code will be divided into two parts\n\n\n1.)\n\n\nif/else condition\n1\n \npackage\n \nmain\n\n\n2\n \n\n3\n \nimport\n \nfmt\n\n\n4\n\n\n5\n \nfunc\n \nmain\n()\n \n{\n\n\n6\n \nd\n \n:=\n \nDog\n\n\n7\n \nc\n \n:=\n \nCat\n\n\n8\n\n\n9\n \n// checking the value of variables\n\n\n10\n \nif\n \nd\n \n==\n \nDog\n \n{\n\n\n11\n  \nfmt\n.\nPrintln\n(\nWoff\n)\n\n\n12\n \n}\n \nelse\n \n{\n\n\n13\n  \nfmt\n.\nPrintln\n(\nI don\nt know which animal!\n)\n\n\n14\n \n}\n\n\n15\n\n\n\n\nReview\n\n\non line 10 we check if the value of the variable \"d\" is equal to \"Dog\"\n\n\nif d == \nDog\n\n\n\n\n\n\nIf the condition is true then we print out \"Woff\" \n\n\nfmt.Println(\nWoff\n)\n\n\n\n\n\nIf the condition is false, we print \"I don't know which animal\"\n\n\nfmt.Println(\nI don\nt know which animal!\n)\n\n\n\n\n\n2.) If/else statements can also be chained if you have multiple conditions\n\n\nif/else condition\n16\n \n// You can also chain if / else conditions\n\n\n17\n \nif\n \nc\n \n==\n \nmonkey\n \n{\n\n\n18\n  \nfmt\n.\nPrintln\n(\nI am a monkey.\n)\n\n\n19\n \n}\n \nelse\n \nif\n \nc\n \n==\n \nDog\n \n{\n\n\n20\n  \nfmt\n.\nPrintln\n(\nI am a dog.\n)\n\n\n21\n \n}\n \nelse\n \nif\n \nc\n \n==\n \nCat\n \n{\n\n\n22\n  \nfmt\n.\nPrintln\n(\nMeoww\n)\n\n\n23\n \n}\n\n\n24\n \n}\n\n\n\n\nReview\n\n\nOn line 17 we check if value of the variable \"c\" is \"monkey\", if the conditions evaluates to true then we print \"I am a monkey\"\n\n\nif c == \nmonkey\n\n\n\n\n\n\nIf it evaluates to false then we check it once again if it contains the value of \"Dog\"\n\n\nif c == \nDog\n\n\n\n\n\n\nSince, this also evaluates to false, we check for the next condition\n\n\nif c == \nCat\n\n\n\n\n\n\nAs it evaluates to true, we print out \"Meoww\" on the screen\n\n\nfmt.Println(\nMeoww\n)\n\n\n\n\n\nIn case if \"c\" does not evaluate to true in any of the case, \n nothing\n will be printed.\n\n\nOutput\n\n\nWoff\nMeoww\n\n\n\n\n\nNote\n\n\nStrings in Go are case sensitive, \"monkey\" and \"Monkey\" are evaluated differently, so be sure of using the right case when checking for evaluation.\n\n\nGithub\n\n\nJust in case you have some errors with your code, you can check out the code at github repo\n\n\nGithub Repo\n\n\nGolang Playground\n\n\nYou can also run the code at playground\n\n\nGolang Playground\n\n\nNext\n\n\nWe will see \n for\n loops.", 
+            "title": "07 Condition - if/else"
+        }, 
+        {
+            "location": "/basic/if-else/#conditions-czjqqkd0-ifelseczjqqkd1", 
+            "text": "", 
+            "title": "Conditions  if/else."
+        }, 
+        {
+            "location": "/basic/if-else/#objective", 
+            "text": "To understand if/else conditions.   If/else conditions are of very fundamental importance to programming and are present in all the programming languages.  The intent of condition is very simple  if condition {\n    do something\n} else {\n    do another thing\n}", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/basic/if-else/#code", 
+            "text": "The code will be divided into two parts  1.)  if/else condition 1   package   main  2   3   import   fmt  4  5   func   main ()   {  6   d   :=   Dog  7   c   :=   Cat  8  9   // checking the value of variables  10   if   d   ==   Dog   {  11    fmt . Println ( Woff )  12   }   else   {  13    fmt . Println ( I don t know which animal! )  14   }  15   Review  on line 10 we check if the value of the variable \"d\" is equal to \"Dog\"  if d ==  Dog   If the condition is true then we print out \"Woff\"   fmt.Println( Woff )  If the condition is false, we print \"I don't know which animal\"  fmt.Println( I don t know which animal! )  2.) If/else statements can also be chained if you have multiple conditions  if/else condition 16   // You can also chain if / else conditions  17   if   c   ==   monkey   {  18    fmt . Println ( I am a monkey. )  19   }   else   if   c   ==   Dog   {  20    fmt . Println ( I am a dog. )  21   }   else   if   c   ==   Cat   {  22    fmt . Println ( Meoww )  23   }  24   }   Review  On line 17 we check if value of the variable \"c\" is \"monkey\", if the conditions evaluates to true then we print \"I am a monkey\"  if c ==  monkey   If it evaluates to false then we check it once again if it contains the value of \"Dog\"  if c ==  Dog   Since, this also evaluates to false, we check for the next condition  if c ==  Cat   As it evaluates to true, we print out \"Meoww\" on the screen  fmt.Println( Meoww )  In case if \"c\" does not evaluate to true in any of the case,   nothing  will be printed.", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/basic/if-else/#output", 
+            "text": "Woff\nMeoww", 
+            "title": "Output"
+        }, 
+        {
+            "location": "/basic/if-else/#note", 
+            "text": "Strings in Go are case sensitive, \"monkey\" and \"Monkey\" are evaluated differently, so be sure of using the right case when checking for evaluation.", 
+            "title": "Note"
+        }, 
+        {
+            "location": "/basic/if-else/#github", 
+            "text": "Just in case you have some errors with your code, you can check out the code at github repo  Github Repo", 
+            "title": "Github"
+        }, 
+        {
+            "location": "/basic/if-else/#golang-playground", 
+            "text": "You can also run the code at playground  Golang Playground", 
+            "title": "Golang Playground"
+        }, 
+        {
+            "location": "/basic/if-else/#next", 
+            "text": "We will see   for  loops.", 
+            "title": "Next"
         }
     ]
 }
