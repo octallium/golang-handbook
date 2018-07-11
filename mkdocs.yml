@@ -78,3 +78,4 @@ pages:
     - '05 Variables & Constants': 'basic/variables-constants.md'
     - '06 Shorthand Declaration': 'basic/shorthand-declaration.md'
     - '07 Condition - if/else': 'basic/if-else.md'
+    - '08 For Loops': 'basic/for_loops.md'
