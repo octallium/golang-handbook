@@ -22,6 +22,20 @@ Constants are like locker, once you put a value in it, it cannot be changed, and
 
     const constName type = value
 
+## Structure
+
+Navigate to our code folder
+
+    code/basic/
+
+For our program create a new folder '05_variables_constant'
+
+    code/basic/05_variables_constant
+
+And lets create a file 'variables_constants.go' in it, finally the structure would look like this:
+
+    code/basic/05_variables_constant/variables_constants.go
+
 ## Code
 
 ???+ example "Variables & Constants"

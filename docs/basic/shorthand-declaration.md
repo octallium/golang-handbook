@@ -16,6 +16,20 @@ General syntax
 
 It is also called as inference type declaration, meaning that the variable type is "inferred" from the value. This method offers various benefits such as compiler can choose the right data type and much more which we will explore as we write more code.
 
+## Structure
+
+Navigate to our code folder
+
+    code/basic/
+
+For our program create a new folder '06_shorthand_declaration'
+
+    code/basic/06_shorthand_declaration
+
+And lets create a file 'shorthand_declaration.go' in it, finally the structure would look like this:
+
+    code/basic/06_shorthand_declaration/shorthand_declaration.go
+
 ## Code
 
 ???+ example "Shorthand Declaration"

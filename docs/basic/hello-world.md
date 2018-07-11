@@ -9,16 +9,17 @@ Write a program which prints "Hello, World!" on the screen.
 ## Structure
 
 Let's create a folder called 'code' anywhere on your machine and we will put all our Go code in it.
+Inside the 'code' folder lets create one more folder for basic tutorials
 
-    code/
+    code/basic/
 
 For our first program create a new folder '01_hello_world'
 
-    code/01_hello_world
+    code/basic/01_hello_world
 
 And lets create a file 'hello_world.go' in it, finally the structure would look like this:
 
-    code/01_hello_world/hello_world.go
+    code/basic/01_hello_world/hello_world.go
 
 ## Code
 

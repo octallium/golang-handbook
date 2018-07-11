@@ -16,6 +16,20 @@ The intent of condition is very simple
         do another thing
     }
 
+## Structure
+
+Navigate to our code folder
+
+    code/basic/
+
+For our program create a new folder '07_if_else'
+
+    code/basic/07_if_else
+
+And lets create a file 'if_else.go' in it, finally the structure would look like this:
+
+    code/basic/07_if_else/if_else.go
+
 ## Code
 
 The code will be divided into two parts
