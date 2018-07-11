@@ -4,9 +4,9 @@
 
 ## Objective
 
-To understand "for" loop conditions.
+To understand {++ for++} loops.
 
-Go offers only "for" loops for doing repetitive tasks, if you come from some languages, Go does not offer "while" , "do-while" loops, instead "for" loops have a flexible syntax and offers all the looping functions.
+Go offers only "for" loops for doing repetitive tasks, if you come from some other languages there are no "while" or "do-while" loops in Go, instead "for" loops have a flexible syntax and offers all the looping functions.
 
 General syntax is:
 
