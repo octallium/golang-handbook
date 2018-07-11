@@ -52,7 +52,7 @@ func lookUpNode(t *Node, v int) bool {
 		}
 		return false
 	}
-	if t.Value == v {
+	if v == t.Value {
 		return true
 	}
 	if t.Next == nil {
