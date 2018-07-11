@@ -13,7 +13,7 @@
         <meta name="description" content="A guide to understanding the "Go" programming language.">
       
       
-        <link rel="canonical" href="https://octallium.github.io/golang-handbook/basic/variables-constants/">
+        <link rel="canonical" href="https://octallium.github.io/golang-handbook/basic/for_loops/">
       
       
         <meta name="author" content="Anil Kulkarni">
@@ -42,7 +42,7 @@
     
     
       
-        <title>05 Variables & Constants - The 'Go' Programming Handbook</title>
+        <title>08 For Loops - The 'Go' Programming Handbook</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#declaring-czjqqkd0-variablesczjqqkd1-czjqqkd2-constantsczjqqkd3" tabindex="1" class="md-skip">
+      <a href="#understanding-czjqqkd0-for-loopsczjqqkd1" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
                 The 'Go' Programming Handbook
               </span>
               <span class="md-header-nav__topic">
-                05 Variables & Constants
+                08 For Loops
               </span>
             
           
@@ -446,105 +446,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        05 Variables & Constants
-      </label>
-    
-    <a href="./" title="05 Variables & Constants" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../variables-constants/" title="05 Variables & Constants" class="md-nav__link">
       05 Variables & Constants
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" title="Objective" class="md-nav__link">
-    Objective
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables" title="Variables" class="md-nav__link">
-    Variables
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constant" title="Constant" class="md-nav__link">
-    Constant
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure" title="Structure" class="md-nav__link">
-    Structure
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code" title="Code" class="md-nav__link">
-    Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github" title="Github" class="md-nav__link">
-    Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
-    Golang Playground
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-review" title="Code Review" class="md-nav__link">
-    Code Review
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" title="Next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -576,11 +482,98 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../for_loops/" title="08 For Loops" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        08 For Loops
+      </label>
+    
+    <a href="./" title="08 For Loops" class="md-nav__link md-nav__link--active">
       08 For Loops
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" title="Objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" title="Structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" title="Code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-code" title="Full Code" class="md-nav__link">
+    Full Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" title="Note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" title="Github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
+    Golang Playground
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -617,20 +610,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables" title="Variables" class="md-nav__link">
-    Variables
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constant" title="Constant" class="md-nav__link">
-    Constant
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#structure" title="Structure" class="md-nav__link">
     Structure
   </a>
@@ -645,6 +624,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#full-code" title="Full Code" class="md-nav__link">
+    Full Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" title="Note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#github" title="Github" class="md-nav__link">
     Github
   </a>
@@ -654,13 +647,6 @@
         <li class="md-nav__item">
   <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
     Golang Playground
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-review" title="Code Review" class="md-nav__link">
-    Code Review
   </a>
   
 </li>
@@ -688,25 +674,19 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/octallium/golang-handbook/edit/master/docs/basic/variables-constants.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/octallium/golang-handbook/edit/master/docs/basic/for_loops.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="declaring-czjqqkd0-variablesczjqqkd1-czjqqkd2-constantsczjqqkd3">Declaring <ins class="critic"> Variables</ins> &amp; <ins class="critic"> Constants</ins>.<a class="headerlink" href="#declaring-czjqqkd0-variablesczjqqkd1-czjqqkd2-constantsczjqqkd3" title="Permanent link">&para;</a></h1>
+                <h1 id="understanding-czjqqkd0-for-loopsczjqqkd1">Understanding <ins class="critic"> For Loops</ins>.<a class="headerlink" href="#understanding-czjqqkd0-for-loopsczjqqkd1" title="Permanent link">&para;</a></h1>
 <hr>
 
 <h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
-<p>Learn how to declare variables and constants.</p>
-<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
-<p>Imagine you own a bookstore and you have to manage many books, you remove one book and store another book, now imagine bookstore to be variable, variable can store different values.</p>
-<p>Variables can be declared using the keyword <mark class="critic"> var</mark>, besides using the keyword you also need to tell Go which data-type it belongs to. Since Go is a strictly typed language you need to declare the data-type.</p>
-<p>The syntax for declaring variable is:</p>
-<div class="codehilite"><pre><span></span>var variableName type
-</pre></div>
-
-
-<h2 id="constant">Constant<a class="headerlink" href="#constant" title="Permanent link">&para;</a></h2>
-<p>Constants are like locker, once you put a value in it, it cannot be changed, and as usual you need to declare the data type as well.</p>
-<div class="codehilite"><pre><span></span>const constName type = value
+<p>To understand "for" loop conditions.</p>
+<p>Go offers only "for" loops for doing repetitive tasks, if you come from some languages, Go does not offer "while" , "do-while" loops, instead "for" loops have a flexible syntax and offers all the looping functions.</p>
+<p>General syntax is:</p>
+<div class="codehilite"><pre><span></span>for condition {
+    do something
+}
 </pre></div>
 
 
@@ -716,62 +696,176 @@
 </pre></div>
 
 
-<p>For our program create a new folder '05_variables_constant'</p>
-<div class="codehilite"><pre><span></span>code/basic/05_variables_constant
+<p>For our program create a new folder '08_for_loops'</p>
+<div class="codehilite"><pre><span></span>code/basic/08_for_loops
 </pre></div>
 
 
-<p>And lets create a file 'variables_constants.go' in it, finally the structure would look like this:</p>
-<div class="codehilite"><pre><span></span>code/basic/05_variables_constant/variables_constants.go
+<p>And lets create a file 'for_loops.go' in it, finally the structure would look like this:</p>
+<div class="codehilite"><pre><span></span>code/basic/08_for_loops/for_loops.go
 </pre></div>
 
 
 <h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
-<details class="example" open="open"><summary>Variables &amp; Constants</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
+<p>The code will be divided into four parts:</p>
+<p>1.)</p>
+<details class="example" open="open"><summary>for loops</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
 <span class="mi">2</span>
 <span class="mi">3</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
 <span class="mi">4</span>
 <span class="mi">5</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">6</span>   <span class="c1">// Declaring variable &quot;name&quot; of type string</span>
-<span class="mi">7</span>   <span class="kd">var</span> <span class="nx">name</span> <span class="kt">string</span>
-<span class="mi">8</span>   <span class="nx">name</span> <span class="p">=</span> <span class="s">&quot;Octallium&quot;</span>
-<span class="mi">9</span>   <span class="c1">// Printing out the value of &quot;name&quot;</span>
-<span class="mi">10</span>   <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value of &#39;name&#39; variable is:&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
-<span class="mi">11</span>
-<span class="mi">12</span>  <span class="c1">// Declaring variable &quot;age&quot; of type int</span>
-<span class="mi">13</span>  <span class="kd">var</span> <span class="nx">age</span> <span class="kt">int</span>
-<span class="mi">14</span>  <span class="nx">age</span> <span class="p">=</span> <span class="mi">9</span>
-<span class="mi">15</span>  <span class="c1">// Printing out the value of &quot;age&quot;</span>
-<span class="mi">16</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value of &#39;age&#39; variable is:&quot;</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span>
-<span class="mi">17</span>  
-<span class="mi">18</span>  <span class="c1">// Declaring constant &quot;SECRET_KEY&quot; of type string</span>
-<span class="mi">19</span>  <span class="kd">const</span> <span class="nx">SECRET_KEY</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&quot;abc-123-xyz-098&quot;</span>
-<span class="mi">20</span>  <span class="c1">// Printing out the value of &quot;SECRET_KEY&quot;</span>
-<span class="mi">21</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value of &#39;SECRET_KEY&#39; constant is:&quot;</span><span class="p">,</span> <span class="nx">SECRET_KEY</span><span class="p">)</span>
-<span class="mi">22</span>
-<span class="mi">23</span>  <span class="c1">// Values of variables can be changed</span>
-<span class="mi">24</span>  <span class="nx">name</span> <span class="p">=</span> <span class="s">&quot;Golang Handbook&quot;</span>
-<span class="mi">25</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now the value of &#39;name&#39; variable is:&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
-<span class="mi">26</span>
-<span class="mi">27</span>  <span class="nx">age</span> <span class="p">=</span> <span class="mi">13</span>
-<span class="mi">28</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now the value of &#39;age&#39; variable is:&quot;</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span>
-<span class="mi">29</span>
-<span class="mi">30</span>  <span class="c1">// SECRET_KEY = &quot;que-472-ert-383&quot; will throw an error as it is a constant</span>
-<span class="mi">31</span> <span class="p">}</span>
+<span class="mi">6</span> <span class="c1">// Variation 1 - conditional loop</span>
+<span class="mi">7</span> <span class="nx">num1</span> <span class="o">:=</span> <span class="mi">0</span>
+<span class="mi">8</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Starting for loop...&quot;</span><span class="p">)</span>
+<span class="mi">9</span> <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">11</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+<span class="mi">10</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num1</span><span class="p">)</span>
+<span class="mi">11</span>  <span class="nx">num1</span><span class="o">++</span>
+<span class="mi">12</span> <span class="p">}</span>
+<span class="mi">13</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 </pre></div>
-</details><h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
+</details><p><em>Review</em></p>
+<p>Line 9 declared a for loop along with condition</p>
+<div class="codehilite"><pre><span></span>for i := 0; i &lt; 11; i++ {
+</pre></div>
+
+
+<p>We initial the variable "i" and set it to "0", then we say loop till "i is less than 11" and after each pass do "i++", i.e increment the value of "i" by 1.</p>
+<p>Line 10 prints the value after each pass and on line 11 we increment the value of num</p>
+<div class="codehilite"><pre><span></span>fmt.Println(&quot;Num =&quot;, num1)
+num1++
+</pre></div>
+
+
+<p>2.)</p>
+<details class="example" open="open"><summary>for loops</summary><div class="codehilite"><pre><span></span><span class="mi">14</span> <span class="c1">// Variation 2 - Infinite loop</span>
+<span class="mi">15</span> <span class="nx">num2</span> <span class="o">:=</span> <span class="mi">20</span>
+<span class="mi">16</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Entering infinite loop...&quot;</span><span class="p">)</span>
+<span class="mi">17</span> <span class="k">for</span> <span class="p">{</span>
+<span class="mi">18</span>  <span class="c1">// break condition</span>
+<span class="mi">19</span>  <span class="k">if</span> <span class="nx">num2</span> <span class="p">&lt;</span> <span class="mi">10</span> <span class="p">{</span>
+<span class="mi">20</span>      <span class="k">break</span>
+<span class="mi">21</span>  <span class="p">}</span>
+<span class="mi">22</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span>
+<span class="mi">23</span>  <span class="nx">num2</span><span class="o">--</span>
+<span class="mi">24</span> <span class="p">}</span>
+<span class="mi">25</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>On line 17 we start a infinite loop, the for loop will keep on executing till it encounters a break condition or runs out of memory</p>
+<div class="codehilite"><pre><span></span>for {
+</pre></div>
+
+
+<p>On line 19 we check for a break condition</p>
+<div class="codehilite"><pre><span></span>if num2 &lt; 10
+</pre></div>
+
+
+<p>3.)</p>
+<details class="example" open="open"><summary>for loops</summary><div class="codehilite"><pre><span></span><span class="mi">26</span>  <span class="c1">// Variation 3 - Optional statements</span>
+<span class="mi">27</span> <span class="nx">num3</span> <span class="o">:=</span> <span class="mi">20</span>
+<span class="mi">28</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Loop with optional statements...&quot;</span><span class="p">)</span>
+<span class="mi">29</span> <span class="k">for</span> <span class="nx">num3</span> <span class="o">&lt;=</span> <span class="mi">30</span> <span class="p">{</span>
+<span class="mi">30</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num3</span><span class="p">)</span>
+<span class="mi">31</span>  <span class="nx">num3</span><span class="o">++</span>
+<span class="mi">32</span> <span class="p">}</span>
+<span class="mi">33</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>On line 29 we start a loop with operational statements, the loop will break when it fulfills the condition.</p>
+<div class="codehilite"><pre><span></span>for num3 &lt;= 30
+</pre></div>
+
+
+<p>Note we have declared and initialized "num3" on line 27</p>
+<div class="codehilite"><pre><span></span>num3 := 20
+</pre></div>
+
+
+<p>4.)</p>
+<details class="example" open="open"><summary>for loops</summary><div class="codehilite"><pre><span></span><span class="mi">34</span>  <span class="c1">// Variation 4 - Boolean operators</span>
+<span class="mi">35</span> <span class="nx">cond</span> <span class="o">:=</span> <span class="kc">true</span>
+<span class="mi">36</span> <span class="nx">num4</span> <span class="o">:=</span> <span class="mi">30</span>
+<span class="mi">37</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Loops with boolean operator...&quot;</span><span class="p">)</span>
+<span class="mi">38</span> <span class="k">for</span> <span class="nx">cond</span> <span class="p">{</span>
+<span class="mi">39</span>  <span class="k">if</span> <span class="nx">num4</span> <span class="o">&gt;=</span> <span class="mi">40</span> <span class="p">{</span>
+<span class="mi">40</span>      <span class="nx">cond</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="mi">41</span>  <span class="p">}</span>
+<span class="mi">42</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num4</span><span class="p">)</span>
+<span class="mi">43</span>  <span class="nx">num4</span><span class="o">++</span>
+<span class="mi">44</span> <span class="p">}</span>
+<span class="mi">45</span> <span class="p">}</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>We declare a boolean condition on line 35, and start the loop on line 38</p>
+<div class="codehilite"><pre><span></span>for cond
+</pre></div>
+
+
+<p>In order to break the loop we set the condition on line 39</p>
+<div class="codehilite"><pre><span></span>if num4 &gt;= 40 {
+    cond = false
+}
+</pre></div>
+
+
+<h2 id="full-code">Full Code<a class="headerlink" href="#full-code" title="Permanent link">&para;</a></h2>
+<details class="example"><summary>Complete For-Loop Code</summary><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Variation 1 - conditional loop</span>
+    <span class="nx">num1</span> <span class="o">:=</span> <span class="mi">0</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Starting for loop...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">11</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num1</span><span class="p">)</span>
+        <span class="nx">num1</span><span class="o">++</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="c1">// Variation 2 - Infinite loop</span>
+    <span class="nx">num2</span> <span class="o">:=</span> <span class="mi">20</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Entering infinite loop...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">{</span>
+        <span class="c1">// break condition</span>
+        <span class="k">if</span> <span class="nx">num2</span> <span class="p">&lt;</span> <span class="mi">10</span> <span class="p">{</span>
+            <span class="k">break</span>
+        <span class="p">}</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span>
+        <span class="nx">num2</span><span class="o">--</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="c1">// Variation 3 - Optional statements</span>
+    <span class="nx">num3</span> <span class="o">:=</span> <span class="mi">20</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Loop with optional statements...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nx">num3</span> <span class="o">&lt;=</span> <span class="mi">30</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num3</span><span class="p">)</span>
+        <span class="nx">num3</span><span class="o">++</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="c1">// Variation 4 - Boolean operators</span>
+    <span class="nx">cond</span> <span class="o">:=</span> <span class="kc">true</span>
+    <span class="nx">num4</span> <span class="o">:=</span> <span class="mi">30</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Loops with boolean operator...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nx">cond</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="nx">num4</span> <span class="o">&gt;=</span> <span class="mi">40</span> <span class="p">{</span>
+            <span class="nx">cond</span> <span class="p">=</span> <span class="kc">false</span>
+        <span class="p">}</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Num =&quot;</span><span class="p">,</span> <span class="nx">num4</span><span class="p">)</span>
+        <span class="nx">num4</span><span class="o">++</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</details><h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h2>
+<p>Go ships with one more variant know as "for - range", we will study it in the coming chapters.</p>
+<h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <p>Just in case you have some errors with your code, you can check out the code at github repo</p>
 <p><a href="https://github.com/octallium/golang-handbook/tree/master/code">Github Repo</a></p>
 <h2 id="golang-playground">Golang Playground<a class="headerlink" href="#golang-playground" title="Permanent link">&para;</a></h2>
 <p>You can also run the code at playground</p>
-<p><a href="https://play.golang.org/p/WqUCP2CxLwJ">Golang Playground</a></p>
-<h2 id="code-review">Code Review<a class="headerlink" href="#code-review" title="Permanent link">&para;</a></h2>
-<p>Lines 7 declares a new variable "name" of type "string" and on line 8 we give it the value of "octallium"</p>
-<p>Similarly on line 13 we declare a variable "age" of type int and on line 14 we give it the value of 9, note that there are no double quotes around 9 as it is of type int, strings have to be enclosed within double quotes.</p>
-<p>On line 19 we declare a constant of type string and give it a value, on line 30 if we try to change the value, the compiler will throw and error, try uncommenting the line and running the code.</p>
-<p>On line 24 &amp; 27 we assign new values to variables and print them out.</p>
+<p><a href="https://play.golang.org/p/LC7FfsSdaHB">Golang Playground</a></p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
-<p>In the next section we will see the short hand method for declaring variables.</p>
+<p>In the next chapter we will learn about <ins class="critic"> function</ins> declaration.</p>
                 
                   
                 
@@ -792,7 +886,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../basic-data-types/" title="04 Understanding Data Types" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../if-else/" title="07 Condition - if/else" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -801,25 +895,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                04 Understanding Data Types
+                07 Condition - if/else
               </span>
             </div>
           </a>
         
-        
-          <a href="../shorthand-declaration/" title="06 Shorthand Declaration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                06 Shorthand Declaration
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
