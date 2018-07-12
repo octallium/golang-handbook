@@ -79,3 +79,4 @@ pages:
     - '06 Shorthand Declaration': 'basic/shorthand-declaration.md'
     - '07 Condition - if/else': 'basic/if-else.md'
     - '08 For Loops': 'basic/for_loops.md'
+    - '09 Function': 'basic/functions.md'
