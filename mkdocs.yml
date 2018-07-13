@@ -80,3 +80,4 @@ pages:
     - '07 Condition - if/else': 'basic/if-else.md'
     - '08 For Loops': 'basic/for_loops.md'
     - '09 Function': 'basic/functions.md'
+    - '10 Packages': 'basic/packages.md'
