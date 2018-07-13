@@ -106,6 +106,16 @@ As it evaluates to true, we print out "Meoww" on the screen
 
 In case if "c" does not evaluate to true in any of the case, {++ nothing++} will be printed.
 
+## Running your code
+
+Open your terminal and navigate to our folder
+
+    ccode/basic/07_if_else
+
+Once in the folder type the following command
+
+    go run if_else.go
+
 ## Output
 
     Woff

@@ -203,6 +203,41 @@ We call printNums along with a value "10" and assign it to the variable "err", t
 
     ```
 
+## Running your code
+
+Open your terminal and navigate to our folder
+
+    code/basic/09_functions/
+
+Once in the folder type the following command
+
+    go run main.go
+
+## Output
+
+    In func main()
+    Now calling func sayHello()...
+
+    In func sayHello()...
+    Hello, Octy!
+
+    In func sayHelloTo()...
+    Hello, Gopher
+
+    In func printNums()...
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    There are no errors!
+
 ## Github
 
 Just in case you have some errors with your code, you can check out the code at github repo

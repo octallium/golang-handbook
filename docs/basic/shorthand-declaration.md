@@ -54,12 +54,6 @@ And lets create a file 'shorthand_declaration.go' in it, finally the structure w
     16 }
     ```
 
-## Output
-
-    The type of variable 'num' is: int.
-    The type of variable 'decimal' is: float64.
-    The type of variable 'name' is : string.
-
 ## Code Review
 
 On line 6, 10 & 14 we declare a new variable
@@ -83,6 +77,22 @@ On line 7, 11 & 15, we print out the data type, to check the data type we use a 
     fmt.Printf("The type of variable 'name' is : %T.\n", name)
 
 If you don't understand the print statements, no worries, we will be having a dedicated section on formatting output, for now type everything as in the code above and make sure it runs.
+
+## Run Code
+
+Open your terminal and navigate to our folder
+
+	code/basic/06_shorthand_declaration
+
+Once in the folder type the following command
+
+	go run shorthand_declaration.go
+
+## Output
+
+    The type of variable 'num' is: int.
+    The type of variable 'decimal' is: float64.
+    The type of variable 'name' is : string.
 
 ## Github
 

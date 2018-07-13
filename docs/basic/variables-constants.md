@@ -74,6 +74,24 @@ And lets create a file 'variables_constants.go' in it, finally the structure wou
     31 }
     ```
 
+## Run Code
+
+Open your terminal and navigate to our folder
+
+	code/basic/05_variables_constant/
+
+Once in the folder type the following command
+
+	go run variables_constants.go
+
+## Output
+
+    The value of 'name' variable is: Octallium
+    The value of 'age' variable is: 9
+    The value of 'SECRET_KEY' constant is: abc-123-xyz-098
+    Now the value of 'name' variable is: Golang Handbook
+    Now the value of 'age' variable is: 13
+
 ## Github
 
 Just in case you have some errors with your code, you can check out the code at github repo

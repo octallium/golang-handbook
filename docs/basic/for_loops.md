@@ -197,6 +197,70 @@ In order to break the loop we set the condition on line 39
     }
     ```
 
+## Run Code
+
+Open your terminal and navigate to our folder
+
+	code/basic/08_for_loops
+
+Once in the folder type the following command
+
+	go run for_loops.go
+
+## Output
+
+	Starting for loop...
+	Num = 0
+	Num = 1
+	Num = 2
+	Num = 3
+	Num = 4
+	Num = 5
+	Num = 6
+	Num = 7
+	Num = 8
+	Num = 9
+	Num = 10
+
+	Entering infinite loop...
+	Num = 20
+	Num = 19
+	Num = 18
+	Num = 17
+	Num = 16
+	Num = 15
+	Num = 14
+	Num = 13
+	Num = 12
+	Num = 11
+	Num = 10
+
+	Loop with optional statements...
+	Num = 20
+	Num = 21
+	Num = 22
+	Num = 23
+	Num = 24
+	Num = 25
+	Num = 26
+	Num = 27
+	Num = 28
+	Num = 29
+	Num = 30
+
+	Loops with boolean operator...
+	Num = 30
+	Num = 31
+	Num = 32
+	Num = 33
+	Num = 34
+	Num = 35
+	Num = 36
+	Num = 37
+	Num = 38
+	Num = 39
+	Num = 40
+
 ## Note
 
 Go ships with one more variant know as "for - range", we will study it in the coming chapters.

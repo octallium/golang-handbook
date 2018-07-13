@@ -49,15 +49,27 @@ Once in the folder type the following command
 
     go run hello_world.go
 
+## Build
+
+Instead of just running let's try to build our code by compiling it to binary.
+
+Instead of "go run" type the following command
+
+    go build hello_world.go
+
+If you are running on a unix based system including mac OSx, you can run the binary by typing
+
+    ./hello_world
+
+## Output
+
 If there are no errors, you should get the output as:
 
-???+ success "Output"
-
-        Hello, World!
+    Hello, World!
 
 If for some reason your code isn't working, checkout the golang playground or github links in the following section.
 
-Click on the below link for {==Github Repo==}
+## Github
 
 [Github Repo](https://github.com/octallium/golang-handbook/tree/master/code)
 
