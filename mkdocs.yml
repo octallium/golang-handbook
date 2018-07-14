@@ -82,3 +82,4 @@ pages:
     - '09 Function': 'basic/functions.md'
     - '10 Packages': 'basic/packages.md'
     - '11 Array': 'basic/array.md'
+    - '12 Slice': 'basic/slice.md'
