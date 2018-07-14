@@ -1,0 +1,1148 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A guide to understanding the "Go" programming language.">
+      
+      
+        <link rel="canonical" href="https://octallium.github.io/golang-handbook/basic/slice/">
+      
+      
+        <meta name="author" content="Anil Kulkarni">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/gopher-front.png">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
+    
+    
+      
+        <title>12 Slice - The 'Go' Programming Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#understanding-data-structure-of-type-czjqqkd0-sliceczjqqkd1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/golang-logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                The 'Go' Programming Handbook
+              </span>
+              <span class="md-header-nav__topic">
+                12 Slice
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/octallium/golang-handbook/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      octallium/golang-handbook
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Introduction" class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../getting-started/why-go/" title="Getting Started" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../basic/" title="Basic" class="md-tabs__link md-tabs__link--active">
+          Basic
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../images/golang-logo.svg" width="48" height="48">
+      
+    </span>
+    The 'Go' Programming Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/octallium/golang-handbook/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      octallium/golang-handbook
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/why-go/" title="Why Go" class="md-nav__link">
+      Why Go
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/editor_ide/" title="Editors and IDE" class="md-nav__link">
+      Editors and IDE
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Basic
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Basic
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic/" title="Basic Introduction" class="md-nav__link">
+      Basic Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hello-world/" title="01 Hello World" class="md-nav__link">
+      01 Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hello-world-understand/" title="02 Understanding Hello World" class="md-nav__link">
+      02 Understanding Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../add-comment/" title="03 Adding a Comment" class="md-nav__link">
+      03 Adding a Comment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-data-types/" title="04 Understanding Data Types" class="md-nav__link">
+      04 Understanding Data Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../variables-constants/" title="05 Variables & Constants" class="md-nav__link">
+      05 Variables & Constants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../shorthand-declaration/" title="06 Shorthand Declaration" class="md-nav__link">
+      06 Shorthand Declaration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../if-else/" title="07 Condition - if/else" class="md-nav__link">
+      07 Condition - if/else
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../for_loops/" title="08 For Loops" class="md-nav__link">
+      08 For Loops
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../functions/" title="09 Function" class="md-nav__link">
+      09 Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../packages/" title="10 Packages" class="md-nav__link">
+      10 Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../array/" title="11 Array" class="md-nav__link">
+      11 Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        12 Slice
+      </label>
+    
+    <a href="./" title="12 Slice" class="md-nav__link md-nav__link--active">
+      12 Slice
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" title="Objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" title="Structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaration" title="Declaration" class="md-nav__link">
+    Declaration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" title="Code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-code" title="Full Code" class="md-nav__link">
+    Full Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-your-code" title="Running your code" class="md-nav__link">
+    Running your code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" title="Github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
+    Golang Playground
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" title="Objective" class="md-nav__link">
+    Objective
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" title="Structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaration" title="Declaration" class="md-nav__link">
+    Declaration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" title="Code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-code" title="Full Code" class="md-nav__link">
+    Full Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-your-code" title="Running your code" class="md-nav__link">
+    Running your code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" title="Github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
+    Golang Playground
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/octallium/golang-handbook/edit/master/docs/basic/slice.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="understanding-data-structure-of-type-czjqqkd0-sliceczjqqkd1">Understanding Data Structure of Type <ins class="critic"> Slice</ins>.<a class="headerlink" href="#understanding-data-structure-of-type-czjqqkd0-sliceczjqqkd1" title="Permanent link">&para;</a></h1>
+<hr>
+
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
+<p>Understanding <ins class="critic"> Slice's</ins> in Go.</p>
+<p><img alt="Array" src="../../images/golang-slice-octallium.png" /></p>
+<p>Slice are dynamic versions of array, slices can grow &amp; shrink in length as required. Underlying the slice is an array and a pointer to it, exactly how the Go compiler stores the slice is a little complex, we will cover it in the "Intermediate" section of the tutorial.</p>
+<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
+<p>Navigate to our code folder</p>
+<div class="codehilite"><pre><span></span>code/basic/
+</pre></div>
+
+
+<p>For our program create a new folder '11_array'</p>
+<div class="codehilite"><pre><span></span>code/basic/12_slice/
+</pre></div>
+
+
+<p>And lets create a file 'array.go' in it, finally the structure would look like this:</p>
+<div class="codehilite"><pre><span></span>code/basic/12_slice/slice.go
+</pre></div>
+
+
+<h2 id="declaration">Declaration<a class="headerlink" href="#declaration" title="Permanent link">&para;</a></h2>
+<p>Syntax</p>
+<p>Declaration &amp; initialization method</p>
+<div class="codehilite"><pre><span></span>sliceName := []type{value1, value2, ...}
+</pre></div>
+
+
+<p>With built-in function make()</p>
+<div class="codehilite"><pre><span></span>slice := make([]type, length, capacity)
+</pre></div>
+
+
+<p>Make initializes the underlying array with zero value and returns a slice that refers to that array. Make is used extensively to initialize slices.</p>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
+<p>We will write the code in 4 parts:</p>
+<p>1.)</p>
+<details class="example" open="open"><summary>part-1 slice.go</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
+<span class="mi">2</span>
+<span class="mi">3</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+<span class="mi">4</span>
+<span class="mi">5</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="mi">6</span>    <span class="c1">// declaring a nil slice</span>
+<span class="mi">7</span>    <span class="kd">var</span> <span class="nx">slice1</span> <span class="p">[]</span><span class="kt">int</span>
+<span class="mi">8</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice1:&quot;</span><span class="p">,</span> <span class="nx">slice1</span><span class="p">)</span>
+<span class="mi">9</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice1</span><span class="p">))</span>
+<span class="mi">10</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice1 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice1</span><span class="p">))</span>
+<span class="mi">11</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">12</span>    <span class="c1">// declaring a slice with initialization</span>
+<span class="mi">13</span>    <span class="nx">slice2</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="mi">14</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice2:&quot;</span><span class="p">,</span> <span class="nx">slice2</span><span class="p">)</span>
+<span class="mi">15</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice2 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice2</span><span class="p">))</span>
+<span class="mi">16</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice2 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice2</span><span class="p">))</span>
+<span class="mi">17</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">18</span>
+<span class="mi">19</span>    <span class="c1">// declaring a slice of length 5 with make</span>
+<span class="mi">20</span>    <span class="nx">slice3</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">string</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="mi">21</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice3:&quot;</span><span class="p">,</span> <span class="nx">slice3</span><span class="p">)</span>
+<span class="mi">22</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice3 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice3</span><span class="p">))</span>
+<span class="mi">23</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice3 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice3</span><span class="p">))</span>
+<span class="mi">24</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">25</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>On line 7, 13 &amp; 20 we declare slice using different syntax</p>
+<div class="codehilite"><pre><span></span>var slice1 []int
+</pre></div>
+
+
+<p>This declares a nil slice, the length &amp; capacity are zero. As you will see in forth coming examples, slices can have variable length and capacity.</p>
+<p>Slices can dynamically resize till it reaches its capacity, we will shortly see how this is done.</p>
+<div class="codehilite"><pre><span></span>slice2 := []int{1, 2, 3, 4, 5}
+</pre></div>
+
+
+<p>Above line declares a slice and initializes its value, in this case length &amp; capacity are equal.</p>
+<div class="codehilite"><pre><span></span>slice3 := make([]string, 5)
+</pre></div>
+
+
+<p>This initializes a zero value slice with the length &amp; capacity of 5. Note the difference in length &amp; capacity of slice3 as compared to slice1.</p>
+<p>2.)</p>
+<details class="example" open="open"><summary>part-2 slice.go</summary><div class="codehilite"><pre><span></span><span class="mi">26</span> <span class="c1">// declaring a slice of length 5 and capacity 10 with make</span>
+<span class="mi">27</span> <span class="nx">slice4</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="mi">28</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice4:&quot;</span><span class="p">,</span> <span class="nx">slice4</span><span class="p">)</span>
+<span class="mi">29</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+<span class="mi">30</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+<span class="mi">31</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">32</span>
+<span class="mi">33</span> <span class="c1">// inserting values, note i &lt; 6 will give an error as we have</span>
+<span class="mi">34</span> <span class="c1">// set the length to 5</span>
+<span class="mi">35</span> <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+<span class="mi">36</span>  <span class="nx">slice4</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span>
+<span class="mi">37</span> <span class="p">}</span>
+<span class="mi">38</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice4:&quot;</span><span class="p">,</span> <span class="nx">slice4</span><span class="p">)</span>
+<span class="mi">39</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">40</span>
+<span class="mi">41</span> <span class="c1">// increasing the length of slice</span>
+<span class="mi">42</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Increasing the length of slice...&quot;</span><span class="p">)</span>
+<span class="mi">43</span>
+<span class="mi">44</span> <span class="c1">// slice4 = slice4[:11] will give an error as capacity is 10</span>
+<span class="mi">45</span> <span class="nx">slice4</span> <span class="p">=</span> <span class="nx">slice4</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+<span class="mi">46</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+<span class="mi">47</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+<span class="mi">48</span> <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+<span class="mi">49</span>  <span class="nx">slice4</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span>
+<span class="mi">50</span> <span class="p">}</span>
+<span class="mi">51</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">52</span>
+<span class="mi">53</span> <span class="c1">// printing slice4</span>
+<span class="mi">54</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice4:&quot;</span><span class="p">,</span> <span class="nx">slice4</span><span class="p">)</span>
+<span class="mi">55</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">56</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>On line 27 we declare a new slice with length = 5 and capacity = 10.</p>
+<div class="codehilite"><pre><span></span>slice4 := make([]int, 5, 10)
+</pre></div>
+
+
+<p>Then on line 35 we insert values into the slice, note we insert values only till index = 4 or length = 5 (remember our index starts from 0 and not 1!)</p>
+<p>If we exceed length of 5, it will throw an error as we have declared our length as 5.</p>
+<p>On line 45 we dynamically increase the length to 10.</p>
+<div class="codehilite"><pre><span></span>slice4 = slice4[:10]
+</pre></div>
+
+
+<p>Now we can insert values upto length = 10 or index = 9. On line 54 we print out our new slice.</p>
+<div class="codehilite"><pre><span></span>fmt.Println(&quot;slice4:&quot;, slice4)
+</pre></div>
+
+
+<p>3.)</p>
+<details class="example" open="open"><summary>part-3 slice.go</summary><div class="codehilite"><pre><span></span><span class="mi">57</span> <span class="c1">// creating a new slice</span>
+<span class="mi">58</span> <span class="nx">slice5</span> <span class="o">:=</span> <span class="nx">slice4</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
+<span class="mi">59</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice5:&quot;</span><span class="p">,</span> <span class="nx">slice5</span><span class="p">)</span>
+<span class="mi">60</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">61</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>We can create new slice from an existing one, on line 58 we create a new slice5 which has values from slice4 but only from index 2 to 8.</p>
+<div class="codehilite"><pre><span></span>slice5 := slice4[2:8]
+</pre></div>
+
+
+<p>Then we print out the slice on line 59.</p>
+<div class="codehilite"><pre><span></span>fmt.Println(&quot;slice5:&quot;, slice5)
+</pre></div>
+
+
+<p>4.)</p>
+<details class="example" open="open"><summary>part-4 slice.go</summary><div class="codehilite"><pre><span></span><span class="mi">62</span> <span class="c1">// two-D slice</span>
+<span class="mi">63</span> <span class="nx">twoD</span> <span class="o">:=</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">{{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">},</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">},</span> <span class="p">{</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">}}</span>
+<span class="mi">64</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Print out values of twoD slice...&quot;</span><span class="p">)</span>
+<span class="mi">65</span> <span class="k">for</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">subSlice</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">twoD</span> <span class="p">{</span>
+<span class="mi">66</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;At index: %d of twoD, Value: %v\n&quot;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">subSlice</span><span class="p">)</span>
+<span class="mi">67</span>  <span class="k">for</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">subSlice</span> <span class="p">{</span>
+<span class="mi">68</span>      <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Index: %d Value: %d\n&quot;</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+<span class="mi">69</span>  <span class="p">}</span>
+<span class="mi">70</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="mi">71</span> <span class="p">}</span>
+<span class="mi">72</span> <span class="p">}</span>
+</pre></div>
+</details><p><em>Review</em></p>
+<p>Slice can have slices inside it, above we create a two-D slice, i.e a slice inside a slice, you can create multiple dimension slices, e.g three-D or four-D or even larger. </p>
+<p>On line 63 we declare a two-D slice of type int</p>
+<div class="codehilite"><pre><span></span><span class="x">twoD := [][]int</span><span class="cp">{{</span><span class="m">3</span><span class="o">,</span> <span class="m">4</span><span class="o">},</span> <span class="o">{</span><span class="m">1</span><span class="o">,</span> <span class="m">5</span><span class="o">},</span> <span class="o">{</span><span class="m">9</span><span class="o">,</span> <span class="m">2</span><span class="o">},</span> <span class="o">{</span><span class="m">7</span><span class="o">,</span> <span class="m">8</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
+
+
+<p>Note the syntax, it contains a slice within a slice, all separated by curly brackets and comma.
+On line 65 we start a for-range loop to print all the values inside two-D</p>
+<div class="codehilite"><pre><span></span>for i, slice := range twoD
+</pre></div>
+
+
+<p>This takes the first slice inside twoD and assigns it to the variable "subSlice", then we again loop over subSlice to print all the values.</p>
+<div class="codehilite"><pre><span></span>for index, value := range subSlice
+</pre></div>
+
+
+<p>Creating multi-dimension slices also increases the complexity, Go offers multiply other data types to tackle this as we will study then in forth coming chapters.</p>
+<h2 id="full-code">Full Code<a class="headerlink" href="#full-code" title="Permanent link">&para;</a></h2>
+<details class="example"><summary>slice.go</summary><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// declaring a nil slice</span>
+    <span class="kd">var</span> <span class="nx">slice1</span> <span class="p">[]</span><span class="kt">int</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice1:&quot;</span><span class="p">,</span> <span class="nx">slice1</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice1</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice1 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice1</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="c1">// declaring a slice with initialization</span>
+    <span class="nx">slice2</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice2:&quot;</span><span class="p">,</span> <span class="nx">slice2</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice2 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice2</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice2 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice2</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// declaring a slice of length 5 with make</span>
+    <span class="nx">slice3</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">string</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice3:&quot;</span><span class="p">,</span> <span class="nx">slice3</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice3 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice3</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice3 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice3</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// declaring a slice of length 5 and capacity 10 with make</span>
+    <span class="nx">slice4</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice4:&quot;</span><span class="p">,</span> <span class="nx">slice4</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// inserting values, note i &lt; 6 will give an error as we have</span>
+    <span class="c1">// set the length to 5</span>
+    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="nx">slice4</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice4:&quot;</span><span class="p">,</span> <span class="nx">slice4</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// increasing the length of slice</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Increasing the length of slice...&quot;</span><span class="p">)</span>
+
+    <span class="c1">// slice4 = slice4[:11] will give an error as capacity is 10</span>
+    <span class="nx">slice4</span> <span class="p">=</span> <span class="nx">slice4</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The capacity of slice4 is:&quot;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice4</span><span class="p">))</span>
+    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="nx">slice4</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// printing slice4</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice4:&quot;</span><span class="p">,</span> <span class="nx">slice4</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// creating a new slice</span>
+    <span class="nx">slice5</span> <span class="o">:=</span> <span class="nx">slice4</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;slice5:&quot;</span><span class="p">,</span> <span class="nx">slice5</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+    <span class="c1">// two-D slice</span>
+    <span class="nx">twoD</span> <span class="o">:=</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">{{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">},</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">},</span> <span class="p">{</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">}}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Print out values of twoD slice...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">slice</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">twoD</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;At index: %d of twoD, Value: %v\n&quot;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">slice</span><span class="p">)</span>
+        <span class="k">for</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">slice</span> <span class="p">{</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Index: %d Value: %d\n&quot;</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</details><h2 id="running-your-code">Running your code<a class="headerlink" href="#running-your-code" title="Permanent link">&para;</a></h2>
+<p>Open your terminal and navigate to our folder</p>
+<div class="codehilite"><pre><span></span>code/basic/12_slice/
+</pre></div>
+
+
+<p>Once in the folder type the following command</p>
+<div class="codehilite"><pre><span></span>go run slice.go
+</pre></div>
+
+
+<p>If there are no errors, you should get the output as:</p>
+<details class="success" open="open"><summary>Output</summary><div class="codehilite"><pre><span></span>slice1: []
+The length of slice1 is: 0
+The capacity of slice1 is: 0
+
+slice2: [1 2 3 4 5]
+The length of slice2 is: 5
+The capacity of slice2 is: 5
+
+slice3: [    ]
+The length of slice3 is: 5
+The capacity of slice3 is: 5
+
+slice4: [0 0 0 0 0]
+The length of slice4 is: 5
+The capacity of slice4 is: 10
+
+slice4: [0 1 2 3 4]
+
+Increasing the length of slice...
+The length of slice4 is: 10
+The capacity of slice4 is: 10
+
+slice4: [0 1 2 3 4 5 6 7 8 9]
+
+slice5: [2 3 4 5 6 7]
+
+Print out values of twoD slice...
+At index: 0 of twoD, Value: [3 4]
+Index: 0 Value: 3
+Index: 1 Value: 4
+
+At index: 1 of twoD, Value: [1 5]
+Index: 0 Value: 1
+Index: 1 Value: 5
+
+At index: 2 of twoD, Value: [9 2]
+Index: 0 Value: 9
+Index: 1 Value: 2
+
+At index: 3 of twoD, Value: [7 8]
+Index: 0 Value: 7
+Index: 1 Value: 8
+</pre></div>
+
+</details><p>If for some reason your code isn't working, checkout the github repo or playground.</p>
+<h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/octallium/golang-handbook/tree/master/code">Github Repo</a></p>
+<h2 id="golang-playground">Golang Playground<a class="headerlink" href="#golang-playground" title="Permanent link">&para;</a></h2>
+<p><a href="https://play.golang.org/p/lsBSrtntHzJ">Golang Playground</a></p>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>In the next chapter we will study <ins class="critic"> Maps</ins>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../array/" title="11 Array" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                11 Array
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 Anil Kulkarni
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://www.octallium.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/octallium" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/octallium" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/octallium" class="md-footer-social__link fa fa-facebook"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      
+      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-121309781-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
