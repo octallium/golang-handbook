@@ -16,11 +16,11 @@ Navigate to our code folder
 
     code/basic/
 
-For our program create a new folder '11_array'
+For our program create a new folder '12_slice'
 
     code/basic/12_slice/
 
-And lets create a file 'array.go' in it, finally the structure would look like this:
+And lets create a file 'slice.go' in it, finally the structure would look like this:
 
     code/basic/12_slice/slice.go
 
@@ -98,35 +98,35 @@ This initializes a zero value slice with the length & capacity of 5. Note the di
 
     ```go
     26 // declaring a slice of length 5 and capacity 10 with make
-	27 slice4 := make([]int, 5, 10)
-	28 fmt.Println("slice4:", slice4)
-	29 fmt.Println("The length of slice4 is:", len(slice4))
-	30 fmt.Println("The capacity of slice4 is:", cap(slice4))
-	31 fmt.Println()
+    27 slice4 := make([]int, 5, 10)
+    28 fmt.Println("slice4:", slice4)
+    29 fmt.Println("The length of slice4 is:", len(slice4))
+    30 fmt.Println("The capacity of slice4 is:", cap(slice4))
+    31 fmt.Println()
     32
-	33 // inserting values, note i < 6 will give an error as we have
-	34 // set the length to 5
-	35 for i := 0; i < 5; i++ {
-	36	slice4[i] = i
-	37 }
-	38 fmt.Println("slice4:", slice4)
-	39 fmt.Println()
+    33 // inserting values, note i < 6 will give an error as we have
+    34 // set the length to 5
+    35 for i := 0; i < 5; i++ {
+    36	slice4[i] = i
+    37 }
+    38 fmt.Println("slice4:", slice4)
+    39 fmt.Println()
     40
-	41 // increasing the length of slice
-	42 fmt.Println("Increasing the length of slice...")
+    41 // increasing the length of slice
+    42 fmt.Println("Increasing the length of slice...")
     43
-	44 // slice4 = slice4[:11] will give an error as capacity is 10
-	45 slice4 = slice4[:10]
-	46 fmt.Println("The length of slice4 is:", len(slice4))
-	47 fmt.Println("The capacity of slice4 is:", cap(slice4))
-	48 for i := 5; i < 10; i++ {
-	49	slice4[i] = i
-	50 }
-	51 fmt.Println()
+    44 // slice4 = slice4[:11] will give an error as capacity is 10
+    45 slice4 = slice4[:10]
+    46 fmt.Println("The length of slice4 is:", len(slice4))
+    47 fmt.Println("The capacity of slice4 is:", cap(slice4))
+    48 for i := 5; i < 10; i++ {
+    49	slice4[i] = i
+    50 }
+    51 fmt.Println()
     52
-	53 // printing slice4
-	54 fmt.Println("slice4:", slice4)
-	55 fmt.Println()
+    53 // printing slice4
+    54 fmt.Println("slice4:", slice4)
+    55 fmt.Println()
     56
     ```
 
@@ -154,8 +154,8 @@ Now we can insert values upto length = 10 or index = 9. On line 54 we print out 
 
     ```go
     57 // creating a new slice
-	58 slice5 := slice4[2:8]
-	59 fmt.Println("slice5:", slice5)
+    58 slice5 := slice4[2:8]
+    59 fmt.Println("slice5:", slice5)
     60 fmt.Println()
     61
     ```
@@ -176,21 +176,21 @@ Then we print out the slice on line 59.
 
     ```go
     62 // two-D slice
-	63 twoD := [][]int{{3, 4}, {1, 5}, {9, 2}, {7, 8}}
-	64 fmt.Println("Print out values of twoD slice...")
-	65 for i, subSlice := range twoD {
-	66	fmt.Printf("At index: %d of twoD, Value: %v\n", i, subSlice)
-	67	for index, value := range subSlice {
-	68		fmt.Printf("Index: %d Value: %d\n", index, value)
-	69	}
-	70	fmt.Println()
-	71 }
+    63 twoD := [][]int{{3, 4}, {1, 5}, {9, 2}, {7, 8}}
+    64 fmt.Println("Print out values of twoD slice...")
+    65 for i, subSlice := range twoD {
+    66	fmt.Printf("At index: %d of twoD, Value: %v\n", i, subSlice)
+    67	for index, value := range subSlice {
+    68		fmt.Printf("Index: %d Value: %d\n", index, value)
+    69	}
+    70	fmt.Println()
+    71 }
     72 }
     ```
 
 _Review_
 
-Slice can have slices inside it, above we create a two-D slice, i.e a slice inside a slice, you can create multiple dimension slices, e.g three-D or four-D or even larger. 
+Slice can have slices inside it, above we create a two-D slice, i.e a slice inside a slice, you can create multiple dimension slices, e.g three-D or four-D or even larger.
 
 On line 63 we declare a two-D slice of type int
 
@@ -352,7 +352,6 @@ If for some reason your code isn't working, checkout the github repo or playgrou
 ## Golang Playground
 
 [Golang Playground](https://play.golang.org/p/lsBSrtntHzJ)
-
 
 ## Next
 

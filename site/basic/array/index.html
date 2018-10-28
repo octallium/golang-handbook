@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/gopher-front.png">
-      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -60,8 +60,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -257,11 +257,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-nav__button md-logo">
       
         <img src="../../images/golang-logo.svg" width="48" height="48">
       
-    </span>
+    </a>
     The 'Go' Programming Handbook
   </label>
   
@@ -639,6 +639,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../map/" title="13 Map" class="md-nav__link">
+      13 Map
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -821,7 +833,9 @@
 <span class="mi">27</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 <span class="mi">28</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 7 we declare an array of type int with a length of 5 and print out the empty array.</p>
 <div class="codehilite"><pre><span></span>var array1 [5]int
 </pre></div>
@@ -844,7 +858,7 @@
 
 
 <p>What this does is, it iterates over each element one by one and prints out the value &amp; index, we don't have to declare variables and iterate, remember we used to write:</p>
-<div class="codehilite"><pre><span></span><span class="nt">for</span> <span class="nt">i</span><span class="o">:=</span> <span class="nt">0</span><span class="o">;</span> <span class="nt">i</span> <span class="o">&lt;</span> <span class="nt">n</span><span class="o">;</span> <span class="nt">i</span><span class="o">++</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><span class="nt">for</span> <span class="nt">i</span><span class="o">:=</span> <span class="nt">0</span><span class="o">;</span> <span class="nt">i</span> <span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span> <span class="nt">n</span><span class="o">;</span> <span class="nt">i</span><span class="o">++</span> <span class="p">{</span>
     <span class="err">do</span> <span class="err">something</span>
 <span class="p">}</span>
 </pre></div>
@@ -878,7 +892,9 @@
 <span class="mi">45</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value at cities[0] is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="mi">46</span> <span class="p">}</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 30 we declare and initialze the array at the same time</p>
 <div class="codehilite"><pre><span></span>cities := [5]string{&quot;New York&quot;, &quot;Seattle&quot;, &quot;Mumbai&quot;, &quot;Sydney&quot;, &quot;Montreal&quot;}
 </pre></div>
@@ -945,7 +961,9 @@ fmt.Println(&quot;The last city can also be found by:&quot;, cities[len(cities)-
     <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value at cities[0] is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="p">}</span>
 </pre></div>
-</details><h2 id="running-your-code">Running your code<a class="headerlink" href="#running-your-code" title="Permanent link">&para;</a></h2>
+
+</details>
+<h2 id="running-your-code">Running your code<a class="headerlink" href="#running-your-code" title="Permanent link">&para;</a></h2>
 <p>Open your terminal and navigate to our folder</p>
 <div class="codehilite"><pre><span></span>code/basic/11_array/
 </pre></div>
@@ -982,7 +1000,9 @@ Changing the value at cities[0] to Paris...
 The value at cities[0] is: Paris
 </pre></div>
 
-</details><p>If for some reason your code isn't working, checkout the github repo.</p>
+
+</details>
+<p>If for some reason your code isn't working, checkout the github repo.</p>
 <h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/octallium/golang-handbook/tree/master/code">Github Repo</a></p>
 <h2 id="golang-playground">Golang Playground<a class="headerlink" href="#golang-playground" title="Permanent link">&para;</a></h2>
@@ -1079,9 +1099,9 @@ The value at cities[0] is: Paris
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     

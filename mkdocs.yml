@@ -1,38 +1,38 @@
 # Project information
 site_name: The 'Go' Programming Handbook
 site_description: 'A guide to understanding the "Go" programming language.'
-site_author: 'Anil Kulkarni'
-site_url: 'https://octallium.github.io/golang-handbook/'
+site_author: "Anil Kulkarni"
+site_url: "https://octallium.github.io/golang-handbook/"
 
 # Repository
-repo_name: 'octallium/golang-handbook'
-repo_url: 'https://github.com/octallium/golang-handbook'
+repo_name: "octallium/golang-handbook"
+repo_url: "https://github.com/octallium/golang-handbook"
 
 # Copyright
-copyright: 'Copyright &copy; 2017 - 2018 Anil Kulkarni'
+copyright: "Copyright &copy; 2017 - 2018 Anil Kulkarni"
 
 # Configuration
 theme:
-  name: 'material'
-  favicon: 'images/gopher-front.png'
-  logo: 'images/golang-logo.svg'
+  name: "material"
+  favicon: "images/gopher-front.png"
+  logo: "images/golang-logo.svg"
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: "indigo"
+    accent: "indigo"
   feature:
     tabs: true
 
 # Customization
 extra:
   social:
-    - type: 'globe'
-      link: 'https://www.octallium.com'
-    - type: 'github'
-      link: 'https://github.com/octallium'
-    - type: 'twitter'
-      link: 'https://twitter.com/octallium'
-    - type: 'facebook'
-      link: 'https://www.facebook.com/octallium'
+    - type: "globe"
+      link: "https://www.octallium.com"
+    - type: "github"
+      link: "https://github.com/octallium"
+    - type: "twitter"
+      link: "https://twitter.com/octallium"
+    - type: "facebook"
+      link: "https://www.facebook.com/octallium"
 
 # Extensions
 markdown_extensions:
@@ -59,27 +59,28 @@ markdown_extensions:
 
 # Google Analytics
 google_analytics:
-  - 'UA-121309781-1'
-  - 'auto'
+  - "UA-121309781-1"
+  - "auto"
 
 # Pages
-pages:
+nav:
   - Introduction: index.md
   - Getting Started:
-    - 'Why Go': 'getting-started/why-go.md'
-    - 'Installation': 'getting-started/installation.md'
-    - 'Editors and IDE': 'getting-started/editor_ide.md'
+      - "Why Go": "getting-started/why-go.md"
+      - "Installation": "getting-started/installation.md"
+      - "Editors and IDE": "getting-started/editor_ide.md"
   - Basic:
-    - 'Basic Introduction': 'basic/basic.md'
-    - '01 Hello World': 'basic/hello-world.md'
-    - '02 Understanding Hello World': 'basic/hello-world-understand.md'
-    - '03 Adding a Comment': 'basic/add-comment.md'
-    - '04 Understanding Data Types': 'basic/basic-data-types.md'
-    - '05 Variables & Constants': 'basic/variables-constants.md'
-    - '06 Shorthand Declaration': 'basic/shorthand-declaration.md'
-    - '07 Condition - if/else': 'basic/if-else.md'
-    - '08 For Loops': 'basic/for_loops.md'
-    - '09 Function': 'basic/functions.md'
-    - '10 Packages': 'basic/packages.md'
-    - '11 Array': 'basic/array.md'
-    - '12 Slice': 'basic/slice.md'
+      - "Basic Introduction": "basic/basic.md"
+      - "01 Hello World": "basic/hello-world.md"
+      - "02 Understanding Hello World": "basic/hello-world-understand.md"
+      - "03 Adding a Comment": "basic/add-comment.md"
+      - "04 Understanding Data Types": "basic/basic-data-types.md"
+      - "05 Variables & Constants": "basic/variables-constants.md"
+      - "06 Shorthand Declaration": "basic/shorthand-declaration.md"
+      - "07 Condition - if/else": "basic/if-else.md"
+      - "08 For Loops": "basic/for_loops.md"
+      - "09 Function": "basic/functions.md"
+      - "10 Packages": "basic/packages.md"
+      - "11 Array": "basic/array.md"
+      - "12 Slice": "basic/slice.md"
+      - "13 Map": "basic/map.md"

@@ -1,6 +1,7 @@
 # The 'Go' Programming Handbook
- 
+
 _A Guide To Understanding The 'Go' Programming Language._
+
 <hr>
 
 ![Go Handbook](https://3.bp.blogspot.com/-i-OOWA4rZdY/Wfi1Qp3OzKI/AAAAAAAA_CM/55hxG13GmYwJcWKNDMm6JLPpMwsYbHBvwCLcBGAs/s1600/golang-logo.png)
@@ -22,11 +23,10 @@ As a beginner I really struggled to find the right sources for learning 'Go' and
 Check out the website for 'Go' Handbook documentation.
 [Click Here](https://octallium.github.io/golang-handbook/).
 
-## Patreon
+## Please Donate ❤️
 
 All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
 
-Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
 
-[![Patreon](https://octallium.github.io/golang-handbook/images/patreon.png)](https://www.patreon.com/octallium)
-
+[![PayPal](https://www.techzim.co.zw/wp-content/uploads/2014/06/paypal-logo.png)](https://www.paypal.me/octallium)

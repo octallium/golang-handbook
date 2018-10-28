@@ -1,6 +1,7 @@
 # The 'Go' Programming Handbook
- 
+
 _A Guide To Understanding The {++ Go++} Programming Language._
+
 <hr>
 
 ![Golang](images/gophercon_1.png)
@@ -24,19 +25,15 @@ Hi, my name is {++ Anil Kulkarni++} and I am passionate about coding. I am a sel
 ## Code Sample
 
 All code samples will the in the form of following block:
-    ``` go
-    func main() {
-        fmt.Println("Hello, World!")
-    }
-    ```
+`go func main() { fmt.Println("Hello, World!") }`
 
-## Patreon
+## Please Donate ❤️
 
 All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
 
-Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
 
-[![Patreon](images/patreon.png)](https://www.patreon.com/octallium)
+[![PayPal](images/paypal-logo.png)](https://www.paypal.me/octallium)
 
 ## Work In Progress
 
@@ -46,11 +43,11 @@ As you can see, this is a work in progress, I intend to complete the basic & par
 
 A lots have to be done yet, here is a small lists to things to do in near future
 
-* [ ] Complete basic tutorial consisting of language syntax by end of Oct, 18.
-* [ ] Add partial intermediate material by end of Oct, 18.
-* [ ] Add at least basic tutorial videos by end of Oct, 2018.
-* [ ] Create pdf downloadable version.
-* [ ] Create artwork for chapters.
+- [ ] Complete basic tutorial consisting of language syntax by end of Oct, 18.
+- [ ] Add partial intermediate material by end of Oct, 18.
+- [ ] Add at least basic tutorial videos by end of Oct, 2018.
+- [ ] Create pdf downloadable version.
+- [ ] Create artwork for chapters.
 
 ## Get In Touch
 
@@ -58,13 +55,11 @@ To know more about me please visit [www.octallium.com](https://www.octallium.com
 
 The website is currently {== offline==} and under development, will update on this page when it is launched.
 
-I am reachable at 
+I am reachable at
 
 ???+ note "Twitter Handle"
 
     [@octallium](https://twitter.com/octallium)
-
-
 
 Thanks,
 
