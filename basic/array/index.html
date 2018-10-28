@@ -589,6 +589,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#github" title="Github" class="md-nav__link">
     Github
   </a>
@@ -726,6 +733,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#github" title="Github" class="md-nav__link">
     Github
   </a>
@@ -818,8 +832,37 @@
 <h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
 <p>We will write the code in 2 parts:</p>
 <p>1.)</p>
-<details class="example" open="open"><summary>Part-1 array.go</summary></details>
-<p><code class="codehilite"><span class="n">go</span> <span class="mi">1</span> <span class="n">package</span> <span class="n">main</span> <span class="mi">2</span> <span class="mi">3</span> <span class="kn">import</span> <span class="s2">&quot;fmt&quot;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="n">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span> <span class="mi">6</span> <span class="o">//</span> <span class="n">declaring</span> <span class="n">an</span> <span class="n">array</span> <span class="n">of</span> <span class="nb">type</span> <span class="nb">int</span> <span class="mi">7</span> <span class="n">var</span> <span class="n">array1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="nb">int</span> <span class="mi">8</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;The values of array1 are:&quot;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span> <span class="mi">9</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;The length of array1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span> <span class="mi">10</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">11</span> <span class="mi">12</span> <span class="o">//</span> <span class="n">adding</span> <span class="n">values</span> <span class="n">into</span> <span class="n">the</span> <span class="n">array</span> <span class="mi">13</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Adding values to array1&quot;</span><span class="p">)</span> <span class="mi">14</span> <span class="n">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">29</span> <span class="mi">15</span> <span class="n">array1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">17</span> <span class="mi">16</span> <span class="n">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">42</span> <span class="mi">17</span> <span class="n">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">13</span> <span class="mi">18</span> <span class="n">array1</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">56</span> <span class="mi">19</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Now the values of array1 are:&quot;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span> <span class="mi">20</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">21</span> <span class="mi">22</span> <span class="o">//</span> <span class="n">Reading</span> <span class="nb">all</span> <span class="n">values</span> <span class="kn">from</span> <span class="nn">array1</span> <span class="nn">using</span> <span class="nn">for</span><span class="o">-</span><span class="nb">range</span> <span class="n">loop</span> <span class="mi">23</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Reading all the values from array1 using for-range loop...&quot;</span><span class="p">)</span> <span class="mi">24</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="p">:</span><span class="o">=</span> <span class="nb">range</span> <span class="n">array1</span> <span class="p">{</span> <span class="mi">25</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s2">&quot;Index: </span><span class="si">%d</span><span class="s2"> Value: </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="mi">26</span> <span class="p">}</span> <span class="mi">27</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">28</span></code></p>
+<details class="example" open="open"><summary>Part-1 array.go</summary><div class="codehilite"><pre><span></span>    <span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
+    <span class="mi">2</span>
+    <span class="mi">3</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+    <span class="mi">4</span>
+    <span class="mi">5</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="mi">6</span> <span class="c1">// declaring an array of type int</span>
+    <span class="mi">7</span> <span class="kd">var</span> <span class="nx">array1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
+    <span class="mi">8</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
+    <span class="mi">9</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of array1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">array1</span><span class="p">))</span>
+    <span class="mi">10</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="mi">11</span>
+    <span class="mi">12</span> <span class="c1">// adding values into the array</span>
+    <span class="mi">13</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Adding values to array1&quot;</span><span class="p">)</span>
+    <span class="mi">14</span> <span class="nx">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="mi">29</span>
+    <span class="mi">15</span> <span class="nx">array1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="mi">17</span>
+    <span class="mi">16</span> <span class="nx">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="mi">42</span>
+    <span class="mi">17</span> <span class="nx">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">=</span> <span class="mi">13</span>
+    <span class="mi">18</span> <span class="nx">array1</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">=</span> <span class="mi">56</span>
+    <span class="mi">19</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now the values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
+    <span class="mi">20</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="mi">21</span>
+    <span class="mi">22</span> <span class="c1">// Reading all values from array1 using for-range loop</span>
+    <span class="mi">23</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading all the values from array1 using for-range loop...&quot;</span><span class="p">)</span>
+    <span class="mi">24</span> <span class="k">for</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">array1</span> <span class="p">{</span>
+    <span class="mi">25</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Index: %d Value: %d\n&quot;</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+    <span class="mi">26</span> <span class="p">}</span>
+    <span class="mi">27</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="mi">28</span>
+</pre></div>
+
+</details>
 <p><em>Review</em></p>
 <p>On line 7 we declare an array of type int with a length of 5 and print out the empty array.</p>
 <div class="codehilite"><pre><span></span>var array1 [5]int
@@ -855,24 +898,24 @@ do something
 
 <p>The underscore "_" simply tells the Go compiler to ignore the value.</p>
 <p>2.)</p>
-<details class="example" open="open"><summary>Part-2 array.go</summary><div class="codehilite"><pre><span></span><span class="mi">29</span>    <span class="c1">// declaring an array of type string with shorthand method</span>
-<span class="mi">30</span>    <span class="nx">cities</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;New York&quot;</span><span class="p">,</span> <span class="s">&quot;Seattle&quot;</span><span class="p">,</span> <span class="s">&quot;Mumbai&quot;</span><span class="p">,</span> <span class="s">&quot;Sydney&quot;</span><span class="p">,</span> <span class="s">&quot;Montreal&quot;</span><span class="p">}</span>
-<span class="mi">31</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of cities array are:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">)</span>
-<span class="mi">32</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">33</span>
-<span class="mi">34</span>    <span class="c1">// Reading specific values</span>
-<span class="mi">35</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading values from cities array using index position...&quot;</span><span class="p">)</span>
-<span class="mi">36</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The first city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="mi">37</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The 3rd city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-<span class="mi">38</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-<span class="mi">39</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city can also be found by:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="nx">cities</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="mi">40</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">41</span>
-<span class="mi">42</span>    <span class="c1">// changing values</span>
-<span class="mi">43</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Changing the value at cities[0] to Paris...&quot;</span><span class="p">)</span>
-<span class="mi">44</span>    <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;Paris&quot;</span>
-<span class="mi">45</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value at cities[0] is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="mi">46</span> <span class="p">}</span>
+<details class="example" open="open"><summary>Part-2 array.go</summary><div class="codehilite"><pre><span></span>    <span class="mi">29</span>    <span class="c1">// declaring an array of type string with shorthand method</span>
+    <span class="mi">30</span>    <span class="nx">cities</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;New York&quot;</span><span class="p">,</span> <span class="s">&quot;Seattle&quot;</span><span class="p">,</span> <span class="s">&quot;Mumbai&quot;</span><span class="p">,</span> <span class="s">&quot;Sydney&quot;</span><span class="p">,</span> <span class="s">&quot;Montreal&quot;</span><span class="p">}</span>
+    <span class="mi">31</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of cities array are:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">)</span>
+    <span class="mi">32</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="mi">33</span>
+    <span class="mi">34</span>    <span class="c1">// Reading specific values</span>
+    <span class="mi">35</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading values from cities array using index position...&quot;</span><span class="p">)</span>
+    <span class="mi">36</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The first city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="mi">37</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The 3rd city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="mi">38</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+    <span class="mi">39</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city can also be found by:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="nx">cities</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="mi">40</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="mi">41</span>
+    <span class="mi">42</span>    <span class="c1">// changing values</span>
+    <span class="mi">43</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Changing the value at cities[0] to Paris...&quot;</span><span class="p">)</span>
+    <span class="mi">44</span>    <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;Paris&quot;</span>
+    <span class="mi">45</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value at cities[0] is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="mi">46</span> <span class="p">}</span>
 </pre></div>
 
 </details>
@@ -896,52 +939,52 @@ fmt.Println(&quot;The last city can also be found by:&quot;, cities[len(cities)-
 
 
 <h2 id="full-code">Full Code<a class="headerlink" href="#full-code" title="Permanent link">&para;</a></h2>
-<details class="example"><summary>array.go</summary><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+<details class="example"><summary>array.go</summary><div class="codehilite"><pre><span></span>    <span class="kn">package</span> <span class="nx">main</span>
 
-<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+    <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
 
-<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// declaring an array of type int</span>
-    <span class="kd">var</span> <span class="nx">array1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of array1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">array1</span><span class="p">))</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// declaring an array of type int</span>
+        <span class="kd">var</span> <span class="nx">array1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of array1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">array1</span><span class="p">))</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 
-    <span class="c1">// adding values into the array</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Adding values to array1&quot;</span><span class="p">)</span>
-    <span class="nx">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="mi">29</span>
-    <span class="nx">array1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="mi">17</span>
-    <span class="nx">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="mi">42</span>
-    <span class="nx">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">=</span> <span class="mi">13</span>
-    <span class="nx">array1</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">=</span> <span class="mi">56</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now the values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+        <span class="c1">// adding values into the array</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Adding values to array1&quot;</span><span class="p">)</span>
+        <span class="nx">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="mi">29</span>
+        <span class="nx">array1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="mi">17</span>
+        <span class="nx">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="mi">42</span>
+        <span class="nx">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">=</span> <span class="mi">13</span>
+        <span class="nx">array1</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">=</span> <span class="mi">56</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now the values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 
-    <span class="c1">// Reading all values from array1 using for-range loop</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading all the values from array1 using for-range loop...&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">array1</span> <span class="p">{</span>
-        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Index: %d Value: %d\n&quot;</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+        <span class="c1">// Reading all values from array1 using for-range loop</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading all the values from array1 using for-range loop...&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">array1</span> <span class="p">{</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Index: %d Value: %d\n&quot;</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+        <span class="c1">// declaring an array of type string with shorthand method</span>
+        <span class="nx">cities</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;New York&quot;</span><span class="p">,</span> <span class="s">&quot;Seattle&quot;</span><span class="p">,</span> <span class="s">&quot;Mumbai&quot;</span><span class="p">,</span> <span class="s">&quot;Sydney&quot;</span><span class="p">,</span> <span class="s">&quot;Montreal&quot;</span><span class="p">}</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of cities array are:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+        <span class="c1">// Reading specific values</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading values from cities array using index position...&quot;</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The first city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The 3rd city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city can also be found by:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="nx">cities</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+
+        <span class="c1">// changing values</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Changing the value at cities[0] to Paris...&quot;</span><span class="p">)</span>
+        <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;Paris&quot;</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value at cities[0] is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="p">}</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-
-    <span class="c1">// declaring an array of type string with shorthand method</span>
-    <span class="nx">cities</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;New York&quot;</span><span class="p">,</span> <span class="s">&quot;Seattle&quot;</span><span class="p">,</span> <span class="s">&quot;Mumbai&quot;</span><span class="p">,</span> <span class="s">&quot;Sydney&quot;</span><span class="p">,</span> <span class="s">&quot;Montreal&quot;</span><span class="p">}</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of cities array are:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-
-    <span class="c1">// Reading specific values</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading values from cities array using index position...&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The first city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The 3rd city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The last city can also be found by:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="nx">cities</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-
-    <span class="c1">// changing values</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Changing the value at cities[0] to Paris...&quot;</span><span class="p">)</span>
-    <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;Paris&quot;</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The value at cities[0] is:&quot;</span><span class="p">,</span> <span class="nx">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="p">}</span>
 </pre></div>
 
 </details>
@@ -956,6 +999,7 @@ fmt.Println(&quot;The last city can also be found by:&quot;, cities[len(cities)-
 </pre></div>
 
 
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <p>If there are no errors, you should get the output as:</p>
 <details class="success" open="open"><summary>Output</summary><div class="codehilite"><pre><span></span>The values of array1 are: [0 0 0 0 0]
 The length of array1 is: 5
