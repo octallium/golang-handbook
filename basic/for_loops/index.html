@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/gopher-front.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -60,8 +60,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -257,11 +257,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-nav__button md-logo">
       
         <img src="../../images/golang-logo.svg" width="48" height="48">
       
-    </span>
+    </a>
     The 'Go' Programming Handbook
   </label>
   
@@ -639,6 +639,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../map/" title="13 Map" class="md-nav__link">
+      13 Map
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -799,9 +811,11 @@
 <span class="mi">12</span> <span class="p">}</span>
 <span class="mi">13</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>Line 9 declared a for loop along with condition</p>
-<div class="codehilite"><pre><span></span>for i := 0; i &lt; 11; i++ {
+<div class="codehilite"><pre><span></span>for i := 0; i &amp;lt; 11; i++ {
 </pre></div>
 
 
@@ -826,14 +840,16 @@ num1++
 <span class="mi">24</span> <span class="p">}</span>
 <span class="mi">25</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 17 we start a infinite loop, the for loop will keep on executing till it encounters a break condition or runs out of memory</p>
 <div class="codehilite"><pre><span></span>for {
 </pre></div>
 
 
 <p>On line 19 we check for a break condition</p>
-<div class="codehilite"><pre><span></span>if num2 &lt; 10
+<div class="codehilite"><pre><span></span>if num2 &amp;lt; 10
 </pre></div>
 
 
@@ -847,9 +863,11 @@ num1++
 <span class="mi">32</span> <span class="p">}</span>
 <span class="mi">33</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 29 we start a loop with operational statements, the loop will break when it fulfills the condition.</p>
-<div class="codehilite"><pre><span></span>for num3 &lt;= 30
+<div class="codehilite"><pre><span></span>for num3 &amp;lt;= 30
 </pre></div>
 
 
@@ -872,14 +890,16 @@ num1++
 <span class="mi">44</span> <span class="p">}</span>
 <span class="mi">45</span> <span class="p">}</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>We declare a boolean condition on line 35, and start the loop on line 38</p>
 <div class="codehilite"><pre><span></span>for cond
 </pre></div>
 
 
 <p>In order to break the loop we set the condition on line 39</p>
-<div class="codehilite"><pre><span></span>if num4 &gt;= 40 {
+<div class="codehilite"><pre><span></span>if num4 &amp;gt;= 40 {
     cond = false
 }
 </pre></div>
@@ -932,7 +952,9 @@ num1++
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-</details><h2 id="run-code">Run Code<a class="headerlink" href="#run-code" title="Permanent link">&para;</a></h2>
+
+</details>
+<h2 id="run-code">Run Code<a class="headerlink" href="#run-code" title="Permanent link">&para;</a></h2>
 <p>Open your terminal and navigate to our folder</p>
 <div class="codehilite"><pre><span></span>code/basic/08_for_loops
 </pre></div>
@@ -1096,9 +1118,9 @@ Num = 40
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     

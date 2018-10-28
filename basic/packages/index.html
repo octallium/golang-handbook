@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/gopher-front.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -60,8 +60,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -257,11 +257,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-nav__button md-logo">
       
         <img src="../../images/golang-logo.svg" width="48" height="48">
       
-    </span>
+    </a>
     The 'Go' Programming Handbook
   </label>
   
@@ -632,6 +632,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../map/" title="13 Map" class="md-nav__link">
+      13 Map
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -809,7 +821,9 @@
 <span class="mi">16</span> <span class="p">}</span>
 <span class="mi">17</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 1 we declare that this file belongs to the package "greeting", note that the package name and the parent directory name has to be the same.</p>
 <div class="codehilite"><pre><span></span>package greeting
 </pre></div>
@@ -837,7 +851,9 @@
 <span class="mi">30</span> <span class="p">}</span>
 <span class="mi">31</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 21 we declare a function "goodAfterNoon", but since the first alphabet is lowercase, the function is not exported, i.e it is not visible from other packages and can be accessed only within the file.</p>
 <div class="codehilite"><pre><span></span>func goodAfterNoon()
 </pre></div>
@@ -856,7 +872,9 @@
 <span class="mi">36</span> <span class="p">}</span>
 <span class="mi">37</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 33 we declare a function "GoodNight" which accepts a string and prints out a message. Note that the function doesn't return anything.</p>
 <div class="codehilite"><pre><span></span>func GoodNight(name string)
 </pre></div>
@@ -875,7 +893,9 @@
 <span class="mi">47</span> <span class="k">return</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">Factorial</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="mi">48</span> <span class="p">}</span>
 </pre></div>
-</details><p><em>Review</em></p>
+
+</details>
+<p><em>Review</em></p>
 <p>On line 43 we declare a function "Factorial" which accepts an int and also returns an int.</p>
 <div class="codehilite"><pre><span></span>func Factorial(n int) int
 </pre></div>
@@ -931,7 +951,9 @@
     <span class="k">return</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">Factorial</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></div>
-</details><p>B) Let's write the main.go</p>
+
+</details>
+<p>B) Let's write the main.go</p>
 <p>Navigate and open main.go from:</p>
 <div class="codehilite"><pre><span></span>code/basic/10_packages/main.go
 </pre></div>
@@ -970,7 +992,9 @@
 <span class="mi">31</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Factorial of %d is: %d.\n&quot;</span><span class="p">,</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span>
 <span class="mi">32</span> <span class="p">}</span>
 </pre></div>
-</details><p>On line 1 we declare that the file belongs to the package "main" </p>
+
+</details>
+<p>On line 1 we declare that the file belongs to the package "main" </p>
 <div class="codehilite"><pre><span></span>package main
 </pre></div>
 
@@ -1046,7 +1070,9 @@ Good Night,  Gopher!
 Factorial of 10 is: 3628800.
 </pre></div>
 
-</details><p>If for some reason your code isn't working, checkout the github repo.</p>
+
+</details>
+<p>If for some reason your code isn't working, checkout the github repo.</p>
 <h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/octallium/golang-handbook/tree/master/code">Github Repo</a></p>
 <p>That's it, <ins class="critic"> Congratulations</ins> ! You just wrote your first custom package in Go.</p>
@@ -1142,9 +1168,9 @@ Factorial of 10 is: 3628800.
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     

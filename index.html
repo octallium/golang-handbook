@@ -37,8 +37,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./images/gopher-front.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.2">
+      <link rel="shortcut icon" href="images/gopher-front.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="./assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -57,16 +57,16 @@
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="./assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
     
     
   </head>
@@ -115,7 +115,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-header-nav__button md-logo">
           
-            <img src="./images/golang-logo.svg" width="24" height="24">
+            <img src="images/golang-logo.svg" width="24" height="24">
           
         </a>
       </div>
@@ -255,11 +255,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-nav__button md-logo">
       
-        <img src="./images/golang-logo.svg" width="48" height="48">
+        <img src="images/golang-logo.svg" width="48" height="48">
       
-    </span>
+    </a>
     The 'Go' Programming Handbook
   </label>
   
@@ -355,8 +355,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#patreon" title="Patreon" class="md-nav__link">
-    Patreon
+  <a href="#please-donate" title="Please Donate ❤️" class="md-nav__link">
+    Please Donate ❤️
   </a>
   
 </li>
@@ -628,6 +628,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="basic/map/" title="13 Map" class="md-nav__link">
+      13 Map
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -689,8 +701,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#patreon" title="Patreon" class="md-nav__link">
-    Patreon
+  <a href="#please-donate" title="Please Donate ❤️" class="md-nav__link">
+    Please Donate ❤️
   </a>
   
 </li>
@@ -736,9 +748,10 @@
                 
                 
                 <h1 id="the-go-programming-handbook">The 'Go' Programming Handbook<a class="headerlink" href="#the-go-programming-handbook" title="Permanent link">&para;</a></h1>
-<p><em>A Guide To Understanding The <ins class="critic"> Go</ins> Programming Language.</em>
-<hr></p>
-<p><img alt="Golang" src="./images/gophercon_1.png" /></p>
+<p><em>A Guide To Understanding The <ins class="critic"> Go</ins> Programming Language.</em></p>
+<hr>
+
+<p><img alt="Golang" src="images/gophercon_1.png" /></p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The 'Go' handbook is an introductory book and is intended for beginners, the book doesn't make any assumption about your prior programming knowledge and tries to teach everything from scratch.</p>
 <h2 id="audience">Audience<a class="headerlink" href="#audience" title="Permanent link">&para;</a></h2>
@@ -749,14 +762,11 @@
 <p>Hi, my name is <ins class="critic"> Anil Kulkarni</ins> and I am passionate about coding. I am a self learned programmer and enjoy my daily dose of Golang. When I am not coding you can usually find me watching movies <img alt="🎬" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f3ac.svg" title=":clapper:" /></p>
 <h2 id="code-sample">Code Sample<a class="headerlink" href="#code-sample" title="Permanent link">&para;</a></h2>
 <p>All code samples will the in the form of following block:
-    <div class="codehilite"><pre><span></span><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></div></p>
-<h2 id="patreon">Patreon<a class="headerlink" href="#patreon" title="Permanent link">&para;</a></h2>
+<code class="codehilite">go func main() { fmt.Println(&quot;Hello, World!&quot;) }</code></p>
+<h2 id="please-donate">Please Donate ❤️<a class="headerlink" href="#please-donate" title="Permanent link">&para;</a></h2>
 <p>All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.</p>
-<p>Any support is genuinely appreciated, you can help the activity by becoming a patreon by clicking on the below link:</p>
-<p><a href="https://www.patreon.com/octallium"><img alt="Patreon" src="./images/patreon.png" /></a></p>
+<p>Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:</p>
+<p><a href="https://www.paypal.me/octallium"><img alt="PayPal" src="images/paypal-logo.png" /></a></p>
 <h2 id="work-in-progress">Work In Progress<a class="headerlink" href="#work-in-progress" title="Permanent link">&para;</a></h2>
 <p>As you can see, this is a work in progress, I intend to complete the basic &amp; partial intermediate write-up by end of Oct, 18.</p>
 <h2 id="to-do">To Do<a class="headerlink" href="#to-do" title="Permanent link">&para;</a></h2>
@@ -771,8 +781,10 @@
 <h2 id="get-in-touch">Get In Touch<a class="headerlink" href="#get-in-touch" title="Permanent link">&para;</a></h2>
 <p>To know more about me please visit <a href="https://www.octallium.com">www.octallium.com</a>.</p>
 <p>The website is currently <mark class="critic"> offline</mark> and under development, will update on this page when it is launched.</p>
-<p>I am reachable at </p>
-<details class="note" open="open"><summary>Twitter Handle</summary><p><a href="https://twitter.com/octallium">@octallium</a></p></details><p>Thanks,</p>
+<p>I am reachable at</p>
+<details class="note" open="open"><summary>Twitter Handle</summary><p><a href="https://twitter.com/octallium">@octallium</a></p>
+</details>
+<p>Thanks,</p>
 <p>Anil Kulkarni</p>
                 
                   
@@ -829,7 +841,7 @@
       
         
   <div class="md-footer-social">
-    <link rel="stylesheet" href="./assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
     
       <a href="https://www.octallium.com" class="md-footer-social__link fa fa-globe"></a>
     
@@ -848,9 +860,9 @@
       
     </div>
     
-      <script src="./assets/javascripts/application.a59e2a89.js"></script>
+      <script src="assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.5",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
       
     
     

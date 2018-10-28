@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/gopher-front.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -60,8 +60,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -257,11 +257,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://octallium.github.io/golang-handbook/" title="The 'Go' Programming Handbook" class="md-nav__button md-logo">
       
         <img src="../../images/golang-logo.svg" width="48" height="48">
       
-    </span>
+    </a>
     The 'Go' Programming Handbook
   </label>
   
@@ -611,6 +611,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic/map/" title="13 Map" class="md-nav__link">
+      13 Map
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -702,64 +714,122 @@
 
 <h2 id="czjqqkd0-how-toczjqqkd1-install-go-on-your-local-machine"><ins class="critic"> How-To</ins> Install Go on your local machine<a class="headerlink" href="#czjqqkd0-how-toczjqqkd1-install-go-on-your-local-machine" title="Permanent link">&para;</a></h2>
 <h2 id="installing-on-mac-osx">Installing on Mac OSx:<a class="headerlink" href="#installing-on-mac-osx" title="Permanent link">&para;</a></h2>
-<details class="question" open="open"><summary>Installing on Mac OSx</summary><p>Installing Go on your mac is pretty straight forward, choose any one method: -</p><p>A) Installing using package installer directly from <a href="https://golang.org/dl/">golang.org</a></p><p>OR</p><p>B) Using Homebrew</p><details class="note" open="open"><summary>A) Installing using the package installer</summary><p>Package installer method is the simplest way to get you started, just download the .pkg file by clicking on <a href="https://golang.org/dl/">this link</a> and install it just as you would install any other program on your mac.</p><p>The installer will automatically create everything for you including setting up your environment variables.</p><p>Installer will automatically install it to</p><div class="codehilite"><pre><span></span>usr/local/go directory
+<details class="question" open="open"><summary>Installing on Mac OSx</summary><p>Installing Go on your mac is pretty straight forward, choose any one method: -</p>
+<p>A) Installing using package installer directly from <a href="https://golang.org/dl/">golang.org</a></p>
+<p>OR</p>
+<p>B) Using Homebrew</p>
+<details class="note" open="open"><summary>A) Installing using the package installer</summary><p>Package installer method is the simplest way to get you started, just download the .pkg file by clicking on <a href="https://golang.org/dl/">this link</a> and install it just as you would install any other program on your mac.</p>
+<p>The installer will automatically create everything for you including setting up your environment variables.</p>
+<p>Installer will automatically install it to</p>
+<div class="codehilite"><pre><span></span>usr/local/go directory
 </pre></div>
 
-<p>After installing read "Checking the installation" section below to make sure everything works.</p></details><details class="abstract"><summary>B) Using Homebrew</summary><p>Before using this method, make sure you have homebrew installed, if it is not installed checkout this <a href="https://brew.sh/">link</a> and install it.</p><p>Open your terminal and type the following:</p><div class="codehilite"><pre><span></span>brew install go
+
+<p>After installing read "Checking the installation" section below to make sure everything works.</p>
+</details>
+<details class="abstract"><summary>B) Using Homebrew</summary><p>Before using this method, make sure you have homebrew installed, if it is not installed checkout this <a href="https://brew.sh/">link</a> and install it.</p>
+<p>Open your terminal and type the following:</p>
+<div class="codehilite"><pre><span></span>brew install go
 </pre></div>
 
-<p>brew will automatically fetch the latest binaries and install it for you, make sure they are installed to</p><div class="codehilite"><pre><span></span>usr/local/go directory
+
+<p>brew will automatically fetch the latest binaries and install it for you, make sure they are installed to</p>
+<div class="codehilite"><pre><span></span>usr/local/go directory
 </pre></div>
 
-<p>Its now time to setup your environment variables, check the "Setting up environment variables" to complete the installation and start using Go.</p></details></details><h2 id="installing-on-freebsd-linux">Installing on FreeBSD &amp; Linux:<a class="headerlink" href="#installing-on-freebsd-linux" title="Permanent link">&para;</a></h2>
-<details class="question"><summary>Installing on FreeBSD &amp; Linux</summary><p>Download the archive from <a href="https://golang.org/dl/">golang.org</a> and extract it to usr/local, for extracting open the terminal in the downloaded directory and type the following:</p><p>If you have downloaded Go v 1.10.3 type the following command, if you have downloaded some other version, change the version in the following command.</p><p>Open terminal in downloaded directory and type:</p><div class="codehilite"><pre><span></span>tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
+
+<p>Its now time to setup your environment variables, check the "Setting up environment variables" to complete the installation and start using Go.</p>
+</details>
+</details>
+<h2 id="installing-on-freebsd-linux">Installing on FreeBSD &amp; Linux:<a class="headerlink" href="#installing-on-freebsd-linux" title="Permanent link">&para;</a></h2>
+<details class="question"><summary>Installing on FreeBSD &amp; Linux</summary><p>Download the archive from <a href="https://golang.org/dl/">golang.org</a> and extract it to usr/local, for extracting open the terminal in the downloaded directory and type the following:</p>
+<p>If you have downloaded Go v 1.10.3 type the following command, if you have downloaded some other version, change the version in the following command.</p>
+<p>Open terminal in downloaded directory and type:</p>
+<div class="codehilite"><pre><span></span>tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
 </pre></div>
 
-<p>After extracting set up GOPATH, refer the "Setting up environment variables" section.</p></details><h2 id="installing-on-windows">Installing on Windows:<a class="headerlink" href="#installing-on-windows" title="Permanent link">&para;</a></h2>
-<details class="question"><summary>Installing on Windows</summary><p>Download the msi installer from <a href="https://golang.org/dl/">golang.org</a> and follow the prompts to intsall it.</p><p>By default it is installed in</p><div class="codehilite"><pre><span></span>c:\Go
+
+<p>After extracting set up GOPATH, refer the "Setting up environment variables" section.</p>
+</details>
+<h2 id="installing-on-windows">Installing on Windows:<a class="headerlink" href="#installing-on-windows" title="Permanent link">&para;</a></h2>
+<details class="question"><summary>Installing on Windows</summary><p>Download the msi installer from <a href="https://golang.org/dl/">golang.org</a> and follow the prompts to intsall it.</p>
+<p>By default it is installed in</p>
+<div class="codehilite"><pre><span></span>c:\Go
 </pre></div>
 
-<p>all the environmental variables are set automatically by the installer.</p><p>If you are using windows, I would highly recommend to install Git &amp; Git Bash.</p></details><h2 id="setting-up-environment-variables">Setting up environment variables:<a class="headerlink" href="#setting-up-environment-variables" title="Permanent link">&para;</a></h2>
-<details class="danger"><summary>Setting up environment variables</summary><p>If you have installed Go using brew on OSx or on linux you need to set up GOPATH.</p><p>A) If you are using bash, open and edit:</p><div class="codehilite"><pre><span></span>~/.bash_profile
+
+<p>all the environmental variables are set automatically by the installer.</p>
+<p>If you are using windows, I would highly recommend to install Git &amp; Git Bash.</p>
+</details>
+<h2 id="setting-up-environment-variables">Setting up environment variables:<a class="headerlink" href="#setting-up-environment-variables" title="Permanent link">&para;</a></h2>
+<details class="danger"><summary>Setting up environment variables</summary><p>If you have installed Go using brew on OSx or on linux you need to set up GOPATH.</p>
+<p>A) If you are using bash, open and edit:</p>
+<div class="codehilite"><pre><span></span>~/.bash_profile
 </pre></div>
 
-<p>B) If you are using zsh, open and edit:</p><div class="codehilite"><pre><span></span>~/.zshrc
+
+<p>B) If you are using zsh, open and edit:</p>
+<div class="codehilite"><pre><span></span>~/.zshrc
 </pre></div>
 
-<p>and add the following:</p><div class="codehilite"><pre><span></span>export PATH=$PATH:/usr/local/go/bin
+
+<p>and add the following:</p>
+<div class="codehilite"><pre><span></span>export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 </pre></div>
 
-<p>save the file and restart the terminal or type</p><p>A) For bash:</p><div class="codehilite"><pre><span></span>source ~/.bash_profile
+
+<p>save the file and restart the terminal or type</p>
+<p>A) For bash:</p>
+<div class="codehilite"><pre><span></span>source ~/.bash_profile
 </pre></div>
 
-<p>B) For zsh:</p><div class="codehilite"><pre><span></span>source ~/.zshrc
+
+<p>B) For zsh:</p>
+<div class="codehilite"><pre><span></span>source ~/.zshrc
 </pre></div>
 
-<details class="question"><summary>Editing .bash_profile or .zshrc</summary><p>Follow the instructions to edit .bash_profile or .zshrc, open the terminal and type</p><div class="codehilite"><pre><span></span>cd
+
+<details class="question"><summary>Editing .bash_profile or .zshrc</summary><p>Follow the instructions to edit .bash_profile or .zshrc, open the terminal and type</p>
+<div class="codehilite"><pre><span></span>cd
 </pre></div>
 
-<p>If you are using atom type</p><div class="codehilite"><pre><span></span>atom .bash_profile
+
+<p>If you are using atom type</p>
+<div class="codehilite"><pre><span></span>atom .bash_profile
 </pre></div>
 
-<p>or</p><div class="codehilite"><pre><span></span>atom .zshrc
+
+<p>or</p>
+<div class="codehilite"><pre><span></span>atom .zshrc
 </pre></div>
 
-</details></details><h2 id="checking-the-installation">Checking the installation:<a class="headerlink" href="#checking-the-installation" title="Permanent link">&para;</a></h2>
-<details class="warning"><summary>Checking the installation</summary><p>Open the terminal and type:</p><div class="codehilite"><pre><span></span>echo $GOROOT
+
+</details>
+</details>
+<h2 id="checking-the-installation">Checking the installation:<a class="headerlink" href="#checking-the-installation" title="Permanent link">&para;</a></h2>
+<details class="warning"><summary>Checking the installation</summary><p>Open the terminal and type:</p>
+<div class="codehilite"><pre><span></span>echo $GOROOT
 </pre></div>
 
-<p>it should give the output:</p><div class="codehilite"><pre><span></span>usr/local/go
+
+<p>it should give the output:</p>
+<div class="codehilite"><pre><span></span>usr/local/go
 </pre></div>
 
-<p>For windows it should give output:</p><div class="codehilite"><pre><span></span>c:\Go
+
+<p>For windows it should give output:</p>
+<div class="codehilite"><pre><span></span>c:\Go
 </pre></div>
 
-<p>You can also test using the following commands:</p><div class="codehilite"><pre><span></span>go env
+
+<p>You can also test using the following commands:</p>
+<div class="codehilite"><pre><span></span>go env
 go version
 </pre></div>
+
 
 </details>
                 
@@ -850,9 +920,9 @@ go version
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     
