@@ -208,11 +208,11 @@ On line 43 we check if the key is present in the map or not, it returns a boolea
 
 Open your terminal and navigate to our folder
 
-    code/basic/12_slice/
+    code/basic/13_map/
 
 Once in the folder type the following command
 
-    go run slice.go
+    go run maps.go
 
 If there are no errors, you should get the output as:
 
@@ -242,7 +242,7 @@ If for some reason your code isn't working, checkout the github repo or playgrou
 
 ## Golang Playground
 
-[Golang Playground](https://play.golang.org/p/lsBSrtntHzJ)
+[Golang Playground](https://play.golang.org/p/UP11dLv3kFR)
 
 ## Next
 
