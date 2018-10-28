@@ -99,9 +99,9 @@ Map can also be declared and initialized using the following syntax
 
     contactList := map[string]int {
     	"Iron Man": 878111222,
-    	"Thor" = 121131141,
-    	"Batman" = 483910138,
-    	"Spider Man" = 478282929,
+    	"Thor": 121131141,
+    	"Batman": 483910138,
+    	"Spider Man": 478282929,
     }
 
 On line 16 we print out the map. We can also change the values of the key, on line 21 we change the number of Iron Man.
