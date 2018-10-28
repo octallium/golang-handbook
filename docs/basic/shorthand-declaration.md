@@ -40,17 +40,17 @@ And lets create a file 'shorthand_declaration.go' in it, finally the structure w
     3 import "fmt"
 
     4 func main() {
-	5   // declaring integer
-	6   num := 12
-	7   fmt.Printf("The type of variable 'num' is: %T.\n", num)
+    5   // declaring integer
+    6   num := 12
+    7   fmt.Printf("The type of variable 'num' is: %T.\n", num)
     8
-	9   // declaring float
-	10  decimal := 15.45
-	11  fmt.Printf("The type of variable 'decimal' is: %T.\n", decimal)
+    9   // declaring float
+    10  decimal := 15.45
+    11  fmt.Printf("The type of variable 'decimal' is: %T.\n", decimal)
     12
-	13  // declaring string
-	14  name := "Octallium"
-	15  fmt.Printf("The type of variable 'name' is : %T.\n", name)
+    13  // declaring string
+    14  name := "Octallium"
+    15  fmt.Printf("The type of variable 'name' is : %T.\n", name)
     16 }
     ```
 
@@ -82,11 +82,11 @@ If you don't understand the print statements, no worries, we will be having a de
 
 Open your terminal and navigate to our folder
 
-	code/basic/06_shorthand_declaration
+    code/basic/06_shorthand_declaration
 
 Once in the folder type the following command
 
-	go run shorthand_declaration.go
+    go run shorthand_declaration.go
 
 ## Output
 
@@ -109,3 +109,11 @@ You can also run the code at playground
 ## Next
 
 In the next chapter we will see about {++ if/else++} condition, don't worry if its becoming too geeky, keep up with the code and in no time you will get the hang of it.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

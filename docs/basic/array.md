@@ -45,36 +45,7 @@ We will write the code in 2 parts:
 1.)
 
 ???+example "Part-1 array.go"
-    ``` go
-    1 package main
-    2 
-    3 import "fmt"
-    4
-    5 func main() {
-    6    // declaring an array of type int
-    7    var array1 [5]int
-    8    fmt.Println("The values of array1 are:", array1)
-    9    fmt.Println("The length of array1 is:", len(array1))
-    10    fmt.Println()
-    11
-    12    // adding values into the array
-    13    fmt.Println("Adding values to array1")
-    14    array1[0] = 29
-    15    array1[1] = 17
-    16    array1[2] = 42
-    17    array1[3] = 13
-    18    array1[4] = 56
-    19    fmt.Println("Now the values of array1 are:", array1)
-    20    fmt.Println()
-    21
-    22    // Reading all values from array1 using for-range loop
-    23    fmt.Println("Reading all the values from array1 using for-range loop...")
-    24    for index, value := range array1 {
-    25        fmt.Printf("Index: %d Value: %d\n", index, value)
-    26    }
-    27    fmt.Println()
-    28
-    ```
+`go 1 package main 2 3 import "fmt" 4 5 func main() { 6 // declaring an array of type int 7 var array1 [5]int 8 fmt.Println("The values of array1 are:", array1) 9 fmt.Println("The length of array1 is:", len(array1)) 10 fmt.Println() 11 12 // adding values into the array 13 fmt.Println("Adding values to array1") 14 array1[0] = 29 15 array1[1] = 17 16 array1[2] = 42 17 array1[3] = 13 18 array1[4] = 56 19 fmt.Println("Now the values of array1 are:", array1) 20 fmt.Println() 21 22 // Reading all values from array1 using for-range loop 23 fmt.Println("Reading all the values from array1 using for-range loop...") 24 for index, value := range array1 { 25 fmt.Printf("Index: %d Value: %d\n", index, value) 26 } 27 fmt.Println() 28`
 
 _Review_
 
@@ -96,21 +67,21 @@ So an array of length 5 will have index positions of 0, 1, 2, 3 & 4.
 
 On line 24 we are using a "for-range" loop to print out the values, notice that we declare two variables "index" and "position" and then range over the array.
 
-    for index, value := range array1 
+    for index, value := range array1
 
 What this does is, it iterates over each element one by one and prints out the value & index, we don't have to declare variables and iterate, remember we used to write:
-    
-    for i:= 0; i < n; i++ {
-        do something
-    }
-    
-Instead we can write it with much cleaner syntax using for-range loop, for-range loops are extensively used in Go. If you don't want to use any value, you can simply discard it using "_" , for example if you do not want index position, you can declare for-range as:
+
+for i:= 0; i < n; i++ {
+do something
+}
+
+Instead we can write it with much cleaner syntax using for-range loop, for-range loops are extensively used in Go. If you don't want to use any value, you can simply discard it using "\_" , for example if you do not want index position, you can declare for-range as:
 
     for _, value : range array1 {
         do something
     }
 
-The underscore "_" simply tells the Go compiler to ignore the value.
+The underscore "\_" simply tells the Go compiler to ignore the value.
 
 2.)
 
@@ -262,3 +233,11 @@ Imagine you data is increasing and now you have 100 cities instead of 5, but the
 ## Next
 
 We will study {++ slices++} in depth in the next chapter.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

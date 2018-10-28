@@ -39,3 +39,11 @@ In reality the above data types are of very basic types, Go has much more to it,
 ## Next
 
 So now you know what are the basic data types in Go, in the next section we will start using them by declaring something called as {++ variables++} and {++ constants++}.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

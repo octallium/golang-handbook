@@ -246,4 +246,12 @@ If for some reason your code isn't working, checkout the github repo or playgrou
 
 ## Next
 
-In the next chapter we will study {++ Maps++}.
+In the next chapter we will study {++ Struct++}.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

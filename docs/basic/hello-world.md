@@ -23,7 +23,7 @@ And lets create a file 'hello_world.go' in it, finally the structure would look 
 
 ## Code
 
-Write the code as shown below, while you can simply copy and paste, its better if you write everything on your own. 
+Write the code as shown below, while you can simply copy and paste, its better if you write everything on your own.
 
 Don't worry if you code won't work, only then copy and paste the code :smile:
 
@@ -92,3 +92,11 @@ I will be posting all the playground links for all the code we write, this way y
 If you haven't understood anything what you wrote, no worries, you aren't expected to understand it just yet !
 
 In the next section we will understand everything line-by-line.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

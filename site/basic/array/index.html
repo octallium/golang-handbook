@@ -616,6 +616,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#please-donate" title="Please Donate ❤️" class="md-nav__link">
+    Please Donate ❤️
+  </a>
+  
+</li>
+      
       
       
       
@@ -746,6 +753,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#please-donate" title="Please Donate ❤️" class="md-nav__link">
+    Please Donate ❤️
+  </a>
+  
+</li>
+      
       
       
       
@@ -804,37 +818,8 @@
 <h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
 <p>We will write the code in 2 parts:</p>
 <p>1.)</p>
-<details class="example" open="open"><summary>Part-1 array.go</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
-<span class="mi">2</span> 
-<span class="mi">3</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
-<span class="mi">4</span>
-<span class="mi">5</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">6</span>    <span class="c1">// declaring an array of type int</span>
-<span class="mi">7</span>    <span class="kd">var</span> <span class="nx">array1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
-<span class="mi">8</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
-<span class="mi">9</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The length of array1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">array1</span><span class="p">))</span>
-<span class="mi">10</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">11</span>
-<span class="mi">12</span>    <span class="c1">// adding values into the array</span>
-<span class="mi">13</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Adding values to array1&quot;</span><span class="p">)</span>
-<span class="mi">14</span>    <span class="nx">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="mi">29</span>
-<span class="mi">15</span>    <span class="nx">array1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="mi">17</span>
-<span class="mi">16</span>    <span class="nx">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="mi">42</span>
-<span class="mi">17</span>    <span class="nx">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">=</span> <span class="mi">13</span>
-<span class="mi">18</span>    <span class="nx">array1</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">=</span> <span class="mi">56</span>
-<span class="mi">19</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now the values of array1 are:&quot;</span><span class="p">,</span> <span class="nx">array1</span><span class="p">)</span>
-<span class="mi">20</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">21</span>
-<span class="mi">22</span>    <span class="c1">// Reading all values from array1 using for-range loop</span>
-<span class="mi">23</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Reading all the values from array1 using for-range loop...&quot;</span><span class="p">)</span>
-<span class="mi">24</span>    <span class="k">for</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">array1</span> <span class="p">{</span>
-<span class="mi">25</span>        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Index: %d Value: %d\n&quot;</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
-<span class="mi">26</span>    <span class="p">}</span>
-<span class="mi">27</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">28</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Part-1 array.go</summary></details>
+<p><code class="codehilite"><span class="n">go</span> <span class="mi">1</span> <span class="n">package</span> <span class="n">main</span> <span class="mi">2</span> <span class="mi">3</span> <span class="kn">import</span> <span class="s2">&quot;fmt&quot;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="n">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span> <span class="mi">6</span> <span class="o">//</span> <span class="n">declaring</span> <span class="n">an</span> <span class="n">array</span> <span class="n">of</span> <span class="nb">type</span> <span class="nb">int</span> <span class="mi">7</span> <span class="n">var</span> <span class="n">array1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="nb">int</span> <span class="mi">8</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;The values of array1 are:&quot;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span> <span class="mi">9</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;The length of array1 is:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span> <span class="mi">10</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">11</span> <span class="mi">12</span> <span class="o">//</span> <span class="n">adding</span> <span class="n">values</span> <span class="n">into</span> <span class="n">the</span> <span class="n">array</span> <span class="mi">13</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Adding values to array1&quot;</span><span class="p">)</span> <span class="mi">14</span> <span class="n">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">29</span> <span class="mi">15</span> <span class="n">array1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">17</span> <span class="mi">16</span> <span class="n">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">42</span> <span class="mi">17</span> <span class="n">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">13</span> <span class="mi">18</span> <span class="n">array1</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">56</span> <span class="mi">19</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Now the values of array1 are:&quot;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span> <span class="mi">20</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">21</span> <span class="mi">22</span> <span class="o">//</span> <span class="n">Reading</span> <span class="nb">all</span> <span class="n">values</span> <span class="kn">from</span> <span class="nn">array1</span> <span class="nn">using</span> <span class="nn">for</span><span class="o">-</span><span class="nb">range</span> <span class="n">loop</span> <span class="mi">23</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Reading all the values from array1 using for-range loop...&quot;</span><span class="p">)</span> <span class="mi">24</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="p">:</span><span class="o">=</span> <span class="nb">range</span> <span class="n">array1</span> <span class="p">{</span> <span class="mi">25</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s2">&quot;Index: </span><span class="si">%d</span><span class="s2"> Value: </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="mi">26</span> <span class="p">}</span> <span class="mi">27</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">28</span></code></p>
 <p><em>Review</em></p>
 <p>On line 7 we declare an array of type int with a length of 5 and print out the empty array.</p>
 <div class="codehilite"><pre><span></span>var array1 [5]int
@@ -858,12 +843,9 @@
 
 
 <p>What this does is, it iterates over each element one by one and prints out the value &amp; index, we don't have to declare variables and iterate, remember we used to write:</p>
-<div class="codehilite"><pre><span></span><span class="nt">for</span> <span class="nt">i</span><span class="o">:=</span> <span class="nt">0</span><span class="o">;</span> <span class="nt">i</span> <span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span> <span class="nt">n</span><span class="o">;</span> <span class="nt">i</span><span class="o">++</span> <span class="p">{</span>
-    <span class="err">do</span> <span class="err">something</span>
-<span class="p">}</span>
-</pre></div>
-
-
+<p>for i:= 0; i &lt; n; i++ {
+do something
+}</p>
 <p>Instead we can write it with much cleaner syntax using for-range loop, for-range loops are extensively used in Go. If you don't want to use any value, you can simply discard it using "_" , for example if you do not want index position, you can declare for-range as:</p>
 <div class="codehilite"><pre><span></span>for _, value : range array1 {
     do something
@@ -1011,6 +993,10 @@ The value at cities[0] is: Paris
 <p>Imagine you data is increasing and now you have 100 cities instead of 5, but the array can only hold 5 values, to overcome this limitation Go ships with a flexible type called as "Slice".</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>We will study <ins class="critic"> slices</ins> in depth in the next chapter.</p>
+<h2 id="please-donate">Please Donate ❤️<a class="headerlink" href="#please-donate" title="Permanent link">&para;</a></h2>
+<p>All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.</p>
+<p>Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:</p>
+<p><a href="https://www.paypal.me/octallium"><img alt="PayPal" src="../../images/paypal-logo.png" /></a></p>
                 
                   
                 

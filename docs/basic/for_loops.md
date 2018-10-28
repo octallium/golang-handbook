@@ -35,21 +35,7 @@ The code will be divided into four parts:
 1.)
 
 ???+example "for loops"
-    ``` go
-    1 package main
-    2
-    3 import "fmt"
-    4
-    5 func main() {
-	6 // Variation 1 - conditional loop
-	7 num1 := 0
-	8 fmt.Println("Starting for loop...")
-	9 for i := 0; i < 11; i++ {
-	10  fmt.Println("Num =", num1)
-	11	num1++
-	12 }
-	13 fmt.Println()
-    ```
+`go 1 package main 2 3 import "fmt" 4 5 func main() { 6 // Variation 1 - conditional loop 7 num1 := 0 8 fmt.Println("Starting for loop...") 9 for i := 0; i < 11; i++ { 10 fmt.Println("Num =", num1) 11 num1++ 12 } 13 fmt.Println()`
 
 _Review_
 
@@ -67,20 +53,7 @@ Line 10 prints the value after each pass and on line 11 we increment the value o
 2.)
 
 ???+example "for loops"
-    ``` go
- 	14 // Variation 2 - Infinite loop
-    15 num2 := 20
-	16 fmt.Println("Entering infinite loop...")
-	17 for {
-	18	// break condition
-	19	if num2 < 10 {
-	20		break
-	21	}
-	22	fmt.Println("Num =", num2)
-	23	num2--
-	24 }
-	25 fmt.Println()
-    ```
+`go 14 // Variation 2 - Infinite loop 15 num2 := 20 16 fmt.Println("Entering infinite loop...") 17 for { 18 // break condition 19 if num2 < 10 { 20 break 21 } 22 fmt.Println("Num =", num2) 23 num2-- 24 } 25 fmt.Println()`
 
 _Review_
 
@@ -95,16 +68,7 @@ On line 19 we check for a break condition
 3.)
 
 ???+example "for loops"
-    ``` go
- 	26	// Variation 3 - Optional statements
-	27 num3 := 20
-	28 fmt.Println("Loop with optional statements...")
-	29 for num3 <= 30 {
-	30	fmt.Println("Num =", num3)
-	31	num3++
-	32 }
-	33 fmt.Println()
-    ```
+`go 26 // Variation 3 - Optional statements 27 num3 := 20 28 fmt.Println("Loop with optional statements...") 29 for num3 <= 30 { 30 fmt.Println("Num =", num3) 31 num3++ 32 } 33 fmt.Println()`
 
 _Review_
 
@@ -119,20 +83,7 @@ Note we have declared and initialized "num3" on line 27
 4.)
 
 ???+example "for loops"
-    ``` go
- 	34	// Variation 4 - Boolean operators
-	35 cond := true
-	36 num4 := 30
-	37 fmt.Println("Loops with boolean operator...")
-	38 for cond {
-	39	if num4 >= 40 {
-	40		cond = false
-	41	}
-	42	fmt.Println("Num =", num4)
-	43	num4++
-	44 }
-    45 }
-    ```
+`go 34 // Variation 4 - Boolean operators 35 cond := true 36 num4 := 30 37 fmt.Println("Loops with boolean operator...") 38 for cond { 39 if num4 >= 40 { 40 cond = false 41 } 42 fmt.Println("Num =", num4) 43 num4++ 44 } 45 }`
 
 _Review_
 
@@ -143,57 +94,58 @@ We declare a boolean condition on line 35, and start the loop on line 38
 In order to break the loop we set the condition on line 39
 
     if num4 >= 40 {
-		cond = false
-	}
+    	cond = false
+    }
 
 ## Full Code
 
 ??? example "Complete For-Loop Code"
-    ``` go
-    package main
+
+````go
+package main
 
     import "fmt"
 
     func main() {
-	    // Variation 1 - conditional loop
-	    num1 := 0
-	    fmt.Println("Starting for loop...")
-	    for i := 0; i < 11; i++ {
-		    fmt.Println("Num =", num1)
-		    num1++
-	    }
-	    fmt.Println()
-	    // Variation 2 - Infinite loop
-	    num2 := 20
-	    fmt.Println("Entering infinite loop...")
-	    for {
-		    // break condition
-		    if num2 < 10 {
-			    break
-		    }
-		    fmt.Println("Num =", num2)
-		    num2--
-	    }
-	    fmt.Println()
-	    // Variation 3 - Optional statements
-	    num3 := 20
-	    fmt.Println("Loop with optional statements...")
-	    for num3 <= 30 {
-		    fmt.Println("Num =", num3)
-		    num3++
-	    }
-	    fmt.Println()
-	    // Variation 4 - Boolean operators
-	    cond := true
-	    num4 := 30
-	    fmt.Println("Loops with boolean operator...")
-	    for cond {
-		    if num4 >= 40 {
-			    cond = false
-		    }
-		    fmt.Println("Num =", num4)
-		    num4++
-	    }
+        // Variation 1 - conditional loop
+        num1 := 0
+        fmt.Println("Starting for loop...")
+        for i := 0; i < 11; i++ {
+    	    fmt.Println("Num =", num1)
+    	    num1++
+        }
+        fmt.Println()
+        // Variation 2 - Infinite loop
+        num2 := 20
+        fmt.Println("Entering infinite loop...")
+        for {
+    	    // break condition
+    	    if num2 < 10 {
+    		    break
+    	    }
+    	    fmt.Println("Num =", num2)
+    	    num2--
+        }
+        fmt.Println()
+        // Variation 3 - Optional statements
+        num3 := 20
+        fmt.Println("Loop with optional statements...")
+        for num3 <= 30 {
+    	    fmt.Println("Num =", num3)
+    	    num3++
+        }
+        fmt.Println()
+        // Variation 4 - Boolean operators
+        cond := true
+        num4 := 30
+        fmt.Println("Loops with boolean operator...")
+        for cond {
+    	    if num4 >= 40 {
+    		    cond = false
+    	    }
+    	    fmt.Println("Num =", num4)
+    	    num4++
+        }
     }
     ```
 
@@ -201,65 +153,65 @@ In order to break the loop we set the condition on line 39
 
 Open your terminal and navigate to our folder
 
-	code/basic/08_for_loops
+    code/basic/08_for_loops
 
 Once in the folder type the following command
 
-	go run for_loops.go
+    go run for_loops.go
 
 ## Output
 
-	Starting for loop...
-	Num = 0
-	Num = 1
-	Num = 2
-	Num = 3
-	Num = 4
-	Num = 5
-	Num = 6
-	Num = 7
-	Num = 8
-	Num = 9
-	Num = 10
+    Starting for loop...
+    Num = 0
+    Num = 1
+    Num = 2
+    Num = 3
+    Num = 4
+    Num = 5
+    Num = 6
+    Num = 7
+    Num = 8
+    Num = 9
+    Num = 10
 
-	Entering infinite loop...
-	Num = 20
-	Num = 19
-	Num = 18
-	Num = 17
-	Num = 16
-	Num = 15
-	Num = 14
-	Num = 13
-	Num = 12
-	Num = 11
-	Num = 10
+    Entering infinite loop...
+    Num = 20
+    Num = 19
+    Num = 18
+    Num = 17
+    Num = 16
+    Num = 15
+    Num = 14
+    Num = 13
+    Num = 12
+    Num = 11
+    Num = 10
 
-	Loop with optional statements...
-	Num = 20
-	Num = 21
-	Num = 22
-	Num = 23
-	Num = 24
-	Num = 25
-	Num = 26
-	Num = 27
-	Num = 28
-	Num = 29
-	Num = 30
+    Loop with optional statements...
+    Num = 20
+    Num = 21
+    Num = 22
+    Num = 23
+    Num = 24
+    Num = 25
+    Num = 26
+    Num = 27
+    Num = 28
+    Num = 29
+    Num = 30
 
-	Loops with boolean operator...
-	Num = 30
-	Num = 31
-	Num = 32
-	Num = 33
-	Num = 34
-	Num = 35
-	Num = 36
-	Num = 37
-	Num = 38
-	Num = 39
-	Num = 40
+    Loops with boolean operator...
+    Num = 30
+    Num = 31
+    Num = 32
+    Num = 33
+    Num = 34
+    Num = 35
+    Num = 36
+    Num = 37
+    Num = 38
+    Num = 39
+    Num = 40
 
 ## Note
 
@@ -280,3 +232,12 @@ You can also run the code at playground
 ## Next
 
 In the next chapter we will learn about {++ function++} declaration.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)
+````

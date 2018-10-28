@@ -24,7 +24,7 @@ Understanding the Hello World program line-by-line
 
 Now its time to dive in and understand the code
 
-Line 1 - 
+Line 1 -
 
     package main
 
@@ -42,7 +42,7 @@ Documentation for "fmt" can be found [here](https://golang.org/pkg/fmt/)
 
 "fmt" exposes a lot of functionality to us which we use in the line 6.
 
-Line 5 - 
+Line 5 -
 
     func main () {
 
@@ -53,7 +53,7 @@ This is the start or entry point for your code, the compiler will automatically 
 
 means "main" function in "main" package
 
-Line 6 - 
+Line 6 -
 
     fmt.Println("Hello, World!)
 
@@ -61,7 +61,7 @@ Here we use Println function defined in the package "fmt" for printing out "Hell
 
 Now, you can see how we can use functionality written in packages and use it for our ease.
 
-Line 7 - 
+Line 7 -
 
     }
 
@@ -74,3 +74,11 @@ Wow.. you have now learned your first Go program, even if all of the above doesn
 As a beginner, you would want to quit when you don't understand anything, my advise, don't quit just move along and later come back to topics which you didn't understand.
 
 Learning code takes patience and persistance, fasten your seat belts and keep learning.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

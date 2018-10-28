@@ -557,41 +557,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#running-your-code" title="Running your code" class="md-nav__link">
-    Running your code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" title="Output" class="md-nav__link">
-    Output
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github" title="Github" class="md-nav__link">
-    Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
-    Golang Playground
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" title="Next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
       
       
       
@@ -711,41 +676,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#running-your-code" title="Running your code" class="md-nav__link">
-    Running your code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" title="Output" class="md-nav__link">
-    Output
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github" title="Github" class="md-nav__link">
-    Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#golang-playground" title="Golang Playground" class="md-nav__link">
-    Golang Playground
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" title="Next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
       
       
       
@@ -797,20 +727,8 @@
 <h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
 <p>The code will be divided into four parts:</p>
 <p>1.)</p>
-<details class="example" open="open"><summary>Functions</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
-<span class="mi">2</span>
-<span class="mi">3</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
-<span class="mi">4</span>
-<span class="mi">5</span> <span class="c1">// sayHello prints &quot;Hello, Octy!&quot;</span>
-<span class="mi">6</span> <span class="kd">func</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">7</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func sayHello()...&quot;</span><span class="p">)</span>
-<span class="mi">8</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, Octy!&quot;</span><span class="p">)</span>
-<span class="mi">9</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">10</span> <span class="p">}</span>
-<span class="mi">11</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Functions</summary></details>
+<p><code class="codehilite"><span class="n">go</span> <span class="mi">1</span> <span class="n">package</span> <span class="n">main</span> <span class="mi">2</span> <span class="mi">3</span> <span class="kn">import</span> <span class="s2">&quot;fmt&quot;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="o">//</span> <span class="n">sayHello</span> <span class="n">prints</span> <span class="s2">&quot;Hello, Octy!&quot;</span> <span class="mi">6</span> <span class="n">func</span> <span class="n">sayHello</span><span class="p">()</span> <span class="p">{</span> <span class="mi">7</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;In func sayHello()...&quot;</span><span class="p">)</span> <span class="mi">8</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Hello, Octy!&quot;</span><span class="p">)</span> <span class="mi">9</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">10</span> <span class="p">}</span> <span class="mi">11</span></code></p>
 <p><em>Review</em></p>
 <p>Line 6 defines a function "sayHello" which prints "Hello, Octy!" on screen</p>
 <div class="codehilite"><pre><span></span>func sayHello()
@@ -818,16 +736,8 @@
 
 
 <p>2.)</p>
-<details class="example" open="open"><summary>Functions</summary><div class="codehilite"><pre><span></span><span class="mi">12</span> <span class="c1">// function with passing values</span>
-<span class="mi">13</span> <span class="kd">func</span> <span class="nx">sayHelloTo</span><span class="p">(</span><span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
-<span class="mi">14</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func sayHelloTo()...&quot;</span><span class="p">)</span>
-<span class="mi">15</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello,&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
-<span class="mi">16</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">17</span> <span class="p">}</span>
-<span class="mi">18</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Functions</summary></details>
+<p><code class="codehilite">go 12 // function with passing values 13 func sayHelloTo(name string) { 14 fmt.Println(&quot;In func sayHelloTo()...&quot;) 15 fmt.Println(&quot;Hello,&quot;, name) 16 fmt.Println() 17 } 18</code></p>
 <p><em>Review</em></p>
 <p>On line 13 we declare a function "sayHelloTo" with accepts a parameter.</p>
 <div class="codehilite"><pre><span></span>func sayHelloTo(name string)
@@ -836,19 +746,8 @@
 
 <p>sayHelloTo accepts a string "name" as a parameter and then print it on line 15.</p>
 <p>3.)</p>
-<details class="example" open="open"><summary>Functions</summary><div class="codehilite"><pre><span></span><span class="mi">19</span> <span class="c1">// function with return values</span>
-<span class="mi">20</span> <span class="kd">func</span> <span class="nx">printNums</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
-<span class="mi">21</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func printNums()...&quot;</span><span class="p">)</span>
-<span class="mi">22</span> <span class="kd">var</span> <span class="nx">err</span> <span class="kt">error</span>
-<span class="mi">23</span> <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
-<span class="mi">24</span>  <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
-<span class="mi">25</span> <span class="p">}</span>
-<span class="mi">26</span> <span class="k">return</span> <span class="nx">err</span>
-<span class="mi">27</span> <span class="p">}</span>
-<span class="mi">28</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Functions</summary></details>
+<p><code class="codehilite">go 19 // function with return values 20 func printNums(n int) error { 21 fmt.Println(&quot;In func printNums()...&quot;) 22 var err error 23 for i := 0; i &lt;= n; i++ { 24 _, err = fmt.Println(i) 25 } 26 return err 27 } 28</code></p>
 <p><em>Review</em></p>
 <p>Line 20 we define a function "printNums" with accepts a parameter and returns a parameter of type "error".</p>
 <div class="codehilite"><pre><span></span>func printNums(n int) error
@@ -871,27 +770,8 @@
 
 
 <p>4.)</p>
-<details class="example" open="open"><summary>Functions</summary><div class="codehilite"><pre><span></span><span class="mi">29</span> <span class="c1">// main function</span>
-<span class="mi">30</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">31</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func main()&quot;</span><span class="p">)</span>
-<span class="mi">32</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now calling func sayHello()...&quot;</span><span class="p">)</span>
-<span class="mi">33</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">34</span> <span class="c1">// calling function sayHello()</span>
-<span class="mi">35</span> <span class="nx">sayHello</span><span class="p">()</span>
-<span class="mi">36</span> <span class="c1">// calling a function with passing values</span>
-<span class="mi">37</span> <span class="nx">name</span> <span class="o">:=</span> <span class="s">&quot;Gopher&quot;</span>
-<span class="mi">38</span> <span class="nx">sayHelloTo</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
-<span class="mi">39</span> <span class="c1">// calling a function with return parameters</span>
-<span class="mi">40</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">printNums</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="mi">41</span> <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
-<span class="mi">42</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;There are no errors!&quot;</span><span class="p">)</span>
-<span class="mi">43</span> <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-<span class="mi">44</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Error with printing:&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
-<span class="mi">45</span> <span class="p">}</span>
-<span class="mi">46</span> <span class="p">}</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Functions</summary></details>
+<p><code class="codehilite">go 29 // main function 30 func main() { 31 fmt.Println(&quot;In func main()&quot;) 32 fmt.Println(&quot;Now calling func sayHello()...&quot;) 33 fmt.Println() 34 // calling function sayHello() 35 sayHello() 36 // calling a function with passing values 37 name := &quot;Gopher&quot; 38 sayHelloTo(name) 39 // calling a function with return parameters 40 err := printNums(10) 41 if err == nil { 42 fmt.Println(&quot;There are no errors!&quot;) 43 } else { 44 fmt.Println(&quot;Error with printing:&quot;, err) 45 } 46 }</code></p>
 <p><em>Review</em></p>
 <p>We call individual functions on lines 35, 38 &amp; 40.</p>
 <div class="codehilite"><pre><span></span>sayHello()
@@ -908,100 +788,115 @@ sayHelloTo(name)
 <p>We call printNums along with a value "10" and assign it to the variable "err", the return error gets stored in the variable "err"</p>
 <h2 id="full-code">Full Code<a class="headerlink" href="#full-code" title="Permanent link">&para;</a></h2>
 <h2 id="full-code_1">Full Code<a class="headerlink" href="#full-code_1" title="Permanent link">&para;</a></h2>
-<details class="example"><summary>Complete Functions Code</summary><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+<details class="example"><summary>Complete Functions Code</summary></details>
+<div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
 
-<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+    <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
 
-<span class="c1">// sayHello prints &quot;Hello, Octy!&quot;</span>
-<span class="kd">func</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func sayHello()...&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, Octy!&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="p">}</span>
-
-<span class="c1">// function with passing values</span>
-<span class="kd">func</span> <span class="nx">sayHelloTo</span><span class="p">(</span><span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func sayHelloTo()...&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello,&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="p">}</span>
-
-<span class="c1">// function with return values</span>
-<span class="kd">func</span> <span class="nx">printNums</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func printNums()...&quot;</span><span class="p">)</span>
-    <span class="kd">var</span> <span class="nx">err</span> <span class="kt">error</span>
-    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
-        <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+    <span class="c1">// sayHello prints &quot;Hello, Octy!&quot;</span>
+    <span class="kd">func</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func sayHello()...&quot;</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, Octy!&quot;</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="nx">err</span>
-<span class="p">}</span>
 
-<span class="c1">// main function</span>
-<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func main()&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now calling func sayHello()...&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-    <span class="c1">// calling function sayHello()</span>
-    <span class="nx">sayHello</span><span class="p">()</span>
-    <span class="c1">// calling a function with passing values</span>
-    <span class="nx">name</span> <span class="o">:=</span> <span class="s">&quot;Gopher&quot;</span>
-    <span class="nx">sayHelloTo</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
-    <span class="c1">// calling a function with return parameters</span>
-    <span class="nx">err</span> <span class="o">:=</span> <span class="nx">printNums</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
-        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;There are no errors!&quot;</span><span class="p">)</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Error with printing:&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+    <span class="c1">// function with passing values</span>
+    <span class="kd">func</span> <span class="nx">sayHelloTo</span><span class="p">(</span><span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func sayHelloTo()...&quot;</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello,&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
     <span class="p">}</span>
-<span class="p">}</span>
+
+    <span class="c1">// function with return values</span>
+    <span class="kd">func</span> <span class="nx">printNums</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func printNums()...&quot;</span><span class="p">)</span>
+        <span class="kd">var</span> <span class="nx">err</span> <span class="kt">error</span>
+        <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+            <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">err</span>
+    <span class="p">}</span>
+
+    <span class="c1">// main function</span>
+    <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;In func main()&quot;</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Now calling func sayHello()...&quot;</span><span class="p">)</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+        <span class="c1">// calling function sayHello()</span>
+        <span class="nx">sayHello</span><span class="p">()</span>
+        <span class="c1">// calling a function with passing values</span>
+        <span class="nx">name</span> <span class="o">:=</span> <span class="s">&quot;Gopher&quot;</span>
+        <span class="nx">sayHelloTo</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+        <span class="c1">// calling a function with return parameters</span>
+        <span class="nx">err</span> <span class="o">:=</span> <span class="nx">printNums</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;There are no errors!&quot;</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Error with printing:&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="s">``</span><span class="err">`</span>
+
+<span class="err">##</span> <span class="nx">Running</span> <span class="nx">your</span> <span class="nx">code</span>
+
+<span class="nx">Open</span> <span class="nx">your</span> <span class="nx">terminal</span> <span class="nx">and</span> <span class="nx">navigate</span> <span class="nx">to</span> <span class="nx">our</span> <span class="nx">folder</span>
+
+    <span class="nx">code</span><span class="o">/</span><span class="nx">basic</span><span class="o">/</span><span class="mi">09</span><span class="nx">_functions</span><span class="o">/</span>
+
+<span class="nx">Once</span> <span class="nx">in</span> <span class="nx">the</span> <span class="nx">folder</span> <span class="kd">type</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">command</span>
+
+    <span class="k">go</span> <span class="nx">run</span> <span class="nx">main</span><span class="p">.</span><span class="k">go</span>
+
+<span class="err">##</span> <span class="nx">Output</span>
+
+    <span class="nx">In</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span>
+    <span class="nx">Now</span> <span class="nx">calling</span> <span class="kd">func</span> <span class="nx">sayHello</span><span class="p">()</span><span class="o">...</span>
+
+    <span class="nx">In</span> <span class="kd">func</span> <span class="nx">sayHello</span><span class="p">()</span><span class="o">...</span>
+    <span class="nx">Hello</span><span class="p">,</span> <span class="nx">Octy</span><span class="p">!</span>
+
+    <span class="nx">In</span> <span class="kd">func</span> <span class="nx">sayHelloTo</span><span class="p">()</span><span class="o">...</span>
+    <span class="nx">Hello</span><span class="p">,</span> <span class="nx">Gopher</span>
+
+    <span class="nx">In</span> <span class="kd">func</span> <span class="nx">printNums</span><span class="p">()</span><span class="o">...</span>
+    <span class="mi">0</span>
+    <span class="mi">1</span>
+    <span class="mi">2</span>
+    <span class="mi">3</span>
+    <span class="mi">4</span>
+    <span class="mi">5</span>
+    <span class="mi">6</span>
+    <span class="mi">7</span>
+    <span class="mi">8</span>
+    <span class="mi">9</span>
+    <span class="mi">10</span>
+    <span class="nx">There</span> <span class="nx">are</span> <span class="nx">no</span> <span class="nx">errors</span><span class="p">!</span>
+
+<span class="err">##</span> <span class="nx">Github</span>
+
+<span class="nx">Just</span> <span class="nx">in</span> <span class="k">case</span> <span class="nx">you</span> <span class="nx">have</span> <span class="nx">some</span> <span class="nx">errors</span> <span class="nx">with</span> <span class="nx">your</span> <span class="nx">code</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">can</span> <span class="nx">check</span> <span class="nx">out</span> <span class="nx">the</span> <span class="nx">code</span> <span class="nx">at</span> <span class="nx">github</span> <span class="nx">repo</span>
+
+<span class="p">[</span><span class="nx">Github</span> <span class="nx">Repo</span><span class="p">](</span><span class="nx">https</span><span class="p">:</span><span class="c1">//github.com/octallium/golang-handbook/tree/master/code)</span>
+
+<span class="err">##</span> <span class="nx">Golang</span> <span class="nx">Playground</span>
+
+<span class="nx">You</span> <span class="nx">can</span> <span class="nx">also</span> <span class="nx">run</span> <span class="nx">the</span> <span class="nx">code</span> <span class="nx">at</span> <span class="nx">playground</span>
+
+<span class="p">[</span><span class="nx">Golang</span> <span class="nx">Playground</span><span class="p">](</span><span class="nx">https</span><span class="p">:</span><span class="c1">//play.golang.org/p/K-1VZCt_M9k)</span>
+
+<span class="err">##</span> <span class="nx">Next</span>
+
+<span class="nx">In</span> <span class="nx">the</span> <span class="nx">next</span> <span class="nx">chapter</span> <span class="nx">we</span> <span class="nx">will</span> <span class="nx">learn</span> <span class="nx">about</span> <span class="err"></span><span class="nx">czjqqkd</span><span class="p">:</span><span class="mi">4</span><span class="err"></span> <span class="nx">packages</span><span class="err"></span><span class="nx">czjqqkd</span><span class="p">:</span><span class="mi">5</span><span class="err"></span> <span class="nx">in</span> <span class="nx">Go</span><span class="p">.</span>
+
+<span class="err">##</span> <span class="nx">Please</span> <span class="nx">Donate</span> <span class="err">❤️</span>
+
+<span class="nx">All</span> <span class="nx">the</span> <span class="nx">work</span> <span class="nx">is</span> <span class="nx">provided</span> <span class="nx">free</span> <span class="nx">of</span> <span class="nx">cost</span> <span class="nx">and</span> <span class="nx">completely</span> <span class="nx">open</span> <span class="nx">source</span><span class="p">,</span> <span class="nx">but</span> <span class="nx">it</span> <span class="nx">needs</span> <span class="nx">your</span> <span class="nx">support</span> <span class="nx">and</span> <span class="nx">love</span> <span class="nx">to</span> <span class="nx">keep</span> <span class="nx">the</span> <span class="nx">activity</span> <span class="nx">sustainable</span><span class="p">.</span>
+
+<span class="nx">Any</span> <span class="nx">support</span> <span class="nx">is</span> <span class="nx">genuinely</span> <span class="nx">appreciated</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">can</span> <span class="nx">help</span> <span class="nx">by</span> <span class="nx">sending</span> <span class="nx">a</span> <span class="nx">small</span> <span class="nx">donation</span> <span class="nx">by</span> <span class="nx">clicking</span> <span class="nx">the</span> <span class="nx">below</span> <span class="nx">link</span><span class="p">:</span>
+
+<span class="p">[![</span><span class="nx">PayPal</span><span class="p">](..</span><span class="o">/</span><span class="nx">images</span><span class="o">/</span><span class="nx">paypal</span><span class="o">-</span><span class="nx">logo</span><span class="p">.</span><span class="nx">png</span><span class="p">)](</span><span class="nx">https</span><span class="p">:</span><span class="c1">//www.paypal.me/octallium)</span>
 </pre></div>
-
-</details>
-<h2 id="running-your-code">Running your code<a class="headerlink" href="#running-your-code" title="Permanent link">&para;</a></h2>
-<p>Open your terminal and navigate to our folder</p>
-<div class="codehilite"><pre><span></span>code/basic/09_functions/
-</pre></div>
-
-
-<p>Once in the folder type the following command</p>
-<div class="codehilite"><pre><span></span>go run main.go
-</pre></div>
-
-
-<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>In func main()
-Now calling func sayHello()...
-
-In func sayHello()...
-Hello, Octy!
-
-In func sayHelloTo()...
-Hello, Gopher
-
-In func printNums()...
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-There are no errors!
-</pre></div>
-
-
-<h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
-<p>Just in case you have some errors with your code, you can check out the code at github repo</p>
-<p><a href="https://github.com/octallium/golang-handbook/tree/master/code">Github Repo</a></p>
-<h2 id="golang-playground">Golang Playground<a class="headerlink" href="#golang-playground" title="Permanent link">&para;</a></h2>
-<p>You can also run the code at playground</p>
-<p><a href="https://play.golang.org/p/K-1VZCt_M9k">Golang Playground</a></p>
-<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
-<p>In the next chapter we will learn about <ins class="critic"> packages</ins> in Go.</p>
                 
                   
                 

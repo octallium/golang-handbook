@@ -4,7 +4,7 @@
 
 ## Objective
 
-Learn how to add a comment in the code. 
+Learn how to add a comment in the code.
 
 ## Requirement
 
@@ -33,12 +33,13 @@ The compiler ignores the comment and runs your code, however as humans for us to
     6
     7 // Declaring the main function
     8 func main() {
-    9   
+    9
     10 // Printing Hello World to the standard output
     11 fmt.Println("Hello, World!")
     12 }
     13 // main function ends
     ```
+
 ## Golang Playground
 
 ???+ info "Hello World With Comment"
@@ -52,3 +53,11 @@ The compiler ignores the comment and runs your code, however as humans for us to
 Now that you know how to write comments, lets start with writing code with beautiful comments, but before we actually start writing more code there is one small step, we need to understand {++ Data Types++}
 
 Click on the next section to understand basic data types in Go.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)

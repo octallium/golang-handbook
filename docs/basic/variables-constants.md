@@ -57,7 +57,7 @@ And lets create a file 'variables_constants.go' in it, finally the structure wou
     14  age = 9
     15  // Printing out the value of "age"
     16  fmt.Println("The value of 'age' variable is:", age)
-    17  
+    17
     18  // Declaring constant "SECRET_KEY" of type string
     19  const SECRET_KEY string = "abc-123-xyz-098"
     20  // Printing out the value of "SECRET_KEY"
@@ -78,11 +78,11 @@ And lets create a file 'variables_constants.go' in it, finally the structure wou
 
 Open your terminal and navigate to our folder
 
-	code/basic/05_variables_constant/
+    code/basic/05_variables_constant/
 
 Once in the folder type the following command
 
-	go run variables_constants.go
+    go run variables_constants.go
 
 ## Output
 
@@ -117,3 +117,11 @@ On line 24 & 27 we assign new values to variables and print them out.
 ## Next
 
 In the next section we will see the short hand method for declaring variables.
+
+## Please Donate ❤️
+
+All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.
+
+Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:
+
+[![PayPal](../images/paypal-logo.png)](https://www.paypal.me/octallium)
