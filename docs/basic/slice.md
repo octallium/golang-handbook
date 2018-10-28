@@ -296,6 +296,8 @@ Once in the folder type the following command
 
     go run slice.go
 
+## Output
+
 If there are no errors, you should get the output as:
 
 ???+ success "Output"

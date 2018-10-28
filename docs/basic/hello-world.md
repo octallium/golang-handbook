@@ -65,7 +65,9 @@ If you are running on a unix based system including mac OSx, you can run the bin
 
 If there are no errors, you should get the output as:
 
-    Hello, World!
+???+ success "Output"
+
+        Hello, World!
 
 If for some reason your code isn't working, checkout the golang playground or github links in the following section.
 

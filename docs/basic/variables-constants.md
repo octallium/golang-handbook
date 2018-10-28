@@ -86,11 +86,13 @@ Once in the folder type the following command
 
 ## Output
 
-    The value of 'name' variable is: Octallium
-    The value of 'age' variable is: 9
-    The value of 'SECRET_KEY' constant is: abc-123-xyz-098
-    Now the value of 'name' variable is: Golang Handbook
-    Now the value of 'age' variable is: 13
+???+ success "Output"
+
+        The value of 'name' variable is: Octallium
+        The value of 'age' variable is: 9
+        The value of 'SECRET_KEY' constant is: abc-123-xyz-098
+        Now the value of 'name' variable is: Golang Handbook
+        Now the value of 'age' variable is: 13
 
 ## Github
 

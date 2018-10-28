@@ -90,9 +90,11 @@ Once in the folder type the following command
 
 ## Output
 
-    The type of variable 'num' is: int.
-    The type of variable 'decimal' is: float64.
-    The type of variable 'name' is : string.
+???+ success "Output"
+
+        The type of variable 'num' is: int.
+        The type of variable 'decimal' is: float64.
+        The type of variable 'name' is : string.
 
 ## Github
 

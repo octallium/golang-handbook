@@ -101,8 +101,10 @@ Once in the folder type the following command
 
 ## Output
 
-    Woff
-    Meoww
+???+ success "Output"
+
+        Woff
+        Meoww
 
 ## Note
 
