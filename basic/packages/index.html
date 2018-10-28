@@ -597,6 +597,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#please-donate" title="Please Donate ❤️" class="md-nav__link">
+    Please Donate ❤️
+  </a>
+  
+</li>
+      
       
       
       
@@ -732,6 +739,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#please-donate" title="Please Donate ❤️" class="md-nav__link">
+    Please Donate ❤️
+  </a>
+  
+</li>
+      
       
       
       
@@ -803,26 +817,8 @@
 
 <p>We will write the code in 4 parts:</p>
 <p>1.)</p>
-<details class="example" open="open"><summary>Part-1 greet.go</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">greeting</span>
-<span class="mi">2</span> 
-<span class="mi">3</span> <span class="c1">// The above statement declares that this file belong to</span>
-<span class="mi">4</span> <span class="c1">// the package &quot;greeting&quot;</span>
-<span class="mi">5</span>
-<span class="mi">6</span> <span class="c1">// import other packages</span>
-<span class="mi">7</span> <span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
-<span class="mi">8</span>
-<span class="mi">9</span> <span class="c1">// GoodMorning - Note that the name of our function starts with a capital alphabet,</span>
-<span class="mi">10</span> <span class="c1">// capital alphabet denotes that the function is exported or visible outside</span>
-<span class="mi">11</span> <span class="c1">// the package.</span>
-<span class="mi">12</span> <span class="c1">// Now you can understand why Println() has a capital letter in the beginning !</span>
-<span class="mi">13</span> <span class="kd">func</span> <span class="nx">GoodMorning</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">14</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good Morning, Octallium!&quot;</span><span class="p">)</span>
-<span class="mi">15</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">16</span> <span class="p">}</span>
-<span class="mi">17</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Part-1 greet.go</summary></details>
+<p><code class="codehilite"><span class="n">go</span> <span class="mi">1</span> <span class="n">package</span> <span class="n">greeting</span> <span class="mi">2</span> <span class="mi">3</span> <span class="o">//</span> <span class="n">The</span> <span class="n">above</span> <span class="n">statement</span> <span class="n">declares</span> <span class="n">that</span> <span class="n">this</span> <span class="nb">file</span> <span class="n">belong</span> <span class="n">to</span> <span class="mi">4</span> <span class="o">//</span> <span class="n">the</span> <span class="n">package</span> <span class="s2">&quot;greeting&quot;</span> <span class="mi">5</span> <span class="mi">6</span> <span class="o">//</span> <span class="kn">import</span> <span class="nn">other</span> <span class="nn">packages</span> <span class="mi">7</span> <span class="kn">import</span> <span class="s2">&quot;fmt&quot;</span> <span class="mi">8</span> <span class="mi">9</span> <span class="o">//</span> <span class="n">GoodMorning</span> <span class="o">-</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">our</span> <span class="n">function</span> <span class="n">starts</span> <span class="k">with</span> <span class="n">a</span> <span class="n">capital</span> <span class="n">alphabet</span><span class="p">,</span> <span class="mi">10</span> <span class="o">//</span> <span class="n">capital</span> <span class="n">alphabet</span> <span class="n">denotes</span> <span class="n">that</span> <span class="n">the</span> <span class="n">function</span> <span class="ow">is</span> <span class="n">exported</span> <span class="ow">or</span> <span class="n">visible</span> <span class="n">outside</span> <span class="mi">11</span> <span class="o">//</span> <span class="n">the</span> <span class="n">package</span><span class="o">.</span> <span class="mi">12</span> <span class="o">//</span> <span class="n">Now</span> <span class="n">you</span> <span class="n">can</span> <span class="n">understand</span> <span class="n">why</span> <span class="n">Println</span><span class="p">()</span> <span class="n">has</span> <span class="n">a</span> <span class="n">capital</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">beginning</span> <span class="err">!</span> <span class="mi">13</span> <span class="n">func</span> <span class="n">GoodMorning</span><span class="p">()</span> <span class="p">{</span> <span class="mi">14</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Good Morning, Octallium!&quot;</span><span class="p">)</span> <span class="mi">15</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span> <span class="mi">16</span> <span class="p">}</span> <span class="mi">17</span></code></p>
 <p><em>Review</em></p>
 <p>On line 1 we declare that this file belongs to the package "greeting", note that the package name and the parent directory name has to be the same.</p>
 <div class="codehilite"><pre><span></span>package greeting
@@ -836,23 +832,8 @@
 
 <p>Note that the first alphabet is capital, it symbolizes that the function is exported or visible to other packages, we will call it from our main().</p>
 <p>2.)</p>
-<details class="example" open="open"><summary>Part-2 greet.go</summary><div class="codehilite"><pre><span></span><span class="mi">18</span> <span class="c1">// goodAfterNoon starts with a lowercase alphabet, means that this function is not</span>
-<span class="mi">19</span> <span class="c1">// exported, and can only be accessed within the package.</span>
-<span class="mi">20</span> <span class="c1">// Calling goodAfterNoon from another package will result in an error</span>
-<span class="mi">21</span> <span class="kd">func</span> <span class="nx">goodAfterNoon</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">22</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good Afternoon, Octallium!&quot;</span><span class="p">)</span>
-<span class="mi">23</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">24</span> <span class="p">}</span>
-<span class="mi">25</span>
-<span class="mi">26</span> <span class="c1">// CallGoodAfterNoon has access to goodAfterNoon as it belongs to the same file,</span>
-<span class="mi">27</span> <span class="c1">// and hence it can call it.</span>
-<span class="mi">28</span> <span class="kd">func</span> <span class="nx">CallGoodAfterNoon</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">29</span> <span class="nx">goodAfterNoon</span><span class="p">()</span>
-<span class="mi">30</span> <span class="p">}</span>
-<span class="mi">31</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Part-2 greet.go</summary></details>
+<p><code class="codehilite">go 18 // goodAfterNoon starts with a lowercase alphabet, means that this function is not 19 // exported, and can only be accessed within the package. 20 // Calling goodAfterNoon from another package will result in an error 21 func goodAfterNoon() { 22 fmt.Println(&quot;Good Afternoon, Octallium!&quot;) 23 fmt.Println() 24 } 25 26 // CallGoodAfterNoon has access to goodAfterNoon as it belongs to the same file, 27 // and hence it can call it. 28 func CallGoodAfterNoon() { 29 goodAfterNoon() 30 } 31</code></p>
 <p><em>Review</em></p>
 <p>On line 21 we declare a function "goodAfterNoon", but since the first alphabet is lowercase, the function is not exported, i.e it is not visible from other packages and can be accessed only within the file.</p>
 <div class="codehilite"><pre><span></span>func goodAfterNoon()
@@ -865,15 +846,8 @@
 
 
 <p>3.)</p>
-<details class="example" open="open"><summary>Part-3 greet.go</summary><div class="codehilite"><pre><span></span><span class="mi">32</span> <span class="c1">// GoodNight accepts a string parameter and prints the result to the screen</span>
-<span class="mi">33</span> <span class="kd">func</span> <span class="nx">GoodNight</span><span class="p">(</span><span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
-<span class="mi">34</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good Night, &quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
-<span class="mi">35</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
-<span class="mi">36</span> <span class="p">}</span>
-<span class="mi">37</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Part-3 greet.go</summary></details>
+<p><code class="codehilite">go 32 // GoodNight accepts a string parameter and prints the result to the screen 33 func GoodNight(name string) { 34 fmt.Println(&quot;Good Night, &quot;, name) 35 fmt.Println() 36 } 37</code></p>
 <p><em>Review</em></p>
 <p>On line 33 we declare a function "GoodNight" which accepts a string and prints out a message. Note that the function doesn't return anything.</p>
 <div class="codehilite"><pre><span></span>func GoodNight(name string)
@@ -881,20 +855,8 @@
 
 
 <p>4.)</p>
-<details class="example" open="open"><summary>Part-4 greet.go</summary><div class="codehilite"><pre><span></span><span class="mi">38</span> <span class="c1">// Factorial accepts an int parameter and also returns an int,</span>
-<span class="mi">39</span> <span class="c1">// it calculates the factorial of the input int and returns</span>
-<span class="mi">40</span> <span class="c1">// the factorial.</span>
-<span class="mi">41</span> <span class="c1">// At this point ignore how the function works, just concentrate</span>
-<span class="mi">42</span> <span class="c1">// on the declaration and syntax.</span>
-<span class="mi">43</span> <span class="kd">func</span> <span class="nx">Factorial</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
-<span class="mi">44</span> <span class="k">if</span> <span class="nx">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
-<span class="mi">45</span>  <span class="k">return</span> <span class="mi">1</span>
-<span class="mi">46</span> <span class="p">}</span>
-<span class="mi">47</span> <span class="k">return</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">Factorial</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="mi">48</span> <span class="p">}</span>
-</pre></div>
-
-</details>
+<details class="example" open="open"><summary>Part-4 greet.go</summary></details>
+<p><code class="codehilite">go 38 // Factorial accepts an int parameter and also returns an int, 39 // it calculates the factorial of the input int and returns 40 // the factorial. 41 // At this point ignore how the function works, just concentrate 42 // on the declaration and syntax. 43 func Factorial(n int) int { 44 if n == 0 { 45 return 1 46 } 47 return n * Factorial(n-1) 48 }</code></p>
 <p><em>Review</em></p>
 <p>On line 43 we declare a function "Factorial" which accepts an int and also returns an int.</p>
 <div class="codehilite"><pre><span></span>func Factorial(n int) int
@@ -902,99 +864,101 @@
 
 
 <p>At this point don't think how the function is working, let's concentrate on the declaration and syntax.</p>
-<details class="example"><summary>Complete greet.go</summary><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">greeting</span>
+<details class="example"><summary>Complete greet.go</summary></details>
+<p>``` go
+package greeting</p>
+<div class="codehilite"><pre><span></span><span class="o">//</span> <span class="n">The</span> <span class="n">above</span> <span class="n">statement</span> <span class="n">declares</span> <span class="n">that</span> <span class="n">this</span> <span class="nb">file</span> <span class="n">belong</span> <span class="n">to</span>
+<span class="o">//</span> <span class="n">the</span> <span class="n">package</span> <span class="s2">&quot;greeting&quot;</span>
 
-<span class="c1">// The above statement declares that this file belong to</span>
-<span class="c1">// the package &quot;greeting&quot;</span>
+<span class="o">//</span> <span class="kn">import</span> <span class="nn">other</span> <span class="nn">packages</span>
+<span class="kn">import</span> <span class="s2">&quot;fmt&quot;</span>
 
-<span class="c1">// import other packages</span>
-<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
-
-<span class="c1">// GoodMorning - Note that the name of our function starts with a capital alphabet,</span>
-<span class="c1">// capital alphabet denotes that the function is exported or visible outside</span>
-<span class="c1">// the package.</span>
-<span class="c1">// Now you can understand why Println() has a capital letter in the beginning !</span>
-<span class="kd">func</span> <span class="nx">GoodMorning</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good Morning, Octallium!&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">GoodMorning</span> <span class="o">-</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">our</span> <span class="n">function</span> <span class="n">starts</span> <span class="k">with</span> <span class="n">a</span> <span class="n">capital</span> <span class="n">alphabet</span><span class="p">,</span>
+<span class="o">//</span> <span class="n">capital</span> <span class="n">alphabet</span> <span class="n">denotes</span> <span class="n">that</span> <span class="n">the</span> <span class="n">function</span> <span class="ow">is</span> <span class="n">exported</span> <span class="ow">or</span> <span class="n">visible</span> <span class="n">outside</span>
+<span class="o">//</span> <span class="n">the</span> <span class="n">package</span><span class="o">.</span>
+<span class="o">//</span> <span class="n">Now</span> <span class="n">you</span> <span class="n">can</span> <span class="n">understand</span> <span class="n">why</span> <span class="n">Println</span><span class="p">()</span> <span class="n">has</span> <span class="n">a</span> <span class="n">capital</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">beginning</span> <span class="err">!</span>
+<span class="n">func</span> <span class="n">GoodMorning</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Good Morning, Octallium!&quot;</span><span class="p">)</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span>
 <span class="p">}</span>
 
-<span class="c1">// goodAfterNoon starts with a lowercase alphabet, means that this function is not</span>
-<span class="c1">// exported, and can only be accessed within the package.</span>
-<span class="c1">// Calling goodAfterNoon from another package will result in an error</span>
-<span class="kd">func</span> <span class="nx">goodAfterNoon</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good Afternoon, Octallium!&quot;</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">goodAfterNoon</span> <span class="n">starts</span> <span class="k">with</span> <span class="n">a</span> <span class="n">lowercase</span> <span class="n">alphabet</span><span class="p">,</span> <span class="n">means</span> <span class="n">that</span> <span class="n">this</span> <span class="n">function</span> <span class="ow">is</span> <span class="ow">not</span>
+<span class="o">//</span> <span class="n">exported</span><span class="p">,</span> <span class="ow">and</span> <span class="n">can</span> <span class="n">only</span> <span class="n">be</span> <span class="n">accessed</span> <span class="n">within</span> <span class="n">the</span> <span class="n">package</span><span class="o">.</span>
+<span class="o">//</span> <span class="n">Calling</span> <span class="n">goodAfterNoon</span> <span class="kn">from</span> <span class="nn">another</span> <span class="nn">package</span> <span class="nn">will</span> <span class="nn">result</span> <span class="nn">in</span> <span class="nn">an</span> <span class="nn">error</span>
+<span class="n">func</span> <span class="n">goodAfterNoon</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Good Afternoon, Octallium!&quot;</span><span class="p">)</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span>
 <span class="p">}</span>
 
-<span class="c1">// CallGoodAfterNoon has access to goodAfterNoon as it belongs to the same file,</span>
-<span class="c1">// and hence it can call it.</span>
-<span class="kd">func</span> <span class="nx">CallGoodAfterNoon</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">goodAfterNoon</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">CallGoodAfterNoon</span> <span class="n">has</span> <span class="n">access</span> <span class="n">to</span> <span class="n">goodAfterNoon</span> <span class="k">as</span> <span class="n">it</span> <span class="n">belongs</span> <span class="n">to</span> <span class="n">the</span> <span class="n">same</span> <span class="nb">file</span><span class="p">,</span>
+<span class="o">//</span> <span class="ow">and</span> <span class="n">hence</span> <span class="n">it</span> <span class="n">can</span> <span class="n">call</span> <span class="n">it</span><span class="o">.</span>
+<span class="n">func</span> <span class="n">CallGoodAfterNoon</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">goodAfterNoon</span><span class="p">()</span>
 <span class="p">}</span>
 
-<span class="c1">// GoodNight accepts a string parameter and prints the result to the screen</span>
-<span class="kd">func</span> <span class="nx">GoodNight</span><span class="p">(</span><span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good Night, &quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">GoodNight</span> <span class="n">accepts</span> <span class="n">a</span> <span class="n">string</span> <span class="n">parameter</span> <span class="ow">and</span> <span class="n">prints</span> <span class="n">the</span> <span class="n">result</span> <span class="n">to</span> <span class="n">the</span> <span class="n">screen</span>
+<span class="n">func</span> <span class="n">GoodNight</span><span class="p">(</span><span class="n">name</span> <span class="n">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Good Night, &quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">()</span>
 <span class="p">}</span>
 
-<span class="c1">// Factorial accepts an int parameter and also returns an int,</span>
-<span class="c1">// it calculates the factorial of the input int and returns</span>
-<span class="c1">// the factorial.</span>
-<span class="c1">// At this point ignore how the function works, just concentrate</span>
-<span class="c1">// on the declaration and syntax.</span>
-<span class="kd">func</span> <span class="nx">Factorial</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="nx">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+<span class="o">//</span> <span class="n">Factorial</span> <span class="n">accepts</span> <span class="n">an</span> <span class="nb">int</span> <span class="n">parameter</span> <span class="ow">and</span> <span class="n">also</span> <span class="n">returns</span> <span class="n">an</span> <span class="nb">int</span><span class="p">,</span>
+<span class="o">//</span> <span class="n">it</span> <span class="n">calculates</span> <span class="n">the</span> <span class="n">factorial</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">input</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">returns</span>
+<span class="o">//</span> <span class="n">the</span> <span class="n">factorial</span><span class="o">.</span>
+<span class="o">//</span> <span class="n">At</span> <span class="n">this</span> <span class="n">point</span> <span class="n">ignore</span> <span class="n">how</span> <span class="n">the</span> <span class="n">function</span> <span class="n">works</span><span class="p">,</span> <span class="n">just</span> <span class="n">concentrate</span>
+<span class="o">//</span> <span class="n">on</span> <span class="n">the</span> <span class="n">declaration</span> <span class="ow">and</span> <span class="n">syntax</span><span class="o">.</span>
+<span class="n">func</span> <span class="n">Factorial</span><span class="p">(</span><span class="n">n</span> <span class="nb">int</span><span class="p">)</span> <span class="nb">int</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
         <span class="k">return</span> <span class="mi">1</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">Factorial</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">Factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="p">}</span>
+<span class="sb">``</span><span class="err">`</span>
 </pre></div>
 
-</details>
+
 <p>B) Let's write the main.go</p>
 <p>Navigate and open main.go from:</p>
 <div class="codehilite"><pre><span></span>code/basic/10_packages/main.go
 </pre></div>
 
 
-<details class="example" open="open"><summary>main.go</summary><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="kn">package</span> <span class="nx">main</span>
-<span class="mi">2</span>
-<span class="mi">3</span> <span class="c1">// The above declaration says that this file belongs to the &quot;main&quot; package</span>
-<span class="mi">4</span>
-<span class="mi">5</span> <span class="c1">// importing our packages</span>
-<span class="mi">6</span> <span class="kn">import</span> <span class="p">(</span>
-<span class="mi">7</span>    <span class="c1">// package &quot;fmt&quot; comes in-built as a part of Go standard library</span>
-<span class="mi">8</span>    <span class="s">&quot;fmt&quot;</span>
-<span class="mi">9</span>    <span class="c1">// importing our custom package</span>
-<span class="mi">10</span>    <span class="s">&quot;./greeting&quot;</span>
-<span class="mi">11</span>    <span class="c1">// the &quot;./&quot; denotes that from the current directory go to the &quot;greeting&quot; directory</span>
-<span class="mi">12</span>  <span class="p">)</span>
-<span class="mi">13</span>
-<span class="mi">14</span> <span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-<span class="mi">15</span>    <span class="c1">// Calling the GoodMorning() from greeting package</span>
-<span class="mi">16</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Calling function GoodMorning() from package &#39;greeting&#39;...&quot;</span><span class="p">)</span>
-<span class="mi">17</span>    <span class="nx">greeting</span><span class="p">.</span><span class="nx">GoodMorning</span><span class="p">()</span>
-<span class="mi">18</span>    <span class="c1">// Calling the goodAfterNoon() from greeting package</span>
-<span class="mi">19</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Calling function goodAfterNoon() from package &#39;greeting&#39;...&quot;</span><span class="p">)</span>
-<span class="mi">20</span>    <span class="c1">// as goodAfterNoon is not directly accessible, we call CallGoodAfterNoon()</span>
-<span class="mi">21</span>    <span class="c1">// which in turn calls goodAfterNoon()</span>
-<span class="mi">22</span>    <span class="nx">greeting</span><span class="p">.</span><span class="nx">CallGoodAfterNoon</span><span class="p">()</span>
-<span class="mi">23</span>    <span class="c1">// Calling the GoodNight() from greeting package</span>
-<span class="mi">24</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Calling function GoodNight() from package &#39;greeting&#39;...&quot;</span><span class="p">)</span>
-<span class="mi">25</span>    <span class="nx">greeting</span><span class="p">.</span><span class="nx">GoodNight</span><span class="p">(</span><span class="s">&quot;Gopher!&quot;</span><span class="p">)</span>
-<span class="mi">26</span>    <span class="c1">// Calling the Factorial function with passing an int</span>
-<span class="mi">27</span>    <span class="nx">num</span> <span class="o">:=</span> <span class="mi">10</span>
-<span class="mi">28</span>    <span class="c1">// As Factorial() returns an int, we save it in a new variable &quot;result&quot;</span>
-<span class="mi">29</span>    <span class="nx">result</span> <span class="o">:=</span> <span class="nx">greeting</span><span class="p">.</span><span class="nx">Factorial</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
-<span class="mi">30</span>    <span class="c1">// Printing the result on screen, note we are using Printf()</span>
-<span class="mi">31</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Factorial of %d is: %d.\n&quot;</span><span class="p">,</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span>
-<span class="mi">32</span> <span class="p">}</span>
-</pre></div>
-
+<details class="example" open="open"><summary>main.go</summary><p>``` go
+1 package main
+2
+3 // The above declaration says that this file belongs to the "main" package
+4
+5 // importing our packages
+6 import (
+7    // package "fmt" comes in-built as a part of Go standard library
+8    "fmt"
+9    // importing our custom package
+10    "./greeting"
+11    // the "./" denotes that from the current directory go to the "greeting" directory
+12  )
+13
+14 func main() {
+15    // Calling the GoodMorning() from greeting package
+16    fmt.Println("Calling function GoodMorning() from package 'greeting'...")
+17    greeting.GoodMorning()
+18    // Calling the goodAfterNoon() from greeting package
+19    fmt.Println("Calling function goodAfterNoon() from package 'greeting'...")
+20    // as goodAfterNoon is not directly accessible, we call CallGoodAfterNoon()
+21    // which in turn calls goodAfterNoon()
+22    greeting.CallGoodAfterNoon()
+23    // Calling the GoodNight() from greeting package
+24    fmt.Println("Calling function GoodNight() from package 'greeting'...")
+25    greeting.GoodNight("Gopher!")
+26    // Calling the Factorial function with passing an int
+27    num := 10
+28    // As Factorial() returns an int, we save it in a new variable "result"
+29    result := greeting.Factorial(num)
+30    // Printing the result on screen, note we are using Printf()
+31    fmt.Printf("Factorial of %d is: %d.\n", num, result)
+32 }</p>
+<p>```</p>
 </details>
-<p>On line 1 we declare that the file belongs to the package "main" </p>
+<p>On line 1 we declare that the file belongs to the package "main"</p>
 <div class="codehilite"><pre><span></span>package main
 </pre></div>
 
@@ -1080,6 +1044,10 @@ Factorial of 10 is: 3628800.
 <p>Since golang playground does not allow to declare and use custom packages, it is not possible to post it there, please refer the github repo for any errors.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>We will start the basic data structures of type <ins class="critic"> array</ins>.</p>
+<h2 id="please-donate">Please Donate ❤️<a class="headerlink" href="#please-donate" title="Permanent link">&para;</a></h2>
+<p>All the work is provided free of cost and completely open source, but it needs your support and love to keep the activity sustainable.</p>
+<p>Any support is genuinely appreciated, you can help by sending a small donation by clicking the below link:</p>
+<p><a href="https://www.paypal.me/octallium"><img alt="PayPal" src="../../images/paypal-logo.png" /></a></p>
                 
                   
                 
